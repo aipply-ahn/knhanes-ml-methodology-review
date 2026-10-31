@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use these materials, please cite the review."
+title: "knhanes-ml-methodology-review: reproducibility materials for a systematic methodological review of supervised machine learning in KNHANES"
+authors:
+  - family-names: Ahn
+    given-names: Hongryul
+    affiliation: "Division of AI and Data Science, DS&ML Center, The University of Suwon"
+    orcid: "https://orcid.org/0000-0002-5941-9784"
+repository-code: "https://github.com/aipply-ahn/knhanes-ml-methodology-review"
+license: MIT
+date-released: 2026-10-31

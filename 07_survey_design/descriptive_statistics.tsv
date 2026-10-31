@@ -1,0 +1,194 @@
+study_id	RC48	POPEST	basis	quote	location
+KHM242	1	Y	Table 1 percentages are footnoted as weighted with complex-sample chi-square; integrated weights, strata and cluster variables applied.	*Weighted %; **P-value was calculated by complex sample chi-square test.	Table 1 footnote; Methods (statistical analysis)
+KHM217	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Results; Supplementary Table S3
+KHM138	0	UNC	Table 1 (mean ± SD, n (%)) unweighted status not stated; KNHANES prevalence used to project QALY gains per 100,000 persons.	After establishing the prevalence of MetS within the entire KNHANES dataset, Supplementary Table 4 presents the calculated QALY gains per 100,000 persons per year	Table 1; Results (life quality improvement)
+KHM061	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM040	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM226	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Tables 4-5
+KHM111	0	N	Only the outcome class distribution (n, %) is summarised; weighted vs unweighted not stated.		Methods (data preparation)
+KHM160	NA	N	Only variable-availability counts and model-predicted rates; no participant descriptive statistics or prevalence.		Table 2; Results
+KHM130	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM077	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM209	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table (patients characteristics)
+KHM098	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM027	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM231	0	UNC	Sample prevalence of suicidal ideation compared with general-population rates of other countries; no weighting statement.	In this sample of South Korean adults, 14.5% had experienced suicidal ideation in the past year.	Discussion; Table 3
+KHM086	1	N	Authors explicitly state that complex-sample analysis with sampling weights, strata and clusters was not performed, so the Table 1 summaries are unweighted.	표본가중치, 층화변수, 집락변수를 완전하게 반영한 복합표본 분석은 수행하지 않았으며, 이에 따른 일반화의 제한은 한계점에 명시하였다.	Methods 3.1 (data)
+KHM169	0	N	Survey weights used for svyglm regression; Table 1 (mean ± SD) gives no indication that descriptive statistics were weighted.	All the analyses were performed in the R environment (version 4.1.1) using the svyglm function in the survey package, accounting for the KNHANES sampling weights.	Methods 2.4; Table 1
+KHM013	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM114	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM117	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Baseline characteristics table
+KHM170	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 2
+KHM033	0	Y	Weighting stated for the NHANES descriptive statistics only; the KNHANES data are not described as weighted or unweighted (item judged on the KNHANES component, Claude Code integration).	Sampling weights were applied for descriptive statistics but not for machine learning model development.	Methods (study population and weighting)
+KHM220	0	Y	Prevalence of allergic disease framed as prevalence in Korean children; no statement on weighting of descriptive statistics.	The study encompassed 30,382 subjects, with an allergic disease prevalence of 24.7%.	Results 3.1; Introduction
+KHM108	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM051	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM084	1	Y	Complex sample weights stated to be applied to all analyses, with weighted frequencies, percentages and means used to describe variables (SPSS); weight variable not named.	complex sample weights were applied to all analyses to ensure national representativeness and reduce estimation bias. Weighted frequencies, percentages, means, and standard deviations were calculated to describe the distribution of variables.	Methods 2.5 (statistical analysis)
+KHM103	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM194	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM189	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM128	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM085	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Methods 2.3.1; descriptive table
+KHM047	1	N	Authors explicitly state that sampling weights were not applied, so descriptive statistics describe the unweighted analytic sample.	this study primarily aims to predict and learn data patterns using machine learning rather than estimating specific population statistics. Therefore, sampling weights were not applied	Methods (statistical analysis)
+KHM020	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM249	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table (participant characteristics)
+KHM201	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM147	1	Y	Table 1 proportions are weighted for the complex survey design, with means ± SE, Rao-Scott tests and SPSS complex-design adjustment.	The reported proportions (%) were weighted to account for the complex survey design.	Methods 2.x (statistical analysis); Table 1 note
+KHM141	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 2
+KHM115	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM005	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM053	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM219	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM063	0	Y	Characteristics claimed to be weighted to represent Korea (mean ± SE), but no weight variable or survey procedure is identified.	The weighted characteristics of the data from the KNHANES 2010 to represent the entire normal and prediabetes people in Korea are summarized by descriptive statistics in Table 1.	Methods 2.6; Table 1
+KHM004	NA	N	KNHANES part reports only n=460 and split sizes; population-weighted ASIRs are GBD aggregates, not KNHANES estimates.		Methods 2.3.1
+KHM080	NA	N	Only cohort sizes (856 hepatitis B, 58 liver cancer) and split counts; no characteristics or prevalence.		Methods 2.2
+KHM248	1	Y	Statistics computed with strata, cluster and 4-year averaged weights; unweighted n, weighted % and weighted mean ± SE, complex-sample crosstabs.	층화(strata), 집락(cluster), 4개년도 평균 가중치(weight)를 반영한 통계치를 산출하였다.	Methods (data analysis); Table 1 footnotes
+KHM152	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM007	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM178	0	Y	Osteoporosis prevalence interpreted for Korean adults ≥50 years with no survey-design handling described.	Using sex-specific Korean young-adult references, the estimated OP prevalence among Korean adults ≥50 years was 21.9% overall	Results 3.2
+KHM009	1	Y	Analysis considered survey-provided weights (integrated multi-year weight described) and reports weighted frequency (%) of stroke with Rao-Scott tests.	As a result of weighted frequency (%) analysis, there were 291 (0.43%) current stroke patients	Methods (data); Results
+KHM125	1	Y	Strata, cluster and (normalised standard) weights considered; weighted frequency (%) of MI/angina reported with Rao-Scott tests.	국민건강영양조사자료는복합표본설계에의해추출된자료이므로층화변수, 집락변수, 가중치를고려하여분석을수행하였다.	Methods 2 (data); Results
+KHM184	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 2
+KHM017	NA	N	Only counts of normal/hypertensive participants by life stage; no characteristics, percentages or prevalence.		Table 1
+KHM096	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Supplementary Table 1
+KHM197	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table I
+KHM075	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM252	1	Y	Weighted complex-sample descriptive statistics (frequency, %, estimates, SE) using a plan file with multistage strata, clusters and sampling weights.	대상자의 일반적 특성, 건강상태, 건강행위 및 건강 관련 삶의 질을 분석하기 위해 가중치를 적용한 복합표본 기술 통계분석을 실시하였으며, 결과는 빈도, 백분율, 추정값, 표준오차로 제시하였다.	Methods (data analysis)
+KHM043	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM228	1	Y	General characteristics presented as weighted means, SE and percentages using linked health-interview/examination weights; Rao-Scott tests.	대상자의 일반적 특성은 조사된 표본이 전체인구를 대표할 수 있도록 건강설문과 검진의 연관성가중치를 부여하였고, 기술 분석을 이용하여 가중치가 적용된 평균 및 표준 오차, 백분율을 각각 제시하였다.	Methods (statistical analysis); Table 1
+KHM247	1	Y	Strata, cluster and 3-year averaged weights applied; n unweighted, % and mean ± SE weighted (table footnotes).	복합표본 설계 정보인 층화(strata), 집락(cluster), 3개년도 평균 가중치(weight)를 반영하여 통계치를 산출하였다.	Methods (data analysis); Table 1 footnotes
+KHM064	0	N	Table values given as mean (SD/SE) or % with no statement on weighting.	Table values are given as mean (standard deviation/standard error) or %.	Table 1 note
+KHM137	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Tables 1-2
+KHM006	1	Y	Survey weights (w_tot) with kstrata/psu applied to descriptive analyses: weighted means and counts with weighted percentages; not applied to ML.	For KNHANES 2013–2024, the integrated survey weight (w_tot) ... was used as provided without additional rescaling. Survey weights were applied to the descriptive and association analyses but not to the machine-learning analyses.	Methods 2.5 (statistical analysis)
+KHM134	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Characteristics table
+KHM003	1	Y	KNHANES column of Table 1 footnoted as estimated with complex-survey-design weights (post-stratification sample weights).	Estimated values by complex-survey-design weights.	Table 1 footnote a
+KHM182	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM019	1	Y	Study population characteristics (Table 1) derived after resampling with the complex sampling weight (itvex) to mimic the overall population.	We defined the study population by applying complex sampling weights to reduce bias in the original dataset. The general characteristics of the study population with selected variables are presented in Table 1.	Results (variable selection and general characteristics); Methods
+KHM253	1	Y	Strata, cluster and 2-year averaged weights applied; unweighted n, weighted % and mean ± SE; decision tree explicitly unweighted.	분석 시 복합표본 설계 정보(층화 strata, 집락 cluster, 가중치 weight)를 반영하였으며, 2개년도 평균 가중치를 적용하여 실수와 백분율, 평균과 표준편차를 산출하였다.	Methods (data analysis); Table 1 footnotes
+KHM240	1	Y	Complex-sample design with named variables kstrata, psu and wt_tot; n unweighted, % and mean ± SE weighted.	층화(변수명 kstrata), 집락(변수명 psu) 및 가중치(변수명 wt_tot)를 반영하여 분석하였다.	Methods 5 (data analysis); Table footnotes
+KHM058	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM124	0	N	Only the outcome class distribution (n, %) is summarised; weighted vs unweighted not stated.		Methods (participants)
+KHM071	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Results (participant characteristics)
+KHM094	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Results; Supplementary Table 1
+KHM046	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 3
+KHM100	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Tables 5-6
+KHM106	NA	N	No participant characteristics, prevalence or other descriptive statistics beyond sample/split counts.		Methods
+KHM110	0	N	wt_itvex used only for model building; general-characteristics table (mean ± SD) not identified as weighted or unweighted.	가중치로서wt_itvex가모델구축에사용되었다.	Methods; Table 1
+KHM050	NA	N	Only sample flow counts (including men/women n); no characteristics table or prevalence.		Methods (data and participants)
+KHM185	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM011	0	UNC	Blanket statement that procedures used weighted data; Table 1 n (%) not identified as weighted or unweighted.	The statistical analyses considered the unique features of the survey design; appropriate procedures employed weighted data.	Methods (statistical analysis); Table 1
+KHM021	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Results text
+KHM016	1	Y	Table 2 gives weighted frequencies with Rao-Scott tests accounting for stratification, clustering and sample weights; weighted population total reported.	Table 2 presents the weighted frequency and the results of the Rao–Scott chi-squared test.	Results 3.2; Methods 2.1-2.2
+KHM162	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM224	1	Y	Health-examination weights applied (SUDAAN; data expanded by weights); characteristic tables use weighted chi-square and weighted prevalence.	본연구의주변수는BMI이므로검진자료의가중치를적용하여통합데이터마트를구축하였다.	Methods (data analysis); Tables 2-5
+KHM091	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 2
+KHM161	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM234	1	Y	Descriptive statistics computed with weight, strata and cluster (integrated wt_itvex/wt_hs); weighted rates reported via complex-sample crosstabs.	본 연구는 복합층화표본 추출된 자료를 이용하였으므로 가중치(weight), 층화변수 (strata), 집락변수(cluster)를 적용하여 기술통계 분석을 하였다.	Methods (analysis); Results
+KHM133	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM104	NA	N	Only total and class counts (10,194; 8,339 without depression); no characteristics or percentages.		Methods 3.1
+KHM164	0	N	Sampling weights used throughout the ML pipeline; baseline n (%) and mean ± SD not stated as weighted or unweighted.	To account for the complex sampling design of KNHANES, individual-level sampling weights were incorporated throughout the machine learning pipeline	Methods (preprocessing; statistical analysis)
+KHM113	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM259	1	Y	KDCA strata, PSU and weights applied to all point estimates; weighted means ± SE and weighted percentages with Rao-Scott tests.	Complex-sample design—KDCA strata, primary sampling units, and weights—was applied to all point estimates. Continuous variables are reported as weighted means ± SE	Methods (statistical analyses)
+KHM212	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM002	0	Y	Weighting stated for the NHANES descriptive statistics only; the KNHANES data are not described as weighted or unweighted (item judged on the KNHANES component, Claude Code integration).	When applying NHANES survey weights to project to the U.S. population, these prevalences corresponded to 31.7%, 22.0%, 25.7%, respectively.	Results (outcome prevalence)
+KHM109	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table (general characteristics)
+KHM122	0	N	Only the outcome class distribution (n, %) is summarised; weighted vs unweighted not stated.		Results (dataset)
+KHM236	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM244	1	Y	Strata, cluster and weights included per KDCA guideline; Table 1 gives unweighted n and weighted % with Rao-Scott tests.	분석 시 층화변수, 집락변수 및 가중치를 분석에 포함하여 분석하였다.	Methods (data analysis); Table 1 note
+KHM198	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM107	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM173	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM079	0	N	"Only a ""weighted chi-squared test"" is mentioned; characteristic percentages/means not identified as weighted and no weight identified."	and the weighted chi-squared test for categorical variables.	Methods (statistical analysis); Table 1
+KHM142	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 2
+KHM221	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 2
+KHM168	0	UNC	Proportion of overweight/obese people reported without sample/population qualifier or weighting statement.	As can be seen from Figure 1, the proportion of overweight and obese people between 2016 and 2018 was 58%	Methods 3.1; Figure 1
+KHM041	NA	N	No participant characteristics, prevalence or other descriptive statistics beyond sample/split counts.		Methods
+KHM102	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Results (characteristics of participants)
+KHM199	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM087	0	N	Weights not used in ML analyses, but no statement on whether the descriptive statistics are weighted.	The primary machine-learning analyses did not incorporate KNHANES sampling weights, strata, or cluster variables.	Methods (statistical analysis); Table 2
+KHM023	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 2
+KHM001	0	N	Cross-sectional weighting stated for the logistic regression only; outcome prevalence and characteristics not identified as weighted or unweighted.	Given the 1-year duration of the study, cross-sectional weighting was applied	Methods (statistical analysis); Abstract; Appendix
+KHM099	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM257	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM238	1	Y	Survey design specified (psu, ID_fam, kstrata, wt_tot); estimated prevalence of DED given with SE and population counts/proportions in Table 2.	The survey design was represented using the variable psu for PSU and ID_fam for the secondary sampling unit, kstrata for strata, and wt_tot for weights.	Methods; Results; Table 2
+KHM036	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM090	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 2
+KHM177	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM227	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Results; Table 1
+KHM246	1	Y	Complex-sample design with linked survey weights (SPSS); tables report number (weighted %) and mean ± SE with Rao-Scott tests.	건강설문·검진조사·영양조사의 연관성 가중치를 반영한 복합표본설계로 분석하였다.	Methods (data analysis); Table 1 footnotes
+KHM213	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM163	NA	N	Table 1 lists variable definitions/ranges and data split counts only; no descriptive statistics or prevalence.		Table 1
+KHM188	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table (mean ± SD)
+KHM074	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM181	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM037	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 2
+KHM029	NA	N	Only training/testing counts by risk class; no characteristics or prevalence.		Table 1
+KHM015	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		표 1
+KHM095	1	Y	Weighted means (SE) and weighted proportions with Rao-Scott tests using SAS PROC SURVEY; Table 1 note says mean ± SD or n (%) (inconsistent).	For continuous variables, weighted means (standard errors) were calculated, and the means between the groups were compared using an independent t-test.	Methods (statistical analysis)
+KHM193	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM105	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM176	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM121	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM192	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 2
+KHM056	0	N	Complex sampling stated for association analyses; descriptive tables (mean ± SD, n (%)) not identified as weighted and prevalence appears to be n/N.	We used a complex sampling design to examine associations between MS and related factors.	Methods 2.3; Table 2; Results 3.1
+KHM159	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM202	0	N	Table reports mean ± SE without any statement on weighting; Methods say means with SD.	All variables are presented as mean±standard error or frequency (%).	Table note; Methods
+KHM024	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM218	0	N	Only the outcome class distribution (n, %) is summarised; weighted vs unweighted not stated.		Results
+KHM049	1	Y	Sampling weights, strata and variance estimates applied in Stata; weighted frequencies of sample characteristics reported.	our analyses incorporated sampling weights to obtain nationally representative estimations and to consider the annual weight for four years. We compared the weighted frequencies of the general sample characteristics	Methods (statistical analysis)
+KHM014	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM230	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM186	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Results text
+KHM035	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM032	NA	N	Table I lists variable definitions with value ranges only; no descriptive statistics or prevalence.		Table I
+KHM210	NA	N	No participant characteristics, prevalence or other descriptive statistics beyond sample/split counts.		Methods
+KHM126	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM204	0	N	Tables report mean ± SE without any statement on weighting; Methods say mean and SD.	All variables are mean ± SE (standard error) or frequency %	Table 1 note
+KHM237	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM136	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM083	1	Y	Survey procedures with stratification, clustering and weights; baseline characteristics as weighted means and proportions, unweighted counts identified.	All analyses were conducted using survey procedures to account for the complex sampling design of the KNHANES, including stratification, clustering, and sampling weights.	Methods (statistical analysis); Table 1 note
+KHM214	1	Y	Weighted mean, SE and percentages presented using KNHANES weights, with weighted ANOVA and Rao-Scott tests.	The weighted mean, standard error, and percentile were presented using a descriptive analysis.	Methods (data analysis); Table 1 notes
+KHM155	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		표 1
+KHM233	1	Y	Strata, cluster and weights applied; unweighted n, weighted % and weighted mean (table footnotes).	국민건강영양조사에서 제시하고 있는 복합표본 설계인 층화, 집락 및 가중치를 반영하여 분석하였다.	Methods (data analysis); Table footnotes
+KHM208	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM174	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Tables 1-3
+KHM250	1	Y	Strata, cluster and survey-component weights applied; n unweighted, % and mean ± SE weighted.	국민건강영양조사는 복합 표본 설계 자료이기에 층(strata), 집락 (cluster), 조사 부문별 가중치(weight)를 반영하여 통계치를 산출하였다.	Methods (data analysis); Table footnotes
+KHM241	1	Y	Complex samples analysis with weight, stratification and cluster variables; tables give unweighted N and weighted %, mean ± SE.	We conducted the analyses through complex samples analysis by considering weight, stratification, and cluster variables	Methods 2.3; Table notes
+KHM149	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table (characteristics of data)
+KHM243	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM010	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM101	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM187	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM039	0	N	Table 1 reports mean and SE with no statement on weighting.	Values are presented as mean and standard error or number and percentage.	Table 1 note
+KHM196	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Abstract; Results text
+KHM225	0	N	Survey weights described only as a feature of KNHANES; Table 1 n (%) not identified as weighted or unweighted.	The respondents’ data were assigned weights to assure the equal probability of being sampled and to cover missing data.	Methods (sample); Table 1
+KHM123	0	N	Only the outcome class distribution (n, %) is summarised; weighted vs unweighted not stated.		Results (K-NHANES dataset)
+KHM055	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Results text
+KHM235	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM118	1	Y	Survey design specified (psu, ID_fam, kstrata, wt_tot/5); population counts, means and SE estimated with design weights.	Population counts (n), means, and standard errors are estimated using complex-survey-design weights.	Table footnote; Methods (R packages)
+KHM144	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Baseline characteristics table
+KHM171	1	Y	Complex sampling design with individual weights, cluster and strata (SAS); Table 1 gives unweighted n and weighted %.	A complex sampling design was employed in the data analysis, incorporating individual weights based on cluster sampling variables and variance estimation strata.	Methods (statistical analysis); Table 1 note
+KHM093	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM255	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM089	0	Y	Regional prevalences interpreted as epidemiological disparities across Korean regions with no design handling described.	Marked geographical heterogeneity in ODC prevalence across South Korean regions (e.g., peak prevalence of 10.7% in South Gyeongsang)	Results; Discussion
+KHM139	0	N	wt_itvex used only for model training; descriptive statistics (mean ± SD) not identified as weighted or unweighted.	모델학습을 위한 데이터의 가중치인 wt_itvex가 모델 구축에 사용되었다.	Methods; Table 1
+KHM200	1	Y	Population numbers, means and SE estimated using complex survey design factors (PSU/SSU, post-stratification weights).	The population number, mean, and standard error (SE) were estimated using complex survey design factors.	Tables 2-3 notes; Methods
+KHM008	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM191	0	N	Text summary of participants and osteoporosis proportions (dataset unclear) with no statement on weighting.		Results and discussion
+KHM175	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Appendix Table 1; Table 2
+KHM066	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Results (frequency analysis)
+KHM167	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM216	1	Y	Complex-sample design in SPSS; descriptive statistics given as unweighted frequencies and weighted percentages, means with SE, Rao-Scott tests.	Descriptive statistics included unweighted frequencies and weighted percentages for categorical variables, and means with standard errors (SE) for continuous variables.	Methods (data analysis); Table 1 note
+KHM044	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM070	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM082	1	Y	Strata, PSU and integrated weight used; Table 1 gives unweighted n and survey-weighted percentages; unweighted prevalence labelled.	Values are presented as unweighted number, mean, or survey-weighted percentage unless otherwise indicated. Percentages were calculated using KNHANES survey weights.	Table 1 note; Methods
+KHM140	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM180	0	N	Blanket claim that all procedures used weights/strata/clusters, but descriptive tables (mean ± SD, Python/SciPy) give no indication of weighting.	All statistical procedures accounted for the complex sampling design of the KNHANES by incorporating designated sampling weights, strata, and cluster variables.	Methods; Tables 5-6
+KHM052	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 7
+KHM132	0	N	Survey weights used for model training/evaluation only; outcome distribution (people, %) not identified as weighted or unweighted.	In modeling and performance validation, only composite sampling design weights were incorporated.	Methods; Table 6
+KHM034	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table (mean (SD))
+KHM245	0	N	P-values from complex-sample tests, but n (%) and mean ± SD not identified as weighted; method not described in text.	P-value was obtained from the complex samples for χ2 test for categorical variables and t-test for continuous variables (P<0.05).	Table 1 note
+KHM135	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM190	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM045	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1
+KHM195	0	N	Descriptive statistics (characteristics table) presented with no statement on whether they are weighted or unweighted.		Table 1

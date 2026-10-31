@@ -1,0 +1,44 @@
+public_id,internal_code,item
+C01,RC01,Population the results describe
+C02,RC02,Survey data used
+C03,RC06,Choice of survey weights
+C04,RC07,Combined-year weights
+C05,RC46,Harmonising variables across years
+C06,RC08,Inclusion and exclusion conditions
+C07,RC09,Sample-selection steps
+C08,RC10,Rebuilding the outcome
+C09,RC11,Timing of the outcome
+C10,RC12,Outcome-predictor overlap
+C11,RC14,Final input variables and coding
+C12,RC15,Variable selection process
+C13,RC16,Derived predictors
+C14,RC13,Outcome distribution
+C15,RC17,Amount of missingness
+C16,RC18,Missing-value rules
+C17,RC19,Special response codes
+C18,RC20,Timing of preprocessing
+C19,RC21,Class rebalancing
+C20,RC22,Algorithms and software
+C21,RC23,Pipeline order
+C22,RC24,Weights in model fitting
+C23,RC25,Tuning procedure
+C24,RC26,Tuning kept apart from evaluation
+C25,RC27,Final hyperparameters
+C26,RC28,Internal-validation design
+C27,RC29,Reproducible split
+C28,RC30,Performance measures
+C29,RC31,Decision threshold
+C30,RC32,Weights in performance evaluation
+C31,RC37,Calibration
+C32,RC33,Uncertainty of performance
+C33,RC34,Strata and PSUs
+C34,RC35,Final model specification
+C35,RC47,Data availability
+C36,RC36,Code availability
+C37,RC39,Importance method and object
+C38,RC40,Importance settings
+C39,RC41,Ranking rule
+C40,RC42,Weights in importance aggregation
+C41,RC43,Ranking stability
+C42,RC44,Scope of interpretation
+C43,RC45,Rule after the ranking

@@ -1,0 +1,12 @@
+run,source,records,date,note
+baseline,europe_pmc_unique,6046,2026-09-03 to 2026-09-05,
+baseline,openalex_unique,9998,2026-09-03 to 2026-09-05,
+baseline,pubmed_raw_retrievals,5128,2026-09-03 to 2026-09-05,
+baseline,pubmed_unique_beyond_europe_pmc,52,2026-09-03 to 2026-09-05,
+baseline,korean_citation_index,339,2026-09-03 to 2026-09-05,
+baseline,kdca_publication_list,2079,2026-09-03 to 2026-09-05,
+baseline,total_before_cross_source_deduplication,18514,2026-09-03 to 2026-09-05,
+baseline,openalex_raw_unique_ids,10000,2026-09-03 to 2026-09-05,
+baseline,database_index_inputs,16435,2026-09-03 to 2026-09-05,
+baseline,raw_source_total,18516,2026-09-03 to 2026-09-05,
+update_2026-10-31,all,,2026-10-31,re-run of the same queries in progress; results will be added with a comparison to the baseline

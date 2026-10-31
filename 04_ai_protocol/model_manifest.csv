@@ -1,0 +1,4 @@
+provider,model,version,interface,run_date,task,prompt_file,io_location
+Anthropic,Claude (Claude Code; reviewer id P2-CLAUDE-OPUS5 in the coding records),as recorded per record,Claude Code CLI,2026-09 to 2026-10,"study-level extraction (protocol v1.2), checklist judgements, coding-audit reviewer A and integrator","prompts/, coding_audit/PROTOCOL.md","03_coding/, 04_ai_protocol/coding_audit/logs/claude.jsonl"
+OpenAI,Codex,not recorded,Codex CLI,2026-10,"coding-audit reviewer B, coordinator rule adjudication","coding_audit/PROTOCOL.md, RULES_r*.md",04_ai_protocol/coding_audit/logs/codex.jsonl
+Author,-,-,-,2026-09 to 2026-10,"eligibility decisions, verification of the study-level dataset, final decisions on rules",-,-

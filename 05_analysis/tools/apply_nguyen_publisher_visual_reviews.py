@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+from apply_completed_visual_reviews import apply_reviews
+from remove_visual_aliases import remove_aliases
+
+T="2026-09-14T01:50:00+09:00"
+reviews=[
+ {"reviewed_at":T,"study_key":"nguyen2024explainable","object_id":"nguyen2024explainable__0004__figure_6","object_type":"figure","object_label":"figure:6","object_number":"6","source_scope":"main","source_path":"references/web_assets/nguyen2024explainable/fig6_original.jpg","page_or_sheet":"publisher HTML figure asset","caption":"Fig. 6. ROC curve of optimized models evaluated on the hold-out set.","image_path":"data/visual_manual_review/latest_after_recrop/decoded_recovered/figure/nguyen2024explainable__0004__figure_6__publisher_original.jpg","width":3450,"height":2728,"extraction_method":"original publisher HTML figure asset (900-dpi JPEG metadata)","content_domains":"model performance; discrimination; hold-out evaluation",
+  "visible_text":"ROC curves on the hold-out set. Legend AUCs: HyperTab 0.8300; TabPFN 0.8288; AdaBoost 0.8233; LightGBM 0.8195; Random Forest 0.8175; Gradient Boost 0.8104; XGBoost 0.8062; Logistic Regression 0.7976.",
+  "interpretation":"HyperTab ranks first on the hold-out set but only narrowly exceeds TabPFN (0.0012) and AdaBoost (0.0067). All eight models fall in a relatively tight AUC band of 0.7976–0.8300, so the visual supports modest rather than decisive separation between models.",
+  "key_values":["HyperTab AUC: 0.8300","TabPFN: 0.8288","AdaBoost: 0.8233","LightGBM: 0.8195","Random Forest: 0.8175","Gradient Boost: 0.8104","XGBoost: 0.8062","Logistic Regression: 0.7976"]},
+ {"reviewed_at":T,"study_key":"nguyen2024explainable","object_id":"nguyen2024explainable__0007__figure_7A","object_type":"figure","object_label":"figure:7","object_number":"7","source_scope":"main","source_path":"references/web_assets/nguyen2024explainable/fig7_original.jpg","page_or_sheet":"publisher HTML figure asset","caption":"Fig. 7. HyperTab-LIME explanation examples: (A) prediabetes prediction and (B) normal-state prediction.","image_path":"data/visual_manual_review/latest_after_recrop/decoded_recovered/figure/nguyen2024explainable__0007__figure_7__publisher_original.jpg","width":4548,"height":1904,"extraction_method":"original publisher HTML figure asset (900-dpi JPEG metadata)","content_domains":"local explanation; case examples; model interpretability",
+  "visible_text":"Panel A: Normal 0.16, Prediabetes 0.84 for a 70-year-old; displayed features/values are age 70.00, DI1_ag 888.00, DI1_2 5.00, HE_sbp3 170.00, N_EN 1410.29, BM13_5 2.00, incm5 4.00, HE_nc 40.20, HE_alt 21.00, BM14_1 1.00. Panel B: Normal 0.82, Prediabetes 0.18 for a 34-year-old; age 34.00, DI1_ag 888.00, DI1_2 5.00, HE_alt 12.00, N_CHO 215.22, N_EN 1515.87, BE3_88 0.00, incm5 4.00, BM13_5 0.00, HE_Ukal 89.00. Orange and blue encode features favoring opposite classes.",
+  "interpretation":"The paired LIME cases contrast a high-probability prediabetes prediction in an older man with a high-probability normal prediction in a younger man. Age changes direction between cases, while the remaining local contributors differ in value and direction. These are illustrative local explanations, not estimates of global feature importance or causal effects.",
+  "key_values":["Panel A: Prediabetes probability 0.84; Normal 0.16; age 70","Panel B: Normal probability 0.82; Prediabetes 0.18; age 34","Each panel displays 10 local feature values","Explanation method: LIME"]}
+]
+apply_reviews(reviews)
+remove_aliases('nguyen2024explainable',{'nguyen2024explainable__0008__figure_7B'})

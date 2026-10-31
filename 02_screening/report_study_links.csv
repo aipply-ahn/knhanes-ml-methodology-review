@@ -1,0 +1,279 @@
+study_id,representative_report,doi_or_pmid,report_type,study_group
+KHM001,Kim 2026a,10.21203/rs.3.rs-6364577/v1,Preprint,Core classification
+KHM002,Yoo 2026,10.1371/journal.pdig.0001486,Journal article,Core classification
+KHM003,Jang 2023,10.1093/jamia/ocad051,Journal article,Core classification
+KHM004,Ding 2026,10.21203/rs.3.rs-10585348/v1,Preprint,Core classification
+KHM005,Jang 2026a,10.2196/preprints.107515,Preprint,Core classification
+KHM006,Lin 2026,10.1002/fsn3.72232,Journal article,Core classification
+KHM007,Kim 2025a,10.2196/74415,Journal article,Core classification
+KHM008,Lee 2025a,10.3390/jpm15030083,Journal article,Core classification
+KHM009,Choi 2024a,10.24225/kjai.2024.12.2.1,Journal article,Core classification
+KHM010,Kim 2024a,10.21203/rs.3.rs-4838697/v1,Preprint,Core classification
+KHM011,Kim 2024b,10.55214/25768484.v8i4.978,Journal article,Core classification
+KHM012,Lee 2024a,10.1371/journal.pone.0307677,Journal article,Other health analysis
+KHM013,Park 2024a,10.5762/kais.2024.25.7.320,Journal article,Core classification
+KHM014,Zhang 2024,10.1186/s13040-024-00363-3,Journal article,Core classification
+KHM015,Kim 2023a,10.15790/cope.2023.19.4.101,Journal article,Core classification
+KHM016,Shin 2023,10.29220/csam.2023.30.1.021,Journal article,Core classification
+KHM017,Kang 2022,10.9723/jksiis.2022.27.5.073,Journal article,Core classification
+KHM018,Dashdondov Khongorzul 2022,10.3745/KTSDE.2022.11.3.107,Journal article,Method-focused
+KHM019,Oh 2022a,10.1038/s41598-022-06333-1,Journal article,Core classification
+KHM020,Oh 2022b,10.21215/kjfp.2022.12.3.173,Journal article,Core classification
+KHM021,Park 2022a,10.18502/ijph.v51i4.9261,Journal article,Core classification
+KHM022,Dashdondov 2021,10.1007/s11063-021-10663-y,Journal article,Method-focused
+KHM023,Kim 2021a,10.3390/bios11070228,Journal article,Core classification
+KHM024,Lee 2021a,10.3745/KTSDE.2021.10.11.541,Journal article,Core classification
+KHM025,Kim 2020a,10.9709/JKSS.2020.29.1.011,Journal article,Method-focused
+KHM026,Amarbayasgalan 2019,10.1371/journal.pone.0225991,Journal article,Method-focused
+KHM027,Heo 2018a,10.9728/dcs.2018.19.4.685,Journal article,Core classification
+KHM028,Kim 2017a,10.1155/2017/2780501,Journal article,Method-focused
+KHM029,Kim 2017b,10.4258/hir.2017.23.3.169,Journal article,Core classification
+KHM030,Ishag 2016,no DOI (citation in Title and Journal),Conference paper,Method-focused
+KHM031,Jin 2014,10.5351/kjas.2014.27.5.705,Journal article,Other health analysis
+KHM032,Yang 2013a,10.1109/icisa.2013.6579455,Conference paper,Core classification
+KHM033,Costa 2026,10.2196/preprints.98280,Preprint,Core classification
+KHM034,Dashdondov 2026,10.1186/s12889-026-26868-6,Journal article,Core classification
+KHM035,Kim 2026b,10.1186/s13098-026-02176-2,Journal article,Core classification
+KHM036,Byeon 2025a,10.18502/ijph.v54i4.18429,Journal article,Core classification
+KHM037,Choi 2025a,10.1186/s40942-025-00638-9,Journal article,Core classification
+KHM038,Choi 2025b,10.1371/journal.pone.0323329,Journal article,Other health analysis
+KHM039,Kim 2025b,10.3389/fmed.2025.1542860,Journal article,Core classification
+KHM040,Kim 2025c,10.1097/jom.0000000000003504,Journal article,Core classification
+KHM041,Lee 2025b,10.37675/jat.2025.00710,Journal article,Core classification
+KHM042,Yang 2025,10.21480/tjrm.36.4.202512.001,Journal article,Method-focused
+KHM043,Lee 2025c,10.21851/obr.25.025,Journal article,Core classification
+KHM044,Song 2025,10.3349/ymj.2024.0442,Journal article,Core classification
+KHM045,Choi 2024b,10.1186/s13006-024-00642-z,Journal article,Core classification
+KHM046,Dashdondov 2024a,10.3390/app14177480,Journal article,Core classification
+KHM047,Heo 2024,10.7586/jkbns.24.029,Journal article,Core classification
+KHM048,Nguyen 2024,10.22514/jomh.2024.166,Journal article,Method-focused
+KHM049,Park 2024b,10.2196/preprints.63621,Preprint,Core classification
+KHM050,Chang 2023,10.4162/nrp.2023.17.6.1255,Journal article,Core classification
+KHM051,Choi 2023a,10.1038/s41598-023-40170-0,Journal article,Core classification
+KHM052,Hunag 2023,10.1007/978-3-031-42112-9_11,Conference paper,Core classification
+KHM053,Byeon 2022,10.3389/fendo.2022.1013162,Journal article,Core classification
+KHM054,Park 2022b,10.5762/kais.2022.23.7.184,Journal article,Method-focused
+KHM055,Lim 2021,10.11149/jkaoh.2021.45.4.218,Journal article,Core classification
+KHM056,Kim 2020b,10.3390/app10217741,Journal article,Core classification
+KHM057,Kim 2020c,10.2196/18418,Journal article,Method-focused
+KHM058,Ryu 2020,10.3390/app10010421,Journal article,Core classification
+KHM059,Cho 2019,10.1038/s41598-019-40058-y,Journal article,Other health analysis
+KHM060,Kim 2019a,10.3390/app9102170,Journal article,Method-focused
+KHM061,Park 2018,10.1080/02664763.2018.1450366,Journal article,Core classification
+KHM062,Zheng 2018,10.1109/nics.2018.8606864,Conference paper,Method-focused
+KHM063,Choi 2014,10.1155/2014/618976,Journal article,Core classification
+KHM064,Chung 2014,10.1109/embc.2014.6944123,Conference paper,Core classification
+KHM066,Kim 2009,no DOI (citation in Title and Journal),Journal article,Core classification
+KHM067,Kim 2024c,10.1093/labmed/lmad114,Journal article,Other health analysis
+KHM068,Hwang 2021,10.2196/29331,Journal article,Other health analysis
+KHM069,Lee 2019a,10.1016/j.cca.2018.11.022,Journal article,Other health analysis
+KHM070,Lee 2019b,10.17703/JCCT.2019.5.4.413,Journal article,Core classification
+KHM071,Park 2019,10.3390/ijerph16152666,Journal article,Core classification
+KHM072,Kim 2018a,10.7586/jkbns.2018.20.2.103,Journal article,Other health analysis
+KHM074,Yu 2025,10.1186/s12911-025-02950-8,Journal article,Core classification
+KHM075,Oh 2015,10.1167/iovs.15-16805,Journal article,Core classification
+KHM077,Heo 2018b,10.3390/ijerph15112571,Journal article,Core classification
+KHM078,Park 2017,10.1007/978-3-319-64265-9_2,Conference paper,Method-focused
+KHM079,Wu 2026,10.1007/s10238-026-02163-x,Journal article,Core classification
+KHM080,Koh 2022,10.3390/ijerph192215171,Journal article,Core classification
+KHM081,Kim 2026c,10.9718/JBER.2026.47.4.287,Journal article,Other health analysis
+KHM082,Chae 2026a,10.14474/ptrs.2026.15.3.288,Journal article,Core classification
+KHM083,Jang 2026b,10.1007/s00520-026-10816-6,Journal article,Core classification
+KHM084,Jun 2026,10.54794/enesg.2026.6.4.339,Journal article,Core classification
+KHM085,Kim 2026d,10.1016/j.psychres.2026.117388,Journal article,Core classification
+KHM086,Kwon 2026,10.17661/jkiiect.2026.19.3.314,Journal article,Core classification
+KHM087,Lee 2026,10.1186/s12903-026-09290-7,Journal article,Core classification
+KHM088,Oh 2026,10.1371/journal.pone.0345018,Journal article,Other health analysis
+KHM089,Shangguan 2026,10.3389/ijph.2026.1609153,Journal article,Core classification
+KHM090,Byeon 2025b,10.13189/ujph.2025.130213,Journal article,Core classification
+KHM091,Byeon 2025c,10.22514/jomh.2025.077,Journal article,Core classification
+KHM092,Kim 2025d,10.3390/healthcare13111319,Journal article,Other health analysis
+KHM093,Kim 2025e,10.3390/electronics14030487,Journal article,Core classification
+KHM094,Kim 2025f,10.61499/dhr.2025.3.e4,Journal article,Core classification
+KHM095,Lim 2025,10.30773/pi.2025.0187,Journal article,Core classification
+KHM096,Seo 2025,10.30773/pi.2024.0106,Journal article,Core classification
+KHM097,Vallathan 2025,10.1109/icstsn67075.2025.11397868,Conference paper,Method-focused
+KHM098,Byeon 2024a,10.22514/jomh.2024.148,Journal article,Core classification
+KHM099,Byeon 2024b,10.17958/ksmt.26.4.202408.722,Journal article,Core classification
+KHM100,Dashdondov 2024b,10.3934/era.2024147,Journal article,Core classification
+KHM101,Jung 2024,10.1016/j.jpsychires.2024.03.037,Journal article,Core classification
+KHM102,Kim 2024d,10.1177/20552076241257046,Journal article,Core classification
+KHM103,Lee 2024b,10.2196/51473,Journal article,Core classification
+KHM104,Tran 2024,10.1016/j.eswa.2024.126084,Journal article,Core classification
+KHM105,Hosseinzadeh Kasani 2023,10.3389/fnut.2023.1165854,Journal article,Core classification
+KHM106,Ibrahum 2023,10.1109/apsipaasc58517.2023.10317543,Conference paper,Core classification
+KHM107,Kim 2023b,10.21037/apm-23-78,Journal article,Core classification
+KHM108,Lee 2023a,10.1371/journal.pone.0288648,Journal article,Core classification
+KHM109,Kim 2023c,10.37727/jkdas.2023.25.3.1121,Journal article,Core classification
+KHM110,Kim 2023d,10.37727/jkdas.2023.25.4.1449,Journal article,Core classification
+KHM111,Zheng 2023,10.1145/3606043.3606061,Conference paper,Core classification
+KHM112,Zulqarnain 2023,10.3390/brainsci13070994,Journal article,Method-focused
+KHM113,Lee 2022,10.3390/ijerph20010575,Journal article,Core classification
+KHM114,Park 2022c,10.3390/jpm12060945,Journal article,Core classification
+KHM115,Park 2022d,10.1016/j.jad.2022.03.076,Journal article,Core classification
+KHM116,Amarbayasgalan 2021,10.1109/access.2021.3116974,Journal article,Method-focused
+KHM117,Choi 2021,10.3390/ijerph182312772,Journal article,Core classification
+KHM118,Nam 2021,10.2196/27344,Journal article,Core classification
+KHM119,Costello 2020,10.3390/healthcare8040562,Journal article,Method-focused
+KHM120,Davagdorj 2020a,10.6703/ijase.202009_17(3).223,Journal article,Method-focused
+KHM121,Oh 2020,10.30773/pi.2019.0270,Journal article,Core classification
+KHM122,Davagdorj 2019,10.1109/icawst.2019.8923252,Conference paper,Core classification
+KHM123,Oh 2019,10.1016/j.jad.2019.06.034,Journal article,Core classification
+KHM124,Ryu 2019,10.30773/pi.2019.06.19,Journal article,Core classification
+KHM125,Lim 2018,10.37727/jkdas.2018.20.2.647,Journal article,Core classification
+KHM126,Ryu 2018,10.30773/pi.2018.08.27,Journal article,Core classification
+KHM127,Lee 2017,10.1109/ichi.2017.95,Conference paper,Method-focused
+KHM128,Song 2017,10.4258/hir.2017.23.4.285,Journal article,Core classification
+KHM130,Lee 2014,10.4258/hir.2014.20.2.125,Journal article,Core classification
+KHM131,Byeon 2026,10.17958/ksmt.28.2.202604.195,Journal article,Method-focused
+KHM132,Choi 2026,10.1186/s12889-026-29087-1,Journal article,Core classification
+KHM133,Choi 2025c,10.1038/s41366-025-01761-1,Journal article,Core classification
+KHM134,Ko 2025a,10.1007/s44155-025-00320-3,Journal article,Core classification
+KHM135,Park 2025a,10.2196/67525,Journal article,Core classification
+KHM136,Lee 2024c,10.1038/s41598-024-53137-6,Journal article,Core classification
+KHM137,Li 2024,10.3390/healthcare12242527,Journal article,Core classification
+KHM138,Yu 2024a,10.21203/rs.3.rs-4386349/v1,Preprint,Core classification
+KHM139,Yu 2024b,10.5762/kais.2024.25.4.324,Journal article,Core classification
+KHM140,Kim 2023e,10.7762/cnr.2023.12.2.138,Journal article,Core classification
+KHM141,Lee 2021b,10.14400/jdc.2021.19.12.477,Journal article,Core classification
+KHM142,Kim 2016a,10.14400/jdc.2016.14.2.325,Journal article,Core classification
+KHM143,Lee 2025d,10.1186/s12911-025-03026-3,Journal article,Method-focused
+KHM144,Kim 2021b,10.3390/ijerph18115597,Journal article,Core classification
+KHM145,Davagdorj 2020b,10.3390/ijerph17186513,Journal article,Method-focused
+KHM146,Chae 2026b,10.37727/jkdas.2026.28.1.419,Journal article,Method-focused
+KHM147,Ahn 2025a,10.3390/nu17040618,Journal article,Core classification
+KHM148,Kim 2025g,10.5573/ieie.2025.62.11.131,Journal article,Method-focused
+KHM149,Jin 2025,10.1109/access.2025.3623702,Journal article,Core classification
+KHM150,Lee 2025e,10.5351/kjas.2025.38.5.665,Journal article,Method-focused
+KHM151,Shin 2025a,10.37727/jkdas.2025.27.5.1481,Journal article,Method-focused
+KHM152,Byeon 2024c,10.5762/kais.2024.25.8.221,Journal article,Core classification
+KHM153,Lee 2024d,10.37727/jkdas.2024.26.4.1191,Journal article,Other health analysis
+KHM154,Jung 2023,no DOI (citation in Title and Journal),Journal article,Method-focused
+KHM155,Kim 2023f,10.24997/kjae.2023.64.3.25,Journal article,Core classification
+KHM157,Son 2022,10.21032/jhis.2022.47.3.217,Journal article,Method-focused
+KHM158,Yoo 2020,10.3837/tiis.2020.09.009,Journal article,Method-focused
+KHM159,Byeon 2018,10.14569/ijacsa.2018.091027,Journal article,Core classification
+KHM160,Kim 2018b,10.7236/ijasc.2018.7.4.1,Journal article,Core classification
+KHM161,Byeon 2016,10.14569/ijacsa.2016.070517,Journal article,Core classification
+KHM162,Cho 2016,10.14257/ijbsbt.2016.8.4.12,Journal article,Core classification
+KHM163,Kim 2012,10.1007/978-94-007-5860-5_123,Conference paper,Core classification
+KHM164,Yang 2026,10.1038/s41598-026-63327-z,Journal article,Core classification
+KHM165,Kim 2025h,10.14251/crisisonomy.2025.21.3.205,Journal article,Method-focused
+KHM166,Kim 2025i,10.1109/embc58623.2025.11251879,Conference paper,Method-focused
+KHM167,Choi 2024c,10.3390/nu16050686,Journal article,Core classification
+KHM168,Jeon 2023,10.3389/fpubh.2022.998782,Journal article,Core classification
+KHM169,Joo 2022,10.3389/fendo.2022.1007129,Journal article,Core classification
+KHM170,Choi 2025d,10.7762/cnr.2025.14.4.297,Journal article,Core classification
+KHM171,Jung 2025,10.21032/jhis.2025.50.2.163,Journal article,Core classification
+KHM172,You 2025,10.12934/jkpmhn.2025.34.3.349,Journal article,Other health analysis
+KHM173,Beak 2024,10.1016/j.heliyon.2024.e32496,Journal article,Core classification
+KHM174,Shon 2022,10.12729/jbtr.2022.23.1.17,Journal article,Core classification
+KHM175,Lee 2021c,10.1038/s41598-021-98837-5,Journal article,Core classification
+KHM176,Park 2021a,10.3390/ijerph18168613,Journal article,Core classification
+KHM177,Lee 2019c,10.1111/jphd.12293,Journal article,Core classification
+KHM178,Carvalho 2026,10.2139/ssrn.7331325,Preprint,Core classification
+KHM179,Han 2026,10.1177/11795549251411101,Journal article,Other health analysis
+KHM180,Shin 2026,10.1186/s12877-026-07852-6,Journal article,Core classification
+KHM181,Zhang 2026,10.1186/s13040-026-00520-w,Journal article,Core classification
+KHM182,Chong 2025,10.2196/75760,Journal article,Core classification
+KHM183,Park 2025b,10.3390/jcm14051542,Journal article,Other health analysis
+KHM184,Choi 2024d,10.1007/s13167-024-00378-0,Journal article,Core classification
+KHM185,Kim 2024e,10.1111/ggi.14895,Journal article,Core classification
+KHM186,Cha 2023,10.11005/jbm.2023.30.3.263,Journal article,Core classification
+KHM187,Gwak 2023,10.29273/jmst.2023.7.2.54,Journal article,Core classification
+KHM188,Seok 2023a,10.3390/healthcare11212881,Journal article,Core classification
+KHM189,Seok 2023b,10.3390/healthcare11091334,Journal article,Core classification
+KHM190,Suh 2023,10.2196/40179,Journal article,Core classification
+KHM191,Ullah 2023,10.1002/hsr2.1656,Journal article,Core classification
+KHM192,Kim 2022a,10.1007/s13167-022-00292-3,Journal article,Core classification
+KHM193,Kwon 2022,10.3390/healthcare10061107,Journal article,Core classification
+KHM194,Park 2021b,10.1007/s00223-021-00880-x,Journal article,Core classification
+KHM195,Shim 2020,10.1007/s11657-020-00802-8,Journal article,Core classification
+KHM196,Kang 2019,10.1097/md.0000000000017699,Journal article,Core classification
+KHM197,Kim 2013,10.1109/embc.2013.6609469,Conference paper,Core classification
+KHM198,Yoo 2013,10.3349/ymj.2013.54.6.1321,Journal article,Core classification
+KHM199,Ko 2025b,10.1111/nhs.70248,Journal article,Core classification
+KHM200,Bhak 2024,10.1016/j.jpain.2024.02.011,Journal article,Core classification
+KHM201,Kim 2024f,10.3233/bmr-240059,Journal article,Core classification
+KHM202,Kim 2024g,10.1371/journal.pone.0314789,Journal article,Core classification
+KHM203,Özcan 2024,no DOI (citation in Title and Journal),Thesis,Other health analysis
+KHM204,Kim 2023g,10.1371/journal.pone.0288697,Journal article,Core classification
+KHM205,Kim 2023h,10.1101/2023.11.19.23298738,Preprint,Method-focused
+KHM206,Amarbayasgalan 2022,10.1007/978-981-19-1057-9_1,Conference paper,Method-focused
+KHM207,Kim 2021c,10.3390/ijerph18105386,Journal article,Method-focused
+KHM208,Kim 2021d,10.1007/s11356-021-13887-6,Journal article,Core classification
+KHM209,Shim 2021,10.3390/medicina57111230,Journal article,Core classification
+KHM210,Lim 2019,10.3390/ijerph16071281,Journal article,Core classification
+KHM211,Kwon 2018,10.9728/dcs.2018.19.4.739,Journal article,Method-focused
+KHM212,Seo 2018,10.1016/j.jkss.2018.11.006,Journal article,Core classification
+KHM213,Yoo 2016,10.1371/journal.pone.0148724,Journal article,Core classification
+KHM214,Byeon 2014,10.1016/j.jvoice.2014.04.004,Journal article,Core classification
+KHM215,Yang 2013b,10.1007/s00779-013-0737-0,Journal article,Method-focused
+KHM216,Ahn 2025b,10.1177/10547738251367551,Journal article,Core classification
+KHM217,Pant 2025,10.1177/20552076251333660,Journal article,Core classification
+KHM218,Kim 2021e,10.3389/fpsyt.2021.684406,Journal article,Core classification
+KHM219,Kim 2021f,10.1186/s12872-021-01925-7,Journal article,Core classification
+KHM220,Jeong 2024,10.3389/fpubh.2023.1287085,Journal article,Core classification
+KHM221,Jo 2023,10.1038/s41598-023-45835-4,Journal article,Core classification
+KHM222,Jang 2020,10.2196/16113,Journal article,Method-focused
+KHM223,Doh 2008,no DOI (citation in Title and Journal),Journal article,Method-focused
+KHM224,Lee 2008,no DOI (citation in Title and Journal),Thesis,Core classification
+KHM225,So 2011,10.1016/j.anr.2011.11.002,Journal article,Core classification
+KHM226,Kang 2011,10.5762/kais.2011.12.2.765,Journal article,Core classification
+KHM227,So 2012,10.4094/jkachn.2012.18.3.143,Journal article,Core classification
+KHM228,Byeon 2013,10.5762/kais.2013.14.7.3368,Journal article,Core classification
+KHM229,Kim 2014,10.5720/kjcn.2014.19.5.468,Journal article,Other health analysis
+KHM230,Kim 2015,10.4258/hir.2015.21.3.167,Journal article,Core classification
+KHM231,Kim 2016b,10.1111/phn.12219,Journal article,Core classification
+KHM232,Mun 2016,KCI ART002156136,Journal article,Other health analysis
+KHM233,Kim 2019c,10.7586/jkbns.2019.21.1.85,Journal article,Core classification
+KHM234,Yoo 2017,10.15709/hswr.2017.37.4.294,Journal article,Core classification
+KHM235,Choi 2018,10.14400/jdc.2018.16.11.363,Journal article,Core classification
+KHM236,Hong 2019,10.12799/jkachn.2019.30.2.130,Journal article,Core classification
+KHM237,Kim 2019b,10.22156/cs4smb.2019.9.12.115,Journal article,Core classification
+KHM238,Nam 2020,10.2196/16153,Journal article,Core classification
+KHM239,Yi 2021,10.17079/jkgn.2021.23.3.285,Journal article,Other health analysis
+KHM240,Kim 2021g,10.7586/jkbns.2021.23.1.31,Journal article,Core classification
+KHM241,Kim 2022b,10.3390/ijerph191610028,Journal article,Core classification
+KHM242,Hwang 2023,10.11149/jkaoh.2023.47.1.26,Journal article,Core classification
+KHM243,Lim 2023,10.3390/jpm13040663,Journal article,Core classification
+KHM244,Kwon 2023,10.35133/kssche.20230228.04,Journal article,Core classification
+KHM245,Lee 2023b,10.3746/jkfn.2023.52.8.864,Journal article,Core classification
+KHM246,Choi 2023b,10.4163/jnh.2023.56.3.300,Journal article,Core classification
+KHM247,Kim 2023i,10.7586/jkbns.23.0007,Journal article,Core classification
+KHM248,Kim 2024h,10.7586/jkbns.23.023,Journal article,Core classification
+KHM249,Shim 2025,10.12972/nhs.2025.24.2.6,Journal article,Core classification
+KHM250,Shin 2025b,10.17079/jkgn.2025.00073,Journal article,Core classification
+KHM251,Kim 2025j,10.5391/jkiis.2025.35.1.1,Journal article,Method-focused
+KHM252,Kim 2025k,10.7739/jkafn.2025.32.3.320,Journal article,Core classification
+KHM253,Kim 2026e,10.7586/jkbns.25.091,Journal article,Core classification
+KHM254,Kim 2026f,10.7318/KJFC/2026.41.3.272,Journal article,Other health analysis
+KHM255,Byeon 2015,10.14569/ijacsa.2015.061213,Journal article,Core classification
+KHM257,Oh 2013,10.1186/1472-6947-13-106,Journal article,Core classification
+KHM258,Jeong 2024b,10.3390/nu16050724,Journal article,Other health analysis
+KHM259,Choi 2025e,10.2139/ssrn.5347786,Preprint,Core classification
+KHM260,Lee 2025f,10.23949/kjpe.2025.7.64.4.19,Journal article,Other health analysis
+,yang2026interpretable,10.21203/rs.3.rs-9308066/v1,DUPLICATE,companion or duplicate report: Linked duplicate report; counted at yang2026interpretablea
+,bhak2025healthome,10.1101/2025.03.10.25323468,DUPLICATE,companion or duplicate report: Linked duplicate report; counted at bhak2026healthome
+,choi2023prediction,10.21203/rs.3.rs-2581580/v1,DUPLICATE,companion or duplicate report: Linked duplicate report; counted at choi2023comparisons
+,oh2016development,10.3349/ymj.2016.57.1.187,DUPLICATE,companion or duplicate report: Linked duplicate report; counted at oh2013development
+,kim2023multi,10.1101/2023.03.06.23286695,DUPLICATE,companion or duplicate report: Linked duplicate report; counted at gwak2023multi
+,anon2022abstract,,DUPLICATE,companion or duplicate report: Linked duplicate report; counted at anon2026abstract
+,amarbayasgalan2021reconstruction,10.1007/978-981-33-6757-9_4,LINKED_COMPANION,"companion or duplicate report: Prompt 12 author adjudication: linked as the 24th additional/companion report in the Amarbayasgalan reconstruction-error KNHANES publication family and not counted as a separate study. The linkage is methodological/publication-family level; the diabetes target differs from the coronary-heart-disease target in the representative full report, so this is not asserted to be an identical outcome analysis."
+,wang2026code,10.5281/zenodo.22160271,DUPLICATE,companion or duplicate report: Linked duplicate report; counted at wang2026codea
+,lee2023machinea,10.2196/preprints.51473,DUPLICATE,companion or duplicate report: Linked duplicate report; counted at lee2024machine
+,chong2025machinea,10.2196/preprints.75760,DUPLICATE,companion or duplicate report: Linked duplicate report; counted at chong2025machine
+,park2024development,10.2196/preprints.67525,DUPLICATE,companion or duplicate report: Linked duplicate report; counted at park2025development
+,anon2019papera,,DUPLICATE,companion or duplicate report: Linked duplicate report; counted at kim2017decision
+,anon2017paper,,DUPLICATE,companion or duplicate report: Linked duplicate report; counted at seo2018novel
+,anon2015determining,,DUPLICATE,companion or duplicate report: Linked duplicate report; counted at bae2015determining
+,lee2023chronic,10.2196/preprints.49433,DUPLICATE,companion or duplicate report: Linked duplicate report; counted at lee2024chronic
+,cho2016prediction,10.14257/astl.2016.132.39,DUPLICATE,companion or duplicate report: Linked duplicate report; counted at cho2016predictiona
+,anon2021paper,,DUPLICATE,companion or duplicate report: Linked duplicate report; counted at kim2019classification
+,byeon2015featurea,,DUPLICATE,companion or duplicate report: Linked duplicate report; counted at byeon2015feature
+,anon2016papera,,DUPLICATE,companion or duplicate report: Linked duplicate report; counted at jee2016development
+,park2022identification,10.2196/preprints.44424,DUPLICATE,companion or duplicate report: Linked duplicate report; counted at park2024predicting
+,anon2011paper,,DUPLICATE,companion or duplicate report: Linked duplicate report; counted at kang2011secular
+,nam2021discoverya,10.2196/preprints.27344,DUPLICATE,companion or duplicate report: Linked duplicate report; counted at nam2021discovery
+,jang2019deep,10.2196/preprints.16113,DUPLICATE,companion or duplicate report: Linked duplicate report; counted at jang2020deep
+,kim2025machineb,10.2196/preprints.74415,DUPLICATE,companion or duplicate report: Linked duplicate report; counted at kim2025machinea

@@ -1,0 +1,11 @@
+name: knhanes-ml-review
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - matplotlib
+  - openpyxl
+  - requests
+  - beautifulsoup4
