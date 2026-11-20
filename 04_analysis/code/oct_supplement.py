@@ -342,10 +342,22 @@ def main():
           ["4. Cross-checks under the directions", f"{sc['s4_in']} agreed exclusions re-examined;¦ {sc['s4_kept']} kept,¦ {sc['s4_open']} reopened (up to three rounds)",
            f"{ec['s4_in']} agreed exclusions re-examined;¦ {ec['s4_kept']} kept,¦ {ec['s4_open']} reopened (up to three rounds)", c4(cm), c4(cl)],
           ["5. Decision", f"{sc['s5']} decided by the author", f"{ec['s5']} decided by the author;¦ 1 retracted report excluded under the author's direction (step 3)", c5(cm), c5(cl)],
+          ["Prompts (Supplementary Note S1)", "Step 1:¦ screening\\_round1;¦ steps 2 and 4:¦ screening\\_round\\_n;¦ step 4:¦ screening\\_challenge",
+           "Step 1:¦ eligibility\\_round1;¦ steps 2 and 4:¦ eligibility\\_round\\_n;¦ step 4:¦ eligibility\\_challenge",
+           "Step 1:¦ step1\\_independent\\_coding,¦ step1\\_performance\\_rows;¦ step 2:¦ step2\\_cross\\_review;¦ step 4:¦ step4\\_* (materiality,¦ inconsistency,¦ form or rule,¦ blind rule check,¦ field rule rounds 1--3 and application);¦ step 5:¦ step5\\_*", "As for the CHARMS-based items"],
           ["Public record", "02\\_¦selection/¦screening\\_¦rounds.jsonl", "02\\_¦selection/¦eligibility\\_¦rounds.jsonl", "03\\_¦coding/¦coding\\_¦rounds.jsonl (run charms);¦ field\\_¦rules.jsonl", "03\\_¦coding/¦coding\\_¦rounds.jsonl (runs additional\\_¦1--3);¦ field\\_¦rules.jsonl"]]
+    tot = cm["n"] + cl["n"]; pc_ = lambda x: f"{100 * x / tot:.1f}"
+    s1_, s2_, s4_, s5_ = cm["s1"] + cl["s1"], cm["s2"] + cl["s2"], cm["s4"] + cl["s4"], cm["s5"] + cl["s5"]
+    summ = [["Independent agreement (step 1)", f"{s1_:,}", pc_(s1_), "Both systems gave the same coding"],
+            ["Cross-review (step 2)", f"{s2_:,}", pc_(s2_), "Same choice of coding in the second or third round"],
+            ["Rule-based cross-checks (step 4)", f"{s4_:,}", pc_(s4_), f"Fixed rules ({cm['s4_fixed'] + cl['s4_fixed']:,}) or a common item rule agreed by both systems ({s4_ - cm['s4_fixed'] - cl['s4_fixed']:,})"],
+            ["Final resolution (step 5)", f"{s5_:,}", pc_(s5_), f"Rules for items without an agreed rule,¦ set under the author's direction;¦ fallback ({cm['s5_fallback'] + cl['s5_fallback']});¦ pilot codings decided by the author on accepted review comments ({cm['s5_pilot'] + cl['s5_pilot']})"],
+            ["Total", f"{tot:,}", "100.0", "Step 3 gives directions and settles no coding by itself"]]
+    s6sum = ("\\bigskip{\\bfseries Resolution of all item codings}\\par\\smallskip\n"
+             + longtable([5.6, 2.2, 1.6, 16.6], ["Pathway", "Codings", "\\%", "What settled the coding"], summ, "8.0", ""))
     parts.append(section("S6. Linear record of selection and coding", "Supplementary Table",
                          longtable([3.6, 4.6, 4.6, 6.6, 6.6], ["Step", "Screening", "Full-text eligibility", "Coding:¦ CHARMS-based items", "Coding:¦ additional items"], s7, "8.0",
-                                   f"Counts from the public round records. A coding is one item for one report;¦ units within a report (models,¦ evaluations) are part of the coding. Of {k('kVCoded')} codings,¦ {k('kVAgreePct')}\\% agreed at once and {k('kVOpen')} were left open. Prompts for every step are in Supplementary Note S1 and in the repository folders 02\\_selection/prompts and 03\\_coding/prompts;¦ the repository README describes each file.")))
+                                   f"Counts from the public round records. A coding is one item for one report;¦ units within a report (models,¦ evaluations) are part of the coding. Of {k('kVCoded')} codings,¦ {k('kVAgreePct')}\\% agreed at once and {k('kVOpen')} were left open. Prompts for every step are in Supplementary Note S1 and in the repository folders 02\\_selection/prompts and 03\\_coding/prompts;¦ the repository README describes each file.") + s6sum))
 
     # ---------------- S8 ten illustrative studies
     P = lambda y: 0 if y <= 2019 else 1 if y <= 2022 else 2 if y <= 2024 else 3

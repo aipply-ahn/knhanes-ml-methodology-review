@@ -28,9 +28,22 @@ was re-decided after the steps: the round records are exports of the recorded ca
 | Folder | Content |
 |---|---|
 | `01_search/` | `query.py` (search terms; the Korean terms are the exact terms searched), `queries.txt` (query strings as run), `run_search.py`, `flow.json` (records per source and deduplication), `dedup_rule_merges.tsv` |
-| `02_selection/` | `criteria/`, `protocol/` (screening and eligibility protocols as run, including amendments), `prompts/` (prompts of steps 1, 2 and 4), `screening_records.jsonl` (bibliographic identification of every screened record), `screening_rounds.jsonl` and `eligibility_rounds.jsonl` (one line per record, every round in order), `included_reports.csv`, `report_study_links.csv`, `selection_summary.json`, `prisma_flow.pdf`, `code/` |
+| `02_selection/` | `criteria/`, `author_decisions.csv` (every decision made by the author), `protocol/` (screening and eligibility protocols as run, including amendments), `prompts/` (prompts of steps 1, 2 and 4), `screening_records.jsonl` (bibliographic identification of every screened record), `screening_rounds.jsonl` and `eligibility_rounds.jsonl` (one line per record, every round in order), `included_reports.csv`, `report_study_links.csv`, `selection_summary.json`, `prisma_flow.pdf`, `code/` |
 | `03_coding/` | `items/` (item definitions and general coding rules: CHARMS-based items v3.1.3 and the three sets of additional items), `prompts/` (prompt templates of every step), `coding_rounds.jsonl` (one line per report and item, every step in order), `field_rules.jsonl` (one line per item that needed a common rule), `coding_steps_summary.json`, `code/` |
 | `04_analysis/` | `Additional_Data_1.xlsx` (study-level dataset, also Supplementary material 2), `numbers/` (every number in the article as a LaTeX macro), `code/` (derivation of the study-level variables, numbers, figures, supplementary tables and the Excel file) |
+
+## Checking the counts
+
+`python validate_counts.py` recomputes from these files the counts reported in the article (records identified,
+screened and assessed, reports and studies included, author decisions, the 61,326 codings by step and the item rules)
+and compares them with the article.
+
+## What these records support
+
+They allow the selection and coding procedure to be reconstructed, the decision history of every record and every
+coding to be traced, and the reported counts to be recomputed. They do not show that a new run of the two AI systems
+would return identical answers, that every coded value was verified independently, or that every decision can be
+checked without the report itself.
 
 ## Round records
 

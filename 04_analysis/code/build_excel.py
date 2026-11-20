@@ -38,6 +38,43 @@ def sheet(wb, name, header, rows, widths=None, note=None):
     return ws
 
 
+PREPRINT = re.compile(r"^10\.(21203|1101|2196/preprints|32388|20944|48550|2139|31219|36227|22541)")
+SERVER = {"10.21203": "Research Square", "10.1101": "medRxiv or bioRxiv", "10.2196/preprints": "JMIR Preprints", "10.20944": "Preprints.org",
+          "10.48550": "arXiv", "10.2139": "SSRN", "10.31219": "OSF Preprints", "10.36227": "TechRxiv", "10.22541": "Authorea", "10.32388": "Qeios"}
+TYPE_OVERRIDE = {"OCT1302": "conference paper", "OCT1440": "conference paper"}  # ITBAM and ICCC proceedings papers without a DOI
+AUTHOR_OVERRIDE = {"OCT1302": "Park", "OCT1436": "Kim", "OCT1440": "Ishag"}  # reports without a DOI: first author from the report
+VENUE_OVERRIDE = {"OCT1251": "International Journal of Applied Science and Engineering"}  # from the DOI prefix; not in the search metadata
+
+
+def venues(meta):
+    """journal or venue, publication type and first author of each included report, from the search metadata only
+    (Crossref container for DOIs; otherwise the source record's journal field, matched by DOI, KCI id, PMID or title;
+    preprint servers by DOI prefix)."""
+    cm = json.load(open("results/oct_search/crossref_meta_screened.json"))
+    R = json.load(open("results/oct_search/records.json"))
+    by = {}
+    for x in R:
+        for m in x["members"]:
+            for k in ("doi", "kci_id", "pmid"):
+                v = str(m.get(k) or "").lower()
+                if v and v != "none": by.setdefault((k, v), []).append(m)
+            by.setdefault(("title", str(m.get("title") or "").lower().strip(" .")), []).append(m)
+    fa = json.load(open("results/oct_search/legacy_fig/first_authors.json"))
+    out = {}
+    for r, x in meta.items():
+        c = cm.get(r) or {}; doi = (x["doi"] or "").lower()
+        ms = [m for k in ("doi", "kci_id", "pmid") for m in by.get((k, str(x[k]).lower()), [])] or by.get(("title", x["title"].lower().strip(" .")), [])
+        js = [m["journal"] for m in ms if m.get("journal") and m["journal"] != "None"]
+        en = [j for j in js if not re.search("[\uac00-\ud7a3]", j)]
+        pre = next((v for k, v in SERVER.items() if doi.startswith(k)), None) if PREPRINT.match(doi) else None
+        venue = VENUE_OVERRIDE.get(r) or c.get("container") or pre or (en or js or [""])[0]
+        ct = c.get("type")
+        typ = TYPE_OVERRIDE.get(r) or ("preprint" if pre or ct == "posted-content" else {"journal-article": "journal article", "proceedings-article": "conference paper",
+               "book-chapter": "book chapter"}.get(ct) or ("journal article" if any(m.get("source") == "KCI" or "article" in str(m.get("ptype")) or "\ud559\uc220\uc9c0" in str(m.get("ptype")) for m in ms) else "other"))
+        out[r] = dict(venue=venue, type=typ, first_author=fa.get(r) or AUTHOR_OVERRIDE.get(r, ""))
+    return out
+
+
 def main():
     rows = [json.loads(l) for l in open(f"{C}/final_items_clean.jsonl")]
     links = list(csv.DictReader(open("results/oct_search/public/report_study_links.csv")))
@@ -68,15 +105,17 @@ def main():
     for r in D: D[r].update({f"fig_{k}": ";".join(v["value"] for v in REC.get(r, {}).get("protocol_items", {}).get(k, [])) for k in pkeys})
     reports = sorted(st)
     svars = [k for k in next(iter(D.values())) if k not in ("record_id", "study_id", "year")]  # publication year is given once (author review 2026-11-20)
-    studies = [[D[r]["study_id"], r, ";".join(sorted(l["record_id"] for l in links if l["study_id"] == D[r]["study_id"])), meta[r]["year"], meta[r]["title"], meta[r]["doi"], meta[r]["pmid"]]
+    ven = venues(meta)
+    studies = [[D[r]["study_id"], r, ";".join(sorted(l["record_id"] for l in links if l["study_id"] == D[r]["study_id"])), meta[r]["year"], ven[r]["first_author"], meta[r]["title"],
+                ven[r]["venue"], ven[r]["type"], meta[r]["doi"], meta[r]["pmid"], meta[r]["kci_id"]]
                + [D[r][k] for k in svars] for r in sorted(D)]
-    shead = ["study_id", "representative_report", "all_reports", "year", "title", "doi", "pmid"] + svars
+    shead = ["study_id", "representative_report", "all_reports", "year", "first_author", "title", "journal_or_venue", "publication_type", "doi", "pmid", "kci_id"] + svars
     rep = [[r, sid[r], next(l["role"] for l in links if l["record_id"] == r), meta[r]["year"], meta[r]["title"], meta[r]["doi"]] for r in reports]
     items = items + litems; grp.update(lgroups)
     status = [[r, sid[r]] + [((st[r].get(i) or {}).get("status", "") + ("; inconsistency" if (st[r].get(i) or {}).get("inconsistency") == "present" else "")) for i in items] for r in reports]
     itemrows = [[g, i, ITEMS["items"][i]] for g, its in ITEMS["groups"].items() for i in its] + [[lgroups[i], i, ldef[i]] for i in litems] + [["general rule", f"rule {k}", t] for k, t in enumerate(ITEMS["general_rules"], 1)]
-    frrows = [[f, v["cases"], {"agreed_r2": "agreed by both systems (round 2)", "agreed_r3": "agreed by both systems (round 3)", "decided_review": "external review decision",
-                               "decided_suggestion": "suggested answer adopted"}.get(v["status"], v["status"]), v.get("rule") or ""] for f, v in sorted({**fr, **lfr}.items())]
+    frrows = [[f, v["cases"], {"agreed_r2": "agreed by both systems (round 2)", "agreed_r3": "agreed by both systems (round 3)", "decided_review": "no agreement; rule from review comments accepted by the author",
+                               "decided_suggestion": "no agreement; suggested rule adopted under the author's direction"}.get(v["status"], v["status"]), v.get("rule") or ""] for f, v in sorted({**fr, **lfr}.items())]
     readme_pub = [
         ["KNHANES machine-learning review: Additional Data 1 (coding of 287 included reports of 279 studies)"],
         ["Studies: one row per study (representative report); study-level variables derived mechanically from the coded items (rules in Derivation) or classified by two AI systems (code, tool, domain, purpose; *_how = how settled); fig_* = coded categories used in the figures and tables (additional items, legacy.*; codes as in Items)."],
