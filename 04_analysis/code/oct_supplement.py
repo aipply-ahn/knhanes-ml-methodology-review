@@ -184,7 +184,20 @@ def main():
     if ext:
         s4.append(grp("Included with KNHANES as the external evaluation dataset", 4))
         for r in ext: s4.append([r, "Included", "Not applicable", "Eligibility covers KNHANES use in model development or evaluation;¦ KNHANES is the external evaluation dataset."])
-    parts.append(section("S4. Eligibility-boundary and study-family decisions", "Supplementary Table",
+    crit = [["E1 Data", "Participant-level KNHANES data (any cycle) used to develop,¦ validate or evaluate a model,¦ including linked or merged data and KNHANES used only for external validation",
+             "KNHANES cited or compared only;¦ published aggregate statistics only;¦ other surveys only (e.g.,¦ US NHANES)", "X1;¦ F2"],
+            ["E2 Analysis", "A supervised model fitted to classify or estimate a designated outcome from predictors,¦ with at least one learner outside the regression family:¦ decision,¦ classification or regression trees (CART,¦ CHAID,¦ C4.5),¦ random forest,¦ boosting and other ensembles,¦ support vector machines,¦ k-nearest neighbours,¦ naive Bayes,¦ Bayesian networks,¦ neural networks or deep learning,¦ AutoML,¦ large language models. Causal ML counts only when such a learner is fitted to the outcome;¦ a large language model only when it is the model that classifies or estimates the outcome. Unsupervised steps followed by an eligible supervised learner qualify",
+             "Regression-family methods only (linear,¦ logistic,¦ Cox,¦ Poisson,¦ GLM,¦ LASSO,¦ ridge,¦ elastic net,¦ GAM),¦ whether or not the authors call them machine learning;¦ unsupervised methods only (clustering,¦ latent class or profile,¦ association rules,¦ PCA or factor analysis);¦ propensity scores or effect estimates from regression models alone", "X2;¦ F3"],
+            ["E3 Purpose", "A health-related outcome (disease or health state,¦ risk factor or biomarker,¦ health behaviour,¦ nutrition,¦ mental health,¦ quality of life,¦ health-care use),¦ or development or comparison of ML methods using KNHANES", "Neither", "X3;¦ F4"],
+            ["E4 Report type", "An original research report:¦ journal article (including a research letter reporting an original analysis),¦ full conference paper,¦ chapter reporting an original analysis,¦ preprint", "Thesis;¦ conference abstract only;¦ review,¦ introductory or textbook chapter;¦ commentary,¦ editorial or letter on another publication;¦ protocol;¦ erratum", "X4;¦ F1"],
+            ["E5 Language and date", "Any language;¦ published up to the search date (2 November 2026)", "--", "--"],
+            ["Decision rules", "Screening:¦ FULL\\_TEXT unless exclusion is certain from the title and abstract (when in doubt,¦ full text). Full text:¦ INCLUDE,¦ or EXCLUDE only when the full text shows a criterion is not met;¦ reports without an obtainable full text are not assessed. Retracted reports are excluded (author's direction)",
+             "Reports of the same study are counted once;¦ the journal article,¦ or without one the later version,¦ represents the study (part B)", "Order when several apply:¦ X4,¦ X1,¦ X2,¦ X3;¦ F1--F4"]]
+    s4body = ("{\\bfseries A. Eligibility criteria,¦ fixed before screening and applied unchanged at full text}\\par\\smallskip\n"
+              + longtable([3.0, 10.4, 9.6, 3.4], ["Criterion", "Eligible", "Not eligible", "Exclusion code (screening;¦ full text)"], crit, "8.0",
+                          "The prompts of screening and full-text assessment insert these criteria verbatim (Supplementary Note S1).")
+              + "\\bigskip{\\bfseries B. Boundary decisions and reports of the same study}\\par\\smallskip\n")
+    parts.append(section("S4. Eligibility criteria,¦ boundary decisions and study families", "Supplementary Table", s4body +
                          longtable([2.2, 4.8, 2.4, 16.2], ["Report ID", "Decision", "Study", "Basis"], s4, "8.0",
                                    "OCT,¦ report identifier used in Additional Data 1 and the public selection records,¦ where every round's decisions and reasons are given for each record. The exclusion codes are those of the eligibility criteria.")))
 
@@ -329,10 +342,10 @@ def main():
           ["4. Cross-checks under the directions", f"{sc['s4_in']} agreed exclusions re-examined;¦ {sc['s4_kept']} kept,¦ {sc['s4_open']} reopened (up to three rounds)",
            f"{ec['s4_in']} agreed exclusions re-examined;¦ {ec['s4_kept']} kept,¦ {ec['s4_open']} reopened (up to three rounds)", c4(cm), c4(cl)],
           ["5. Decision", f"{sc['s5']} decided by the author", f"{ec['s5']} decided by the author;¦ 1 retracted report excluded under the author's direction (step 3)", c5(cm), c5(cl)],
-          ["Public record", "02\\_selection/screening\\_rounds.jsonl", "02\\_selection/eligibility\\_rounds.jsonl", "03\\_coding/coding\\_rounds.jsonl (run charms);¦ field\\_rules.jsonl", "03\\_coding/coding\\_rounds.jsonl (runs additional\\_1--3);¦ field\\_rules.jsonl"]]
+          ["Public record", "02\\_¦selection/¦screening\\_¦rounds.jsonl", "02\\_¦selection/¦eligibility\\_¦rounds.jsonl", "03\\_¦coding/¦coding\\_¦rounds.jsonl (run charms);¦ field\\_¦rules.jsonl", "03\\_¦coding/¦coding\\_¦rounds.jsonl (runs additional\\_¦1--3);¦ field\\_¦rules.jsonl"]]
     parts.append(section("S6. Linear record of selection and coding", "Supplementary Table",
                          longtable([3.6, 4.6, 4.6, 6.6, 6.6], ["Step", "Screening", "Full-text eligibility", "Coding:¦ CHARMS-based items", "Coding:¦ additional items"], s7, "8.0",
-                                   f"Counts from the public round records. A coding is one item for one report;¦ units within a report (models,¦ evaluations) are part of the coding. Of {k('kVCoded')} codings,¦ {k('kVAgreePct')}\\% agreed at once and {k('kVOpen')} were left open. Prompts for every step are in the repository folders 02\\_selection/prompts and 03\\_coding/prompts;¦ the repository README describes each file.")))
+                                   f"Counts from the public round records. A coding is one item for one report;¦ units within a report (models,¦ evaluations) are part of the coding. Of {k('kVCoded')} codings,¦ {k('kVAgreePct')}\\% agreed at once and {k('kVOpen')} were left open. Prompts for every step are in Supplementary Note S1 and in the repository folders 02\\_selection/prompts and 03\\_coding/prompts;¦ the repository README describes each file.")))
 
     # ---------------- S8 ten illustrative studies
     P = lambda y: 0 if y <= 2019 else 1 if y <= 2022 else 2 if y <= 2024 else 3
@@ -352,10 +365,59 @@ def main():
                                    "Lowest study IDs in each stratum: two core studies per period,¦ one other health-focused and one method-focused study;¦ all studies are in Additional Data 1. --,¦ not reported or not done;¦ variables as domains,¦ up to five. RF,¦ random forest;¦ LR,¦ logistic regression;¦ Boost,¦ gradient boosting (XGBoost,¦ LightGBM and others);¦ DT,¦ decision tree;¦ SVM,¦ support-vector machine;¦ NN,¦ neural network;¦ split,¦ single train--test split;¦ CV,¦ cross-validation;¦ Ext,¦ external dataset;¦ Temporal,¦ later survey period;¦ MN,¦ model-native importance;¦ Perm,¦ permutation importance;¦ coef,¦ coefficient or statistic;¦ Wf and We,¦ survey weights in fitting and in evaluation;¦ SP,¦ strata or PSUs;¦ Public,¦ analysis code in a public repository or supplementary file;¦ Request,¦ code on request.")))
 
     pre = SEPT[:SEPT.index("\\begin{landscape}")]
+    # ---------------- Note S1: prompt templates of every step (verbatim, from the public repository copy)
+    G = "results/oct_search/github_repo"
+    PRM = [("Study selection", [
+               ("02_selection/prompts/screening_round1.md", "Step 1. Title and abstract screening, each system independently"),
+               ("02_selection/prompts/screening_round_n.md", "Steps 2 and 4. Consensus round:¦ each system sees its previous decision and the other's decision,¦ evidence and reason"),
+               ("02_selection/prompts/screening_challenge.md", "Step 4. Re-examination of an exclusion agreed by both systems (author's direction at step 3)"),
+               ("02_selection/prompts/eligibility_round1.md", "Step 1. Full-text eligibility,¦ each system independently"),
+               ("02_selection/prompts/eligibility_round_n.md", "Steps 2 and 4. Full-text consensus round"),
+               ("02_selection/prompts/eligibility_challenge.md", "Step 4. Full-text re-examination of an agreed exclusion")]),
+           ("Source text for coding (before step 1)", [
+               ("03_coding/prompts/source_text_conversion.txt", "Conversion of a report into a text in which every paragraph,¦ table cell and figure element carries an identifier"),
+               ("03_coding/prompts/table_figure_transcription_rules.txt", "Rules for transcribing tables and figures element by element"),
+               ("03_coding/prompts/table_figure_transcription.txt", "Transcription of one table or figure,¦ each system independently"),
+               ("03_coding/prompts/table_figure_transcription_compare.txt", "Comparison of the two transcriptions")]),
+           ("Data coding", [
+               ("03_coding/prompts/step1_independent_coding.txt", "Step 1. Independent coding of the items of one item group"),
+               ("03_coding/prompts/step1_performance_rows.txt", "Step 1. Performance rows (model,¦ outcome,¦ dataset,¦ metric,¦ value)"),
+               ("03_coding/prompts/step2_cross_review.txt", "Step 2. Choice between the two codings (A,¦ B,¦ UNION,¦ NEITHER);¦ in the next round each system also sees the other's choice"),
+               ("03_coding/prompts/step4_materiality.txt", "Step 4. Is the difference material?"),
+               ("03_coding/prompts/step4_inconsistency_check.txt", "Step 4. Does the report contradict itself where one coding flags an inconsistency?"),
+               ("03_coding/prompts/step4_form_rule_substance.txt", "Step 4. Is the difference one of form,¦ of reading a rule,¦ or of substance?"),
+               ("03_coding/prompts/step4_blind_rule_check.txt", "Step 4. Which anonymised coding follows the rules?"),
+               ("03_coding/prompts/step4_field_rule_round1.txt", "Step 4. Common rule for an item,¦ round 1:¦ causes of disagreement and one minimal rule"),
+               ("03_coding/prompts/step4_field_rule_round2.txt", "Step 4. Common rule,¦ round 2:¦ choose between the two proposed rules or revise"),
+               ("03_coding/prompts/step4_field_rule_round3.txt", "Step 4. Common rule,¦ round 3:¦ test both rules on other open cases"),
+               ("03_coding/prompts/step4_field_rule_application.txt", "Step 4. Judging each coding under the agreed rule"),
+               ("03_coding/prompts/step5_field_rule_writing.txt", "Step 5. Writing the rule for an item without agreement from the decision"),
+               ("03_coding/prompts/step5_field_rule_check.txt", "Step 5. Checking the written rule"),
+               ("03_coding/prompts/step5_coding_under_rule.txt", "Step 5. Writing the coding under the rule"),
+               ("03_coding/prompts/step5_coding_under_rule_check.txt", "Step 5. Checking the coding written under the rule")]),
+           ("After coding", [
+               ("03_coding/prompts/after_shorten_long_values.txt", "Short form of long coded values for Additional Data 1"),
+               ("03_coding/prompts/after_shorten_long_values_check.txt", "Check of the short form against the full value"),
+               ("03_coding/prompts/analysis_study_classification.txt", "Study-level categories not settled by keyword rules (code availability,¦ online tool,¦ outcome domain,¦ purpose)")])]
+    def _prompt_text(f):
+        s = open(f"{G}/{f}").read()
+        if f.endswith(".txt"):
+            s = s.split("\n", 1)[1].strip()
+            s = re.sub(r'^[rfbRFB]*"""', "", s); s = re.sub(r'"""\s*$', "", s)
+        return s.strip("\n")
+    nb = ["Prompt templates of every step,¦ verbatim. Both systems received the same prompt in isolated calls without tools or earlier conversation (Anthropic Claude claude-opus-5-5,¦ OpenAI Codex gpt-6.1-sol). Words in braces are filled for each call:¦ the eligibility criteria (Supplementary Table S4),¦ the item definitions and general coding rules,¦ the records or the report text with its identifiers,¦ and,¦ in later rounds,¦ the earlier answers. Item definitions,¦ coding rules and these files are in the public repository (Data availability).\\par\\medskip\n"]
+    for g_, lst in PRM:
+        nb.append(f"{{\\large\\sffamily\\bfseries {g_}}}\\par\\smallskip\n")
+        for f, d in lst:
+            nb.append(f"\\needspace{{6\\baselineskip}}{{\\bfseries {d}}}\\par{{\\footnotesize\\texttt{{{f.replace('_', '\\_')}}}}}\\par\n"
+                      "\\begin{Verbatim}[breaklines,breakanywhere,fontsize=\\scriptsize,frame=single,framesep=2pt]\n" + _prompt_text(f) + "\n\\end{Verbatim}\n\\medskip\n")
+    parts.append(section("S1. Prompts of every step", "Supplementary Note", "".join(nb), landscape=False))
+
     def _key(p_):  # tables S1-S8 first, then figures S1-S8, each in number order (= order of first citation in the article)
-        m_ = re.search(r"Supplementary (Table|Figure) S(\d+)\.", p_)
-        return (0 if m_.group(1) == "Table" else 1, int(m_.group(2)))
+        m_ = re.search(r"Supplementary (Table|Note|Figure) S(\d+)\.", p_)
+        return ({"Table": 0, "Note": 1, "Figure": 2}[m_.group(1)], int(m_.group(2)))
     parts.sort(key=_key)
+    pre = pre.replace("\\begin{document}", "\\usepackage{fvextra}\n\\setmonofont{DejaVu Sans Mono}[Scale=0.92]\n\\begin{document}", 1)
     tex = (pre + "".join(parts) + "\\end{document}\n").replace("¦", "\\allowbreak{}")
     open(f"{OUT}/KNHANES_ML_review_Supplementary.tex", "w").write(tex)
     env = dict(os.environ, PATH=os.path.expanduser("~/knhanes_build_env/bin") + ":" + os.environ["PATH"])

@@ -19,7 +19,8 @@ steps:
 | 5 | Decision on what remained | author adjudication | rules for items without an agreed rule (review comments accepted by the author, or the suggested rule as directed by the author), with a fallback; pilot codings decided by review comments accepted by the author |
 
 The author's directions at step 3, with dates and the code that implements each, are in `DIRECTIONS.md`.
-Counts at every step are in `STEP_COUNTS.json` and in Supplementary Table S6 of the article. Nothing in this repository
+Counts at every step are in `STEP_COUNTS.json` and in Supplementary Table S6 of the article. The eligibility criteria are
+also printed in Supplementary Table S4 and the prompts in Supplementary Note S1 of the article. Nothing in this repository
 was re-decided after the steps: the round records are exports of the recorded calls.
 
 ## Folders
