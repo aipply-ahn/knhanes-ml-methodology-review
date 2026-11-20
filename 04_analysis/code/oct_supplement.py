@@ -354,7 +354,8 @@ def main():
             ["Final resolution (step 5)", f"{s5_:,}", pc_(s5_), f"Rules for items without an agreed rule,¦ set under the author's direction;¦ fallback ({cm['s5_fallback'] + cl['s5_fallback']});¦ pilot codings decided by the author on accepted review comments ({cm['s5_pilot'] + cl['s5_pilot']})"],
             ["Total", f"{tot:,}", "100.0", "Step 3 gives directions and settles no coding by itself"]]
     s6sum = ("\\bigskip{\\bfseries Resolution of all item codings}\\par\\smallskip\n"
-             + longtable([5.6, 2.2, 1.6, 16.6], ["Pathway", "Codings", "\\%", "What settled the coding"], summ, "8.0", ""))
+             + longtable([5.6, 2.2, 1.6, 16.6], ["Pathway", "Codings", "\\%", "What settled the coding"], summ, "8.0",
+                         f"Percentages are rounded to one decimal place and sum to {sum(round(100 * x / tot, 1) for x in (s1_, s2_, s4_, s5_)):.1f};¦ the counts sum to {tot:,}."))
     parts.append(section("S6. Linear record of selection and coding", "Supplementary Table",
                          longtable([3.6, 4.6, 4.6, 6.6, 6.6], ["Step", "Screening", "Full-text eligibility", "Coding:¦ CHARMS-based items", "Coding:¦ additional items"], s7, "8.0",
                                    f"Counts from the public round records. A coding is one item for one report;¦ units within a report (models,¦ evaluations) are part of the coding. Of {k('kVCoded')} codings,¦ {k('kVAgreePct')}\\% agreed at once and {k('kVOpen')} were left open. Prompts for every step are in Supplementary Note S1 and in the repository folders 02\\_selection/prompts and 03\\_coding/prompts;¦ the repository README describes each file.") + s6sum))

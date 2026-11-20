@@ -42,7 +42,7 @@ PREPRINT = re.compile(r"^10\.(21203|1101|2196/preprints|32388|20944|48550|2139|3
 SERVER = {"10.21203": "Research Square", "10.1101": "medRxiv or bioRxiv", "10.2196/preprints": "JMIR Preprints", "10.20944": "Preprints.org",
           "10.48550": "arXiv", "10.2139": "SSRN", "10.31219": "OSF Preprints", "10.36227": "TechRxiv", "10.22541": "Authorea", "10.32388": "Qeios"}
 TYPE_OVERRIDE = {"OCT1302": "conference paper", "OCT1440": "conference paper"}  # ITBAM and ICCC proceedings papers without a DOI
-AUTHOR_OVERRIDE = {"OCT1302": "Park", "OCT1436": "Kim", "OCT1440": "Ishag"}  # reports without a DOI: first author from the report
+AUTHOR_OVERRIDE = {"OCT1302": "Park", "OCT1436": "Kim", "OCT1440": "Ishag", "OCT0742": "Malaysha"}  # not in the search metadata: first author as printed in the report
 VENUE_OVERRIDE = {"OCT1251": "International Journal of Applied Science and Engineering"}  # from the DOI prefix; not in the search metadata
 
 
