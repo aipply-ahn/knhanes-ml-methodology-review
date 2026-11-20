@@ -1,9 +1,9 @@
 """Supplementary material 1 of the ORIGINAL manuscript, rebuilt with the October-search data (author 2026-11-19: keep the
 text, figures and tables, swap the numbers). Same sections and layout as manuscript/bmc_supplementary.tex (September):
-Tables S1 (PRISMA 2020) and S2 (PRISMA-S) with their locations and search details updated; S3 search strategies (October
-queries from query.py, counts from selection_summary.json); S4 eligibility-boundary and study-family decisions; S5 the
-health-focused studies outside the core cohort; Figures S1-S8 (legacy_supplement.py); S6 verification protocol; S7 recorded
-verification results; S8 ten illustrative studies (lowest IDs per stratum, as before).
+Numbered in the order of first citation in the article (author 2026-11-21): Tables S1 (PRISMA 2020) and S2 (PRISMA-S);
+S3 search strategies; S4 eligibility-boundary and study-family decisions (cited in 2.2); S5 verification protocol and coding
+rules (2.3); S6 linear record of selection and coding (2.4); S7 health-focused studies outside the core cohort; S8 ten
+illustrative studies; then Figures S1-S8 (legacy_supplement.py; S3 participants, S4 outcome and predictors).
 No text copied from the reports is printed: study rows give coded categories, counts and bibliographic details only.
 Output: manuscript/supplementary/oct/KNHANES_ML_review_Supplementary.tex (+ .pdf with xelatex)
 Usage: oct_supplement.py"""
@@ -118,11 +118,12 @@ def main():
            "Report which materials are publicly available and where.": "Study-level dataset (Additional Data 1);¦ public repository (Data availability) with the queries,¦ criteria,¦ protocols,¦ prompts,¦ the record of every selection and coding round,¦ the field rules and the analysis code;¦ coded values held by the author."}
     loc = {"13a": "Sections 2.3 and 2.5;¦ Section 3.2", "13f": "Not performed", "20d": "Not performed",
            "16b": "Section 3.1;¦ Supplementary Table S4;¦ public selection records (decision and reasons for every report)",
-           "19": "Additional Data 1 (study-level coded variables);¦ Supplementary Tables S5 and S8",
+           "19": "Additional Data 1 (study-level coded variables);¦ Supplementary Tables S7 and S8",
            "20b": "Section 3;¦ Figures 1--5;¦ Appendix Table A1;¦ Additional Data 1", "20c": "Sections 3.3,¦ 3.4 and 3.6;¦ Appendix Table A1;¦ Supplementary Figure S5",
            "27": fix["Report which materials are publicly available and where."],
-           "24b": "Not registered;¦ selection and coding protocols and prompts in the public repository (Data availability);¦ coding rules in Supplementary Table S6;¦ the five steps of selection and coding in Supplementary Table S7",
-           "8": "Sections 2.2 and 2.4;¦ Supplementary Tables S4 and S7;¦ public repository (prompts and round records)", "9": "Sections 2.3 and 2.4;¦ Supplementary Tables S6 and S7;¦ public repository (prompts and round records)"}
+           "24b": "Not registered;¦ selection and coding protocols and prompts in the public repository (Data availability);¦ coding rules in Supplementary Table S5;¦ the five steps of selection and coding in Supplementary Table S6",
+           "10b": "Section 2.3;¦ Supplementary Table S5", "11": "Section 2.3;¦ Supplementary Table S5",
+           "8": "Sections 2.2 and 2.4;¦ Supplementary Tables S4 and S6;¦ public repository (prompts and round records)", "9": "Sections 2.3 and 2.4;¦ Supplementary Tables S5 and S6;¦ public repository (prompts and round records)"}
     s1 = []
     for r in rows:
         c = r.split(" & "); it = next((i for i, x in enumerate(c) if re.fullmatch(r"\d+[a-f]?", x.strip(" &"))), None)
@@ -197,7 +198,7 @@ def main():
         s5.append(grp(f"{title} (n=¦{len(rs)})", 10))
         for r in rs:
             s5.append([brk(lab[r]), brk({"cont": "continuous or ordered outcome", "other": "other ML analysis"}.get(task[r].lower(), task[r].replace("_", " ").lower())), brk(topic.get(r, "")), brk(years(r)) + ";¦ " + n_an(r), brk(alg(r)), brk(internal(r)), brk(beyond(r)), brk(imp(r)), brk(design(r)), brk(code(r))])
-    parts.append(section(f"S5. The {len(other)} health-focused studies outside the core classific\\-ation cohort", "Supplementary Table",
+    parts.append(section(f"S7. The {len(other)} health-focused studies outside the core classific\\-ation cohort", "Supplementary Table",
                          longtable([3.0, 2.8, 3.0, 3.6, 3.2, 2.6, 1.8, 2.4, 1.7, 1.5], ["Study (first author, year)", "Task", "Health topic", "KNHANES years; n", "ML method", "Internal evaluation", "Beyond development data", "Importance", "Survey design", "Code"], s5, "6.8",
                                    "Abbreviations as in Supplementary Table S8;¦ --,¦ none or not reported. Categories are the coded values;¦ outcome definitions are in the reports.")))
 
@@ -211,10 +212,10 @@ def main():
              f"(A) Contribution of the {k('kMethod')} method-focused studies;¦ teal,¦ compared with existing methods. (B) Analysis stages addressed,¦ which overlap. (C) How the method was evaluated;¦ teal,¦ beyond a single KNHANES application."),
             ("S2. Role of KNHANES and survey years analysed", "Supplementary_Figure_S02_Study_characteristics",
              f"(A) Role of KNHANES in the {k('kAll')} studies;¦ hatched,¦ unclear. (B) Survey years analysed by the {k('kCore')} core studies;¦ a study counts once for each year. {ynr} studies named no single survey year (some named only the survey cycle)."),
-            ("S3. Outcome and predictor construction", "Supplementary_Figure_S03_Outcome_and_predictor_construction",
-             f"{k('kCore')} core studies. (A) Outcome structure. (B) Outcome and predictor set rebuildable from the report,¦ and model choice,¦ tuning and threshold made without the final evaluation data (all three in the last row)."),
-            ("S4. Participants and sample size", "Supplementary_Figure_S04_Participants_and_sample_size",
+            ("S3. Participants and sample size", "Supplementary_Figure_S04_Participants_and_sample_size",
              f"{k('kCore')} core studies. (A) Participant restrictions,¦ which overlap. (B) Participant-selection items reported;¦ the last row requires all five."),
+            ("S4. Outcome and predictor construction", "Supplementary_Figure_S03_Outcome_and_predictor_construction",
+             f"{k('kCore')} core studies. (A) Outcome structure. (B) Outcome and predictor set rebuildable from the report,¦ and model choice,¦ tuning and threshold made without the final evaluation data (all three in the last row)."),
             ("S5. Differences by publication period", "Supplementary_Figure_S05_Differences_by_publication_period",
              f"Core studies by publication period (n =¦ {k('kPerNA')},¦ {k('kPerNB')},¦ {k('kPerNC')} and {k('kPerND')}). (A) Algorithms compared and families fitted;¦ teal,¦ boosting. (B) Paired model comparison. (C) Studies producing a ranking in the first and last period,¦ in the four largest topics. Lines are visual guides,¦ not fitted trends."),
             ("S6. Algorithms,¦ tuning,¦ evaluation designs and performance measures", "Supplementary_Figure_S06_Algorithms_tuning_evaluation_and_measures",
@@ -236,7 +237,7 @@ def main():
           ["Evidence", "What supports a coded value?", "All items", "The identifiers of the supporting text;¦ values are never inferred from information the report does not give."],
           ["Response states", "How are missing values recorded?", "All items", "Reported: stated in the report. Not reported: the item applies but the report does not state it. Not applicable: the item has no object in the study. Unclear: the report touches it but the value cannot be fixed. A stated conflict within a report is recorded as an inconsistency."],
           ["Units", "At what level is an item coded?", "All items", "Study items once;¦ outcome,¦ model,¦ development and evaluation items for each unit named in the report."],
-          ["Settling codings", "How were differences between the two systems settled?", f"{k('kVCoded')} item codings", f"Five steps (Supplementary Table S7). 1:¦ agreed codings final ({k('kVAgree')}). 2:¦ each system chose the correct coding of the two,¦ then saw the other's choice ({k('kVConsensus')}). 3:¦ the author directed that the rest be settled by rules,¦ not case by case. 4:¦ cross-checks under these directions ({k('kVStepFour')}:¦ {k('kVRule')} by fixed rules for immaterial,¦ form,¦ one-sided inconsistency and rule-reading differences,¦ the rest by common rules agreed by both systems for {k('kVFieldAgreedItems')} items). 5:¦ rules for the {k('kVFieldDecidedItems')} items without agreement taken from review comments accepted by the author or from the suggested rule,¦ as directed,¦ with a fallback ({k('kVStepFive')},¦ of which {k('kVFallback')} by the fallback and {k('kVDecision')} pilot codings by review comments accepted by the author)."],
+          ["Settling codings", "How were differences between the two systems settled?", f"{k('kVCoded')} item codings", f"Five steps (Supplementary Table S6). 1:¦ agreed codings final ({k('kVAgree')}). 2:¦ each system chose the correct coding of the two,¦ then saw the other's choice ({k('kVConsensus')}). 3:¦ the author directed that the rest be settled by rules,¦ not case by case. 4:¦ cross-checks under these directions ({k('kVStepFour')}:¦ {k('kVRule')} by fixed rules for immaterial,¦ form,¦ one-sided inconsistency and rule-reading differences,¦ the rest by common rules agreed by both systems for {k('kVFieldAgreedItems')} items). 5:¦ rules for the {k('kVFieldDecidedItems')} items without agreement taken from review comments accepted by the author or from the suggested rule,¦ as directed,¦ with a fallback ({k('kVStepFive')},¦ of which {k('kVFallback')} by the fallback and {k('kVDecision')} pilot codings by review comments accepted by the author)."],
           "\\noalign{\\penalty-100}\n", grp("B. Coding rules that produce the reported results", 4)]
     B = [("Orientation", "Is the study health-focused or method-focused?", f"All {k('kAll')} studies", "Judged from the objective,¦ principal analysis,¦ main results and conclusion together,¦ not from the algorithm or title. Health-focused: answers a health question. Method-focused: develops,¦ improves or compares an analytic method."),
          ("Analytic task", "What is the primary analytic task?", f"All {k('kAll')} studies", f"Set by the fitted outcome scale and evaluation:¦ classific\\-ation,¦ continuous or ordered estimation,¦ or another task. Health-focused classific\\-ation studies form the core cohort ({k('kCore')})."),
@@ -256,7 +257,7 @@ def main():
          ("Reporting elements and PROBAST+AI", "How completely were the 19 TRIPOD+AI-derived elements reported,¦ and what were the PROBAST+AI judgements?", f"{k('kCore')} core", "Each element complete,¦ partial or not reported. PROBAST+AI signalling questions and domain judgements for each model-development unit (quality) and each performance-evaluation unit (risk of bias)."),
          ("Core reporting checklist", "Did the report meet each of the 43 core items (C01--C43,¦ Table 1)?", f"{k('kCore')} core", "Met,¦ not met or not applicable against the item criterion,¦ coded by both systems for the representative report of each core study. Items judge reporting,¦ not practice.")]
     s6 += [list(b) for b in B]
-    parts.append(section("S6. Verification protocol: two AI coders,¦ settling rules and coding rules", "Supplementary Table",
+    parts.append(section("S5. Selection and coding procedure and coding rules", "Supplementary Table",
                          longtable([3.3, 5.1, 3.5, 13.7], ["Item", "Question", "Applies to", "Decision rule"], s6, "8.0",
                                    "The coding items (CHARMS-based,¦ v3.1.3,¦ with the additional items for the figures),¦ the general rules and the settled field rules are in Additional Data 1 (sheets Items and Field\\_rules).")))
 
@@ -329,7 +330,7 @@ def main():
            f"{ec['s4_in']} agreed exclusions re-examined;¦ {ec['s4_kept']} kept,¦ {ec['s4_open']} reopened (up to three rounds)", c4(cm), c4(cl)],
           ["5. Decision", f"{sc['s5']} decided by the author", f"{ec['s5']} decided by the author;¦ 1 retracted report excluded under the author's direction (step 3)", c5(cm), c5(cl)],
           ["Public record", "02\\_selection/screening\\_rounds.jsonl", "02\\_selection/eligibility\\_rounds.jsonl", "03\\_coding/coding\\_rounds.jsonl (run charms);¦ field\\_rules.jsonl", "03\\_coding/coding\\_rounds.jsonl (runs additional\\_1--3);¦ field\\_rules.jsonl"]]
-    parts.append(section("S7. Linear record of selection and coding", "Supplementary Table",
+    parts.append(section("S6. Linear record of selection and coding", "Supplementary Table",
                          longtable([3.6, 4.6, 4.6, 6.6, 6.6], ["Step", "Screening", "Full-text eligibility", "Coding:¦ CHARMS-based items", "Coding:¦ additional items"], s7, "8.0",
                                    f"Counts from the public round records. A coding is one item for one report;¦ units within a report (models,¦ evaluations) are part of the coding. Of {k('kVCoded')} codings,¦ {k('kVAgreePct')}\\% agreed at once and {k('kVOpen')} were left open. Prompts for every step are in the repository folders 02\\_selection/prompts and 03\\_coding/prompts;¦ the repository README describes each file.")))
 
@@ -351,6 +352,10 @@ def main():
                                    "Lowest study IDs in each stratum: two core studies per period,¦ one other health-focused and one method-focused study;¦ all studies are in Additional Data 1. --,¦ not reported or not done;¦ variables as domains,¦ up to five. RF,¦ random forest;¦ LR,¦ logistic regression;¦ Boost,¦ gradient boosting (XGBoost,¦ LightGBM and others);¦ DT,¦ decision tree;¦ SVM,¦ support-vector machine;¦ NN,¦ neural network;¦ split,¦ single train--test split;¦ CV,¦ cross-validation;¦ Ext,¦ external dataset;¦ Temporal,¦ later survey period;¦ MN,¦ model-native importance;¦ Perm,¦ permutation importance;¦ coef,¦ coefficient or statistic;¦ Wf and We,¦ survey weights in fitting and in evaluation;¦ SP,¦ strata or PSUs;¦ Public,¦ analysis code in a public repository or supplementary file;¦ Request,¦ code on request.")))
 
     pre = SEPT[:SEPT.index("\\begin{landscape}")]
+    def _key(p_):  # tables S1-S8 first, then figures S1-S8, each in number order (= order of first citation in the article)
+        m_ = re.search(r"Supplementary (Table|Figure) S(\d+)\.", p_)
+        return (0 if m_.group(1) == "Table" else 1, int(m_.group(2)))
+    parts.sort(key=_key)
     tex = (pre + "".join(parts) + "\\end{document}\n").replace("¦", "\\allowbreak{}")
     open(f"{OUT}/KNHANES_ML_review_Supplementary.tex", "w").write(tex)
     env = dict(os.environ, PATH=os.path.expanduser("~/knhanes_build_env/bin") + ":" + os.environ["PATH"])
