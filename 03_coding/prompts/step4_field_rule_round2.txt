@@ -1,0 +1,14 @@
+# Template R2 from code/coding_field_rules.py (placeholders in braces are filled per call)
+HEAD + """
+Two rules were proposed for this item (P and Q, in no particular order):
+P: {p}
+Q: {q}
+
+TASK: check each against the cases and the existing rules (check_P, check_Q: one or two sentences: what it gets right,
+what it gets wrong or leaves open). Then choose P or Q if it is right and sufficient as written; otherwise REVISED and
+write the revised rule (the simplest wording that is right). rule: the text of the rule you choose (copied when P/Q).
+When P and Q differ only on a convention on which both are defensible, the simpler one wins: fewer distinctions, closer
+to the wording of the item definition and the general rules, less judgement asked of the coder.
+
+CASES
+{cases}"""

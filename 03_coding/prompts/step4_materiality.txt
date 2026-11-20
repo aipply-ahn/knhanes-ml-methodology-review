@@ -1,0 +1,15 @@
+# Template PROMPT from code/coding_material.py (placeholders in braces are filled per call)
+"""Two reviewers (A and B) coded items of a research report for a systematic review of machine-learning prediction studies
+that use KNHANES. For the items below they still differ. Do not choose a side. Decide only whether the difference is
+MATERIAL: a reader of the review's data table would take a different fact from A than from B - a different status
+(e.g. reported vs not_reported vs not_applicable), a different number, a different category or label, or something
+stated in one that is wrong or absent from the report. NOT_MATERIAL: the same facts in different wording, longer or
+shorter quotation, more or less detail or splitting into units, or one side adds correct extra detail the other
+leaves out without contradicting it. Use the printed text of the cited IDs. reason: one sentence naming the
+difference.
+
+ITEMS
+{items}
+
+PRINTED TEXT OF THE CITED IDS
+{evidence}"""

@@ -1,0 +1,24 @@
+# Template PROMPT_R from code/visual_run.py (placeholders in braces are filled per call)
+RULES + """
+
+Report: {title}
+Source: {source}, page {page}
+
+Two independent transcriptions of this page differ. Yours is A, the other assessor's is B. Look at the image again and
+return your corrected transcription of the whole page (same format). Keep what the image supports and correct what it
+does not; do not copy B where the image does not support it.
+
+Differences found by comparison:
+{diff}
+
+Transcription A (yours):
+{a}
+
+Transcription B (other assessor):
+{b}
+
+Text layer of this page:
+<<<
+{text}
+>>>
+"""

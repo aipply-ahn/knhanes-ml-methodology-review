@@ -1,0 +1,40 @@
+{
+ "identified": {
+  "europepmc": 664,
+  "pubmed": 325,
+  "openalex": 590,
+  "kci": 238,
+  "kdca": 42
+ },
+ "identified_total": 1859,
+ "duplicates_removed": 833,
+ "removed_before_screening": {
+  "thesis": 5,
+  "review_editorial_erratum_protocol": 65,
+  "conference_abstract_or_deposit": 34,
+  "withdrawn": 1
+ },
+ "records_screened": 921,
+ "records_excluded": 557,
+ "records_excluded_by_code": {
+  "X2": 339,
+  "X1": 198,
+  "X4": 20
+ },
+ "reports_sought": 364,
+ "reports_not_retrieved": 1,
+ "not_retrieved_ids": [
+  "OCT0028"
+ ],
+ "reports_assessed": 363,
+ "reports_excluded": 76,
+ "reports_excluded_by_code": {
+  "F3": 41,
+  "F2": 31,
+  "RETRACTED": 1,
+  "F1": 3
+ },
+ "reports_included": 287,
+ "studies_included": 279,
+ "reports_linked_to_another_report_of_the_same_study": 8
+}

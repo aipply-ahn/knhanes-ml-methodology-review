@@ -1,0 +1,18 @@
+# Template APP from code/coding_field_rules.py (placeholders in braces are filled per call)
+HEAD + """
+AGREED RULE FOR THIS ITEM
+{rule}
+
+TASK: apply the agreed rule and the coding rules to this report and judge each coding on its own. X_ok: true if
+coding X follows them and states nothing the printed text of the cited IDs does not support and misses nothing it
+clearly states; false only with the problem named (X_problem; '' when X_ok). The same for Y. Both can be acceptable, or
+neither. insufficient: true only if the printed text does not let you judge under the rule (do not guess then).
+
+CODING X
+{x}
+
+CODING Y
+{y}
+
+PRINTED TEXT OF THE CITED IDS
+{evidence}"""

@@ -1,0 +1,16 @@
+{
+ "identified": {
+  "europepmc": 664,
+  "pubmed": 325,
+  "openalex": 590,
+  "kci": 238,
+  "kdca": 42
+ },
+ "kci_returned_before_term_check": 427,
+ "identified_total": 1859,
+ "after_deduplication": 1026,
+ "excluded_thesis": 5,
+ "excluded_other_type": 65,
+ "excluded_not_research_report": 34,
+ "records_for_full_text": 922
+}

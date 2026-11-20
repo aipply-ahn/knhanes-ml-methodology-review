@@ -1,0 +1,13 @@
+# Template R3 from code/coding_field_rules.py (placeholders in braces are filled per call)
+HEAD + """
+Two final candidate rules for this item (P and Q, in no particular order):
+P: {p}
+Q: {q}
+
+TASK: test each rule on its own on the cases below (other cases of the same item, not used to write the rules).
+P_ok: true if coding these cases by P gives correct, consistent codings that the printed text supports; false only with
+a counterexample (P_counterexample: the case number and what P gets wrong; '' when P_ok). The same for Q. Judge each
+rule on its own: both can be acceptable, or neither.
+
+CASES
+{cases}"""

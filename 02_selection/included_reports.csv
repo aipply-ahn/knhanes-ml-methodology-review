@@ -1,0 +1,288 @@
+record_id,title,doi,pmid,kci_id,year
+OCT0010,Association Between the Dietary Inflammatory Index and Cardiorenal Anemia Syndrome: Evidence From NHANES and Related-Phenotype Exploration in KNHANES.,10.1002/fsn3.72232,42688738,,2026
+OCT0013,Machine learning-based prediction of osteoporosis in postmenopausal women with clinical examined features: A quantitative clinical study.,10.1002/hsr2.1656,37900094,,2023
+OCT0020,Decoding the Anxiety Burden in Asia and Developing an XGBoost-Based Online Screening Tool Using Korean Data.,10.1002/smi.70231,42845016,,2026
+OCT0021,Predicting the Relationship Between Meal Frequency and Type 2 Diabetes: Empirical Study Using Machine and Deep Learning,10.1007/978-3-031-42112-9_11,,,2023
+OCT0022,Smoking-Induced Noncommunicable Disease Prediction Using the PIA-Soft Model,10.1007/978-3-032-21631-1_25,,,2026
+OCT0024,Decision Tree Driven Rule Induction for Heart Disease Prediction Model: Korean National Health and Nutrition Examinations Survey V-1,10.1007/978-94-007-5860-5_123,,,2012
+OCT0026,Variational Autoencoder-Based Deep Neural Network for Coronary Heart Disease Risk Prediction,10.1007/978-981-19-1057-9_1,,,2022
+OCT0031,Application of Machine Learning to Identify Clinically Meaningful Risk Group for Osteoporosis in Individuals Under the Recommended Age for Dual-Energy X-Ray Absorptiometry.,10.1007/s00223-021-00880-x,34195852,,2021
+OCT0034,Psychological distress in cancer survivors: a population-based analysis and machine learning-based risk stratification.,10.1007/s00520-026-10816-6,42192026,,2026
+OCT0037,Coronary heart disease optimization system on adaptive-network-based fuzzy inference system and linear discriminant analysis (ANFIS–LDA),10.1007/s00779-013-0737-0,,,2013
+OCT0043,Development and validation of an explainable machine learning model using routine laboratory biomarkers for identifying prevalent MASLD: Evidence from two observational studies.,10.1007/s10238-026-02163-x,42141301,,2026
+OCT0045,Mahalanobis Distance Based Multivariate Outlier Detection to Improve Performance of Hypertension Prediction,10.1007/s11063-021-10663-y,,,2021
+OCT0049,Machine-learning models predicting osteoarthritis associated with the lead blood level.,10.1007/s11356-021-13887-6,33846921,,2021
+OCT0050,Development of a novel scoring system for glaucoma risk based on demographic and laboratory factors using ChatGPT-4.,10.1007/s11517-024-03182-0,39129037,,2025
+OCT0052,Application of machine learning approaches for osteoporosis risk prediction in postmenopausal women.,10.1007/s11657-020-00802-8,33097976,,2020
+OCT0055,"Oculomics for sarcopenia prediction: a machine learning approach toward predictive, preventive, and personalized medicine.",10.1007/s13167-022-00292-3,36061832,,2022
+OCT0062,Weight-control behavior in individuals with metabolic syndrome: a decision tree model,10.1007/s44155-025-00320-3,,,2025
+OCT0064,Relationship Between Health-related Behavioral and Psychological Factors and Cardiovascular and Cerebrovascular Diseases Comorbidity Among Korean Adults With Diabetes.,10.1016/j.anr.2011.11.002,25030521,ART001614112,2011
+OCT0071,Deep neural network for estimating low density lipoprotein cholesterol.,10.1016/j.cca.2018.11.022,30448282,,2019
+OCT0078,Korean public and hospital data for estimating LDL-cholesterol.,10.1016/j.dib.2018.12.009,30581927,,2019
+OCT0086,Explainable hybrid tabular Variational Autoencoder and feature Tokenizer Transformer for depression prediction,10.1016/j.eswa.2024.126084,,,2024
+OCT0089,Data-driven prediction model for periodontal disease based on correlational feature analysis and clinical validation.,10.1016/j.heliyon.2024.e32496,38912435,,2024
+OCT0096,Identifying depression in the National Health and Nutrition Examination Survey data using a deep learning algorithm.,10.1016/j.jad.2019.06.034,31357159,,2019
+OCT0100,Prediction of suicidal ideation in shift workers compared to non-shift workers using machine learning techniques.,10.1016/j.jad.2022.03.076,35390350,,2022
+OCT0110,Novel nomogram based on risk factors of chronic obstructive pulmonary disease (COPD) using a naïve Bayesian classifier model,10.1016/j.jkss.2018.11.006,,ART002482700,2018
+OCT0111,Machine Learning Models for Low Back Pain Detection and Factor Identification: Insights From a 6-Year Nationwide Survey.,10.1016/j.jpain.2024.02.011,38342191,,2024
+OCT0112,Four modeling approaches to study restrictions on everyday life and social activities due to chronic diseases with consequences of suicidal behavior.,10.1016/j.jpsychires.2024.03.037,38581904,,2024
+OCT0115,The Risk Factors of Laryngeal Pathology in Korean Adults Using a Decision Tree Model,10.1016/j.jvoice.2014.04.004,25008378,,2014
+OCT0134,Inferring suicidal ideation without direct questions: A network-augmented machine learning analysis of depression screening data.,10.1016/j.psychres.2026.117388,42623757,,2026
+OCT0151,Development and validation of a machine learning model for predicting pediatric metabolic syndrome using anthropometric and bioelectrical impedance parameters.,10.1038/s41366-025-01761-1,40169924,,2025
+OCT0159,Identification of novel population clusters with different susceptibilities to type 2 diabetes and their impact on the prediction of diabetes.,10.1038/s41598-019-40058-y,30833619,,2019
+OCT0165,Risk factor assessments of temporomandibular disorders via machine learning.,10.1038/s41598-021-98837-5,34611188,,2021
+OCT0166,Machine learning-based diagnosis and risk factor analysis of cardiocerebrovascular disease based on KNHANES.,10.1038/s41598-022-06333-1,35145205,,2022
+OCT0170,Comparisons of the prediction models for undiagnosed diabetes between machine learning versus traditional statistical methods.,10.1038/s41598-023-40170-0,37567907,,2023
+OCT0172,Development of a daily predictive model for the exacerbation of chronic obstructive pulmonary disease.,10.1038/s41598-023-45835-4,37907619,,2023
+OCT0175,Machine learning analysis for the association between breast feeding and metabolic syndrome in women.,10.1038/s41598-024-53137-6,38374105,,2024
+OCT0190,An interpretable machine learning model for chronic kidney disease identification among obese adults: a nationwide population-based study,10.1038/s41598-026-63327-z,,,2026
+OCT0194,How to build nomogram for type 2 diabetes using a naïve Bayesian classifier technique,10.1080/02664763.2018.1450366,,,2018
+OCT0227,Machine-learning enhancement of urine dipstick tests for chronic kidney disease detection.,10.1093/jamia/ocad051,37027837,,2023
+OCT0231,Prediction of low-density lipoprotein cholesterol levels using machine learning methods.,10.1093/labmed/lmad114,38217551,,2024
+OCT0249,Occupational and Physical Activity Factors as Predictors of Prediabetes: A Machine Learning Study With SHAP-Based Interpretation.,10.1097/jom.0000000000003504,40663410,,2025
+OCT0261,Sarcopenia feature selection and risk prediction using machine learning: A cross-sectional study.,10.1097/md.0000000000017699,31651901,,2019
+OCT0275,Osteoporosis Feature Selection and Risk Prediction Model by Machine Learning Using a Cross-Sectional Database.,10.11005/jbm.2023.30.3.263,37718904,ART002994872,2023
+OCT0276,A Multi-layer Perceptron Neural Network for Predicting the Osteoporosis in Women Using Physical Activity Factors,10.1101/2023.03.06.23286695,,,2023
+OCT0277,Improving Diagnostic Sensitivity for Imbalanced Musculoskeletal Disorder Data: A Sensitivity-Based Multi-Sampling Technique for Osteoarthritis Prediction,10.1101/2023.11.19.23298738,,,2023
+OCT0278,Healthome Polygon Framework: Comprehensive and Multi-dimensional Health Quantification Framework Using Artificial Intelligence and Multiomics Data,10.1101/2025.03.10.25323468,,,2025
+OCT0280,An Efficient Prediction Method for Coronary Heart Disease Risk Based on Two Deep Neural Networks Trained on Well-Ordered Training Datasets,10.1109/access.2021.3116974,,,2021
+OCT0281,A Data-Driven Model to Predict Regular Strength Exercise Patterns in Patients With Chronic Obstructive Pulmonary Disease: A Secondary Analysis,10.1109/access.2025.3623702,,,2025
+OCT0282,An Extreme Gradient Boosting-based Prediction for Depression,10.1109/apsipaasc58517.2023.10317543,,,2023
+OCT0284,Osteoporosis risk prediction using machine learning and conventional methods.,10.1109/embc.2013.6609469,24109656,,2013
+OCT0285,Screening for pre-diabetes using support vector machine model.,10.1109/embc.2014.6944123,25570491,,2014
+OCT0286,Bridging Ensemble Performance and Transparency: Knowledge Distillation for Obesity Classification on KNHANES Dataset.,10.1109/embc58623.2025.11251879,41335915,,2025
+OCT0287,A machine-learning approach for predicting success in smoking cessation intervention,10.1109/icawst.2019.8923252,,,2019
+OCT0288,Exploring the Performance of Stacking Classifier to Predict Depression Among the Elderly,10.1109/ichi.2017.95,,,2017
+OCT0290,Feature Attention-Enhanced CNN-LSTM for Real Time Stress Prediction & Management,10.1109/icstsn67075.2025.11397868,,,2025
+OCT0291,A Hybrid Feature Selection Approach for Applying to Patients with Diabetes Mellitus: KNHANES 2013-2015,10.1109/nics.2018.8606864,,,2018
+OCT0302,Machine-learning classifier models for predicting sarcopenia in the elderly based on physical factors.,10.1111/ggi.14895,38744528,,2024
+OCT0316,Predictive data mining for diagnosing periodontal disease: the Korea National Health and Nutrition Examination Surveys (KNHANES V and VI) from 2010 to 2015.,10.1111/jphd.12293,30468241,,2019
+OCT0318,Machine Learning Techniques for Identifying Lifestyle Factors Associated With Low Back Pain in Adults Aged 50 and Older Using Data From the Korean National Health and Nutrition Examination Survey.,10.1111/nhs.70248,41186069,,2025
+OCT0319,Decision Tree Identified Risk Groups with High Suicidal Ideation in South Korea: A Population-Based Study.,10.1111/phn.12219,26207765,,2016
+OCT0324,A step-by-step guide to random forest model using orange data mining in the field of periodontitis,10.11149/jkaoh.2021.45.4.218,,ART002790359,2021
+OCT0325,A machine learning based decision tree analysis of influential factor for the number of remaining teeth in Korean adults,10.11149/jkaoh.2023.47.1.26,,ART002945437,2023
+OCT0328,Machine learning prediction of periodontitis across age strata: using data from the Korea National Health and Nutrition Examintaion Survey,10.11149/jkaoh.2026.50.3.105,,ART003386465,2026
+OCT0341,A Voting Ensemble-based Model to Predict the Risk of Cardiovascular Disease in Ordinary People,10.1145/3606043.3606061,,,2023
+OCT0342,Screening for prediabetes using machine learning models.,10.1155/2014/618976,25165484,,2014
+OCT0343,Neural Network-Based Coronary Heart Disease Risk Prediction Using Feature Correlation Analysis.,10.1155/2017/2780501,29065583,,2017
+OCT0365,Artificial Neural Network Approach for Differentiating Open-Angle Glaucoma From Glaucoma Suspect Without a Visual Field Test.,10.1167/iovs.15-16805,26098462,,2015
+OCT0373,Oral Health Indicators as Important Predictors of Frailty in Korean Adults Aged 50 Years and Older: A Sex-Stratified Explainable Machine Learning Approach.,10.1177/07334648261488554,42747015,,2026
+OCT0375,Machine Learning-Based Prediction Model for Health-Related Quality of Life in Diabetic Patients.,10.1177/10547738251367551,40928064,,2025
+OCT0377,Prediction Model for Low Bone Mineral Density in Cancer Survivors and Age-Matched Controls Using a Causal Bayesian Network: A Nationwide Population-Based Study in Korea.,10.1177/11795549251411101,41523336,,2026
+OCT0380,Association between the ratio of uric acid to high-density lipoprotein cholesterol (UHR) and the abnormal risk of sarcopenia: Evidence from two large population-based surveys and interpretable machine learning-driven sarcopenia screening.,10.1177/20420188261489474,42732258,,2026
+OCT0382,Machine-learning model for predicting depression in second-hand smokers in cross-sectional data using the Korea National Health and Nutrition Examination Survey.,10.1177/20552076241257046,38784054,,2024
+OCT0384,Development of a deep learning model to predict smoking status in patients with chronic obstructive pulmonary disease: A secondary analysis of cross-sectional national survey.,10.1177/20552076251333660,40297369,,2025
+OCT0399,Machine learning models to identify low adherence to influenza vaccination among Korean adults with cardiovascular disease.,10.1186/s12872-021-01925-7,33750304,,2021
+OCT0402,Construction and evaluation of a CatBoost-based machine learning model for sarcopenia prediction using bioelectrical impedance analysis (BIA) and handgrip strength (HGS) from a nationally representative dataset of Korean older adults.,10.1186/s12877-026-07852-6,42387431,,2026
+OCT0421,Assessing diabetes risk factors using explainable AI and SMOTEENN: a nutrition-based analysis in South Korea,10.1186/s12889-026-26868-6,,,2026
+OCT0424,"Development of metabolic syndrome identification model by integrating Korea national health and nutrition examination survey data with regional particulate matter, air pollutants, and green environmental factors",10.1186/s12889-026-29087-1,,,2026
+OCT0429,Machine learning-based identification of multifactorial asthma phenotypes in Korean adults: insights from the Korea National Health and Nutrition Examination Survey,10.1186/s12890-026-04868-x,,,2026
+OCT0436,Development and temporal validation of a machine-learning based risk prediction model for depression in older adults with chewing difficulty: evidence from the KNHANES.,10.1186/s12903-026-09290-7,42477672,,2026
+OCT0442,Retinal vein occlusion risk prediction without fundus examination using a no-code machine learning tool for tabular data: a nationwide cross-sectional study from South Korea.,10.1186/s12911-025-02950-8,40055729,,2025
+OCT0443,Deep learning health space model for ordered responses.,10.1186/s12911-025-03026-3,40380121,,2025
+OCT0464,Association between breastfeeding duration and diabetes mellitus in menopausal women: a machine-learning analysis using population-based retrospective study.,10.1186/s13006-024-00642-z,38745339,,2024
+OCT0466,Machine-learning-based models to predict cardiovascular risk using oculomics and clinic variables in KNHANES.,10.1186/s13040-024-00363-3,38644481,,2024
+OCT0467,An online non-radiographic osteoporosis prediction calculator constructed using interpretable machine learning.,10.1186/s13040-026-00520-w,41580731,,2026
+OCT0471,Development and temporal external validation of a high-specificity XGBoost rule-in model for diabetes in middle-aged and older Korean adults.,10.1186/s13098-026-02176-2,42226262,,2026
+OCT0475,Automated and code-free development of a risk calculator using ChatGPT-4 for predicting diabetic retinopathy and macular edema without retinal imaging.,10.1186/s40942-025-00638-9,39891252,,2025
+OCT0487,Development of a Model to Estimate Body Fat Percentage using Decision Tree Analysis,10.1249/01.mss.0000487993.14293.5a,,ART002156136,2016
+OCT0497,"Risk Factors for Sarcopenia, Sarcopenic Obesity, and Sarcopenia Without Obesity in Older Adults",10.12674/ptk.2021.28.3.177,,,2021
+OCT0498,Machine learning-based risk factor analysis for periodontal disease from a Korean National Survey,10.12729/jbtr.2022.23.1.17,,ART002827626,2022
+OCT0508,Health-related Quality of Life in Multimorbid Adults: A Random Forest Cross-sectional Analysis of the Korean National Health and Nutrition Examination Survey,10.12934/jkpmhn.2025.34.3.349,,ART003248959,2025
+OCT0510,Decision Tree Analysis to Identify Risk Groups for Depression and Anxiety in the Adult Population in Korea,10.12972/nhs.2025.24.2.6,,ART003296920,2025
+OCT0522,Cost-Sensitive Boosting Approach to Analyzing Risk Factors Affecting Health-Related Quality of Life in Hypertensive Diabetic Patients: Insights from a National Population-Based Study,10.13189/ujph.2025.130213,,,2025
+OCT0523,MERWACS: Development and external validation of a non-invasive machine learning tool for identifying subjects to be screened for CKD.,10.1371/journal.pdig.0001486,42424235,,2026
+OCT0531,Simple Scoring System and Artificial Neural Network for Knee Osteoarthritis Risk Prediction: A Cross-Sectional Study.,10.1371/journal.pone.0148724,26859664,,2016
+OCT0546,Reconstruction error based deep neural networks for coronary heart disease risk prediction.,10.1371/journal.pone.0225991,31805166,,2019
+OCT0550,Machine learning-based identification and related features of depression in patients with diabetes mellitus based on the Korea National Health and Nutrition Examination Survey: A cross-sectional study.,10.1371/journal.pone.0288648,37440591,,2023
+OCT0551,"The impact of working hours on pregnancy intention in childbearing-age women in Korea, the country with the world's lowest fertility rate.",10.1371/journal.pone.0288697,37467184,,2023
+OCT0553,Lifestyle risk behavior and atherosclerotic cardiovascular risk: An analysis using the Korea National Health and Nutrition Examination Survey.,10.1371/journal.pone.0307677,39208285,,2024
+OCT0554,Factors associated with predicting knee pain using knee X-ray and personal factors: A multivariate logistic regression and XGBoost model analysis from the Nationwide Korean Database (KNHANES).,10.1371/journal.pone.0314789,39621732,,2024
+OCT0555,Relationship between insulin resistance surrogate markers with diabetes and dyslipidemia: A Bayesian network analysis of Korean adults.,10.1371/journal.pone.0323329,40341273,,2025
+OCT0558,Estimating the causal effect of sleep duration on mental health in young adults: A meta-learner approach from physiological and nutritional perspectives.,10.1371/journal.pone.0345018,41926479,,2026
+OCT0561,Comparison of Machine Learning Models for Predicting Dyslipidemia in Korean Postmenopausal Women : Analysis Using the 1st Year Data of the 9th Korea National Health and Nutrition Examination Survey,10.14251/crisisonomy.2025.21.3.205,,ART003190891,2025
+OCT0566,A Prediction Model for Benign Laryngeal Disease Using RBF Artificial Neural Network,10.14257/astl.2016.132.39,,,2016
+OCT0567,A Prediction Model for Benign Laryngeal Disease Using Supervised Learning Techniques,10.14257/ijbsbt.2016.8.4.12,,,2016
+OCT0574,Development of Prediction Model for Prevalence of Metabolic Syndrome Using Data Mining: Korea National Health and Nutrition Examination Study,10.14400/JDC.2016.14.2.325,,ART002086678,2016
+OCT0575,Deriving rules for identifying diabetic among individuals with metabolic syndrome,10.14400/JDC.2018.16.11.363,,ART002406200,2018
+OCT0576,Convergence study to detect metabolic syndrome risk factors by gender difference,10.14400/JDC.2021.19.12.477,,ART002787576,2021
+OCT0579,Objective Correlates of Activity Limitation in Korean Adults: A Combined Complex-Survey Regression and Explainable Machine-Learning Analysis of KNHANES 2019－2021,10.14474/ptrs.2026.15.3.288,,ART003391245,2026
+OCT0580,A Feature Analysis of Risk Factors for Stroke in the Middle-Aged Adults,10.14569/ijacsa.2015.061213,,,2015
+OCT0581,The Factors of Subjective Voice Disorder Using Integrated Method of Decision Tree and Multi-Layer Perceptron Artificial Neural Network Algorithm,10.14569/ijacsa.2016.070517,,,2016
+OCT0582,Model Development for Predicting the Occurrence of Benign Laryngeal Lesions using Support Vector Machine: Focusing on South Korean Adults Living in Local Communities,10.14569/ijacsa.2018.091027,,,2018
+OCT0599,A Decision-Tree Analysis of Influential Factors and Reasons for Unmet Dental Care in Korean Adults,10.15709/hswr.2017.37.4.294,,ART002307924,2017
+OCT0601,Prediction Model of Hypertension for Smartwatch Users Using Machine Learning : Based on Korea National Health and Nutrition Examination Survey,10.15790/cope.2023.19.4.101,,ART003038473,2023
+OCT0611,Factors related to Quality of Life among Older Women in South Korea: The Impact of Residential Areas,10.17079/jkgn.2021.23.3.285,,ART002751849,2021
+OCT0613,[A decision tree-based prediction model for hearing loss in middle-aged and older adults: Secondary analysis of the Korea National Health and Nutrition Examination Survey].,10.17079/jkgn.2025.00073,41583714,ART003205641,2025
+OCT0615,Unmet Dental Need among Korean Adults with Activity Limitations: A Decision Tree Analysis Using Korea National Health and Nutrition Examination Survey Data,10.17135/jdhs.2026.26.3.216,,ART003384555,2026
+OCT0625,Identifying Determinants of Occupational Injuries Among Plant and Machine Operators Using Semi-supervised MarginBoost,10.17958/ksmt.26.4.202408.627,,ART003108778,2024
+OCT0626,Predictive System for Mental Health of Machine Operators Based on Deep Autoencoder Model,10.17958/ksmt.26.4.202408.722,,ART003108816,2024
+OCT0627,Comprehensive Data-Driven Insights into Metabolic Syndrome: Utilizing DeepGBM with Heuristic Feature Optimization,10.17958/ksmt.28.2.202604.195,,ART003328643,2026
+OCT0631,An Artificial Neural Network Approach to Predicting Stroke in Postmenopausal Women.,10.18502/ijph.v51i4.9261,35936538,,2022
+OCT0632,Machine Learning Analysis of Blood Glucose Regulation in Korean Male Workers with Type 2 Diabetes.,10.18502/ijph.v54i4.18429,40321926,,2025
+OCT0639,Performance Comparison of Imputation Methods Using Machine Learning Techniques for Ordinal Missing Data,10.21032/jhis.2022.47.3.217,,ART002875074,2022
+OCT0641,Performance Evaluation and Analysis of Machine Learning Algorithms for Predicting Periodontal Disease in Korean Adults,10.21032/jhis.2025.50.2.163,,ART003208177,2025
+OCT0643,The usefulness of machine learning analysis for predicting the presence of depression with the results of the Korea National Health and Nutrition Examination Survey.,10.21037/apm-23-78,37355804,,2023
+OCT0649,"Obesity-Related Metabolic Phenotypes and Ischemic Stroke Risk: A Trend Analysis Using GBD 2023, Time-Series Validation in Korea, and Predictive Modeling in KNHANES",10.21203/rs.3.rs-10585348/v1,,,2026
+OCT0652,The prediction of undiagnosed diabetes using lifestyle and anthropometric measures: Machine learning vs. Traditional statistical methods,10.21203/rs.3.rs-2581580/v1,,,2023
+OCT0654,Deep Autoencoder-based Multivariate Outlier Detection for the Classification of Hypertension: Case study COVID-19,10.21203/rs.3.rs-2872456/v1,,,2023
+OCT0657,Metabolic syndrome prediction models using only lifestyle information based on nationwide survey data,10.21203/rs.3.rs-4386349/v1,,,2024
+OCT0658,Gender-Specific Lifestyle Risk Behaviors and Machine Learning Models for Predicting Atherosclerotic Cardiovascular Disease,10.21203/rs.3.rs-4838697/v1,,,2024
+OCT0659,Predicting Chronic Kidney Disease Risk Factors Using Machine Learning: Using the 2021 Korea National Health and Nutrition Examination Survey,10.21203/rs.3.rs-6364577/v1,,,2026
+OCT0664,An interpretable machine learning model for predicting chronic kidney disease risk among obese adults: a nationwide population-based study,10.21203/rs.3.rs-9308066/v1,,,2026
+OCT0678,A Machine-Learning-Based Risk Factor Analysis for Hypertension: Korea National Health and Nutrition Examination Survey 2016–2019,10.21215/kjfp.2022.12.3.173,,ART002848130,2022
+OCT0682,Phenotypic Stratification and Cluster-Specific Risk Profiles of Korean Adults with Asthma: A Machine-Learning Analysis of a Nationwide Survey,10.2139/ssrn.5347786,,,2025
+OCT0687,Obesity-related Phenotypes and Ischemic Stroke Risk: A Multi-scale Analysis of Global Burden of Disease Data and a Korean Cohort Using Explainable Deep Learning,10.2139/ssrn.6872765,,,2026
+OCT0688,Cross-population transportability of an imaging- and laboratory-free machine-learning model for osteoporosis screening: a frozen NHANES-to-KNHANES validation study,10.2139/ssrn.7331325,,,2026
+OCT0703,A Methodology for Interpretable Health Risk Management: Integrating Counterfactual Explanations and On-Premise Medical LLMs in the Insurance Industry,10.21480/tjrm.36.4.202512.001,,ART003282259,2025
+OCT0710,Prediction of periodontal disease in adults using tree-based machine learning models,10.21851/obr.25.025,,ART003283791,2025
+OCT0712,Deep Learning Approach for Imputation of Missing Values in Actigraphy Data: Algorithm Development Study.,10.2196/16113,32445459,,2020
+OCT0713,Explanatory Model of Dry Eye Disease Using Health and Nutrition Examinations: Machine Learning and Network-Based Factor Analysis From a National Survey.,10.2196/16153,32130150,,2020
+OCT0714,Limitations of Deep Learning Attention Mechanisms in Clinical Research: Empirical Case Study Based on the Korean Diabetic Disease Setting.,10.2196/18418,33325832,,2020
+OCT0715,Discovery of Depression-Associated Factors From a Nationwide Population-Based Survey: Epidemiological Study Using Machine Learning and Network Analysis.,10.2196/27344,34184998,,2021
+OCT0717,Interpretable Deep-Learning Approaches for Osteoporosis Risk Screening and Individualized Feature Analysis Using Large Population-Based Data: Model Development and Performance Evaluation.,10.2196/40179,36482780,,2023
+OCT0723,Machine Learning-Based Prediction of Suicidality in Adolescents With Allergic Rhinitis: Derivation and Validation in 2 Independent Nationwide Cohorts.,10.2196/51473,38354043,,2024
+OCT0727,Development of a Predictive Model for Metabolic Syndrome Using Noninvasive Data and its Cardiovascular Disease Risk Assessments: Multicohort Validation Study.,10.2196/67525,40315452,,2025
+OCT0728,Machine Learning-Based Analysis of Lifestyle Risk Factors for Atherosclerotic Cardiovascular Disease: Retrospective Case-Control Study.,10.2196/74415,40773657,,2025
+OCT0729,A Machine Learning Model for Predicting Sarcopenia Among Middle-Aged Adults: Development and External Validation.,10.2196/75760,40864499,,2025
+OCT0734,Identification of risk indicators for periodontitis: Machine Learning and Feature Importance Analysis (Preprint),10.2196/preprints.44424,,,2022
+OCT0735,Predicting risk indicators for periodontitis in a Korean population: Machine learning algorithms approach (Preprint),10.2196/preprints.63621,,,2024
+OCT0736,Machine Learning-Based Analysis of Lifestyle Risk Factors in Atherosclerotic Cardiovascular Disease Risk++ (Preprint),10.2196/preprints.74415,,,2025
+OCT0738,"Integrated Noninvasive Screening for Diabetes, CKD, and CVD: Externally Validated Machine Learning Model and Web Application (Preprint)",10.2196/preprints.98280,,,2026
+OCT0741,Convergence Analysis of Risk factors for Readmission in Cardiovascular Disease: A Machine Learning Approach,10.22156/CS4SMB.2019.9.12.115,,ART002534138,2019
+OCT0742,Classification and Prediction of Low-Density Lipoprotein Cholesterol LDL-C in The Palestinian Patients Using Machine Learning Techniques,10.22266/ijies2022.0228.41,,,2021
+OCT0744,Determinants of blood pressure control in hypertensive individuals using histogram-based gradient boosting: findings from 1114 male workers in South Korea,10.22514/jomh.2024.148,,,2024
+OCT0745,An explainable hybrid deep learning model for prediabetes prediction in men aged 30 and above,10.22514/jomh.2024.166,,,2024
+OCT0746,Non-cognitive factors influencing early stroke symptom recognition among Korean working-class males with hypertension and diabetes: an integrated multi-output gradient boosting and logistic regression approach,10.22514/jomh.2025.077,,,2025
+OCT0765,Using Machine Learning to Develop Predictive Models of Nutritionally Vulnerable Groups,10.24997/KJAE.2023.64.3.25,,ART003006273,2023
+OCT0770,Nomogram for screening the risk of developing metabolic syndrome using naïve Bayesian classifier,10.29220/csam.2023.30.1.021,,ART002927387,2023
+OCT0771,A Multi-Layer Perceptron Neural Network for Predicting the Diagnosis of Osteoporosis in Women Using Physical Activity Factors,10.29273/jmst.2023.7.2.54,,ART003032912,2023
+OCT0772,Use of a Machine Learning Algorithm to Predict Individuals with Suicide Ideation in the General Population.,10.30773/pi.2018.08.27,30301301,ART002406104,2018
+OCT0773,Prediction of Suicidal Ideation among Korean Adults Using Machine Learning: A Cross-Sectional Study.,10.30773/pi.2019.0270,32213803,,2020
+OCT0775,Detection of Suicide Attempters among Suicide Ideators Using Machine Learning.,10.30773/pi.2019.06.19,31446686,ART002494230,2019
+OCT0777,Contribution of Chronic Disease in Predicting Depression and Suicidal Ideation Among the Older Adult Population.,10.30773/pi.2024.0106,40834909,ART003244672,2025
+OCT0778,Optimizing Suicide Risk Prediction in Korea: A Comparison of Model Performance Using Resampling Methods and Machine Learning Algorithms.,10.30773/pi.2025.0187,41276795,ART003265001,2025
+OCT0784,Comparative analysis of machine learning models for efficient low back pain prediction using demographic and lifestyle factors.,10.3233/bmr-240059,39031340,,2024
+OCT0785,Healthome Polygon Framework: A Comprehensive and Multidimensional Health Quantification Framework Using Artificial Intelligence and Multiomics Data,10.32388/kiru4o,,,2026
+OCT0807,Osteoporosis risk prediction for bone mineral density assessment of postmenopausal women using machine learning.,10.3349/ymj.2013.54.6.1321,24142634,,2013
+OCT0813,"Prediction Model for Insulin Resistance and Implications for MASLD in Youth: A Novel Marker, the Pediatric Insulin Resistance Assessment Score.",10.3349/ymj.2024.0442,40709676,,2025
+OCT0825,Misperception of body weight and associated socioeconomic and health-related factors among Korean female adults: A nationwide population-based study.,10.3389/fendo.2022.1007129,36619562,,2022
+OCT0826,Exploring the risk factors of impaired fasting glucose in middle-aged population living in South Korean communities by using categorical boosting machine.,10.3389/fendo.2022.1013162,36246911,,2022
+OCT0836,"A machine learning-based prediction of diabetic retinopathy using the Korea national health and nutrition examination survey (2008-2012, 2017-2021).",10.3389/fmed.2025.1542860,40520799,,2025
+OCT0842,Evaluation of nutritional status and clinical depression classification using an explainable machine learning method.,10.3389/fnut.2023.1165854,37229464,,2023
+OCT0844,A Deep Learning Algorithm to Predict Hazardous Drinkers and the Severity of Alcohol-Related Problems Using K-NHANES.,10.3389/fpsyt.2021.684406,34305681,,2021
+OCT0849,Age-specific risk factors for the prediction of obesity using a machine learning approach.,10.3389/fpubh.2022.998782,36733276,,2022
+OCT0851,Association between household income levels and nutritional intake of allergic children under 6 years of age in Korea: 2019 Korea National Health and Nutrition Examination Survey and application of machine learning.,10.3389/fpubh.2023.1287085,38274515,,2023
+OCT0855,Development and external validation of an interpretable machine learning model for obesity-depression comorbidity in Korean and US adults.,10.3389/ijph.2026.1609153,42292917,,2026
+OCT0856,A Deep Learning Model for Estimation of Patients with Undiagnosed Diabetes,10.3390/app10010421,,,2020
+OCT0857,"Identification of Metabolic Syndrome Based on Anthropometric, Blood and Spirometric Risk Factors Using Machine Learning",10.3390/app10217741,,,2020
+OCT0858,Enhancing Diabetes Prediction and Prevention through Mahalanobis Distance and Machine Learning Integration,10.3390/app14177480,,,2024
+OCT0860,Chronic Disease Prediction Using Character-Recurrent Neural Network in The Presence of Missing Information,10.3390/app9102170,,,2019
+OCT0865,Building a Cardiovascular Disease Prediction Model for Smartwatch Users Using Machine Learning: Based on the Korea National Health and Nutrition Examination Survey.,10.3390/bios11070228,34356699,,2021
+OCT0866,Attention Aware Deep Learning Approaches for an Efficient Stress Classification Model.,10.3390/brainsci13070994,37508926,,2023
+OCT0869,Joint Categories of Perceived Stress and Subjective Body-Shape Perception and Health-Related Outcomes Among Adolescents.,10.3390/children13101391,42940710,,2026
+OCT0878,Exploring Factors Influencing Depression: Socioeconomic Perspectives Using Machine Learning Analytics,10.3390/electronics14030487,,,2025
+OCT0883,Osteoporosis Pre-Screening Using Ensemble Machine Learning in Postmenopausal Korean Women.,10.3390/healthcare10061107,35742158,,2022
+OCT0886,Sarcopenia Prediction for Elderly People Using Machine Learning: A Case Study on Physical Activity.,10.3390/healthcare11091334,37174876,,2023
+OCT0889,"Machine Learning for Sarcopenia Prediction in the Elderly Using Socioeconomic, Infrastructure, and Quality-of-Life Data.",10.3390/healthcare11212881,37958025,,2023
+OCT0892,Machine Learning-Driven Metabolic Syndrome Prediction: An International Cohort Validation Study.,10.3390/healthcare12242527,39765954,,2024
+OCT0899,Identifying High-Risk Factors of Depression in Middle-Aged Persons with a Novel Sons and Spouses Bayesian Network Model.,10.3390/healthcare8040562,33333799,,2020
+OCT0901,"Prediction of Prehypertenison and Hypertension Based on Anthropometry, Blood Parameters, and Spirometry.",10.3390/ijerph15112571,30453592,,2018
+OCT0902,A Deep Neural Network-Based Method for Early Detection of Osteoarthritis Using Statistical Data.,10.3390/ijerph16071281,30974803,,2019
+OCT0905,"Comparisons among Machine Learning Models for the Prediction of Hypercholestrolemia Associated with Exposure to Lead, Mercury, and Cadmium.",10.3390/ijerph16152666,31349672,,2019
+OCT0911,XGBoost-Based Framework for Smoking-Induced Noncommunicable Disease Prediction.,10.3390/ijerph17186513,32906777,,2020
+OCT0918,A Deep Neural Network-Based Method for Prediction of Dementia Using Big Data.,10.3390/ijerph18105386,34070100,,2021
+OCT0919,"Classification and Prediction on the Effects of Nutritional Intake on Overweight/Obesity, Dyslipidemia, Hypertension and Type 2 Diabetes Mellitus Using Deep Learning Model: 4-7th Korea National Health and Nutrition Examination Survey.",10.3390/ijerph18115597,34073854,,2021
+OCT0920,Prediction Models of Early Childhood Caries Based on Machine Learning Algorithms.,10.3390/ijerph18168613,34444368,,2021
+OCT0924,Identification of Risk Factors for Suicidal Ideation and Attempt Based on Machine Learning Algorithms: A Longitudinal Survey in Korea (2007-2019).,10.3390/ijerph182312772,34886497,,2021
+OCT0929,Factors Related to Suicidal Ideation and Prediction of High-Risk Groups among Youngest-Old Adults in South Korea.,10.3390/ijerph191610028,36011664,,2022
+OCT0932,Risk Association of Liver Cancer and Hepatitis B with Tree Ensemble and Lifestyle Features.,10.3390/ijerph192215171,36429890,,2022
+OCT0934,The Association between Replacement Drivers and Depressive Symptoms.,10.3390/ijerph20010575,36612903,,2022
+OCT0944,Machine Learning-Based Model for Grip Strength Prediction in Healthy Adults: A Nationwide Dataset-Based Study.,10.3390/jcm14051542,40095470,,2025
+OCT0949,Self-Rated Health Associated with Chronic Diseases and Types of Physical Activity Among Middle-Aged and Older Adults: A Cross-Sectional Study Using Explainable Machine Learning.,10.3390/jcm15187100,42795871,,2026
+OCT0952,A Machine Learning Approach for Predicting Wage Workers' Suicidal Ideation.,10.3390/jpm12060945,35743731,,2022
+OCT0953,A Predictive Model of Ischemic Heart Disease in Middle-Aged and Older Women Using Data Mining Technique.,10.3390/jpm13040663,37109049,,2023
+OCT0954,Sex-Specific Associations Between Dynapenia and Risk of Atherosclerotic Cardiovascular Disease: A Machine-Learning-Based Approach.,10.3390/jpm15030083,40137399,,2025
+OCT0958,Machine Learning Approaches to Predict Chronic Lower Back Pain in People Aged over 50 Years.,10.3390/medicina57111230,34833448,,2021
+OCT0983,An Explainable Prediction for Dietary-Related Diseases via Language Models.,10.3390/nu16050686,38474813,,2024
+OCT0984,Investigating the Influence of Heavy Metals and Environmental Factors on Metabolic Syndrome Risk Based on Nutrient Intake: Machine Learning Analysis of Data from the Eighth Korea National Health and Nutrition Examination Survey (KNHANES).,10.3390/nu16050724,38474852,,2024
+OCT0985,Discovering Vitamin-D-Deficiency-Associated Factors in Korean Adults Using KNHANES Data Based on an Integrated Analysis of Machine Learning and Statistical Techniques.,10.3390/nu17040618,40004947,,2025
+OCT0999,Risk factors of alcohol use disorder in Korean adults based on the decision tree analysis,10.35133/kssche.20230228.04,,ART002939384,2023
+OCT1012,"A Study of Depression Related Factors and Their Association with Diet in People in Young-, Middle-, and Late Adulthood -Based on Data from the Korea National Health and Nutrition Examination Survey, 2016 and 2018-",10.3746/jkfn.2023.52.8.864,,ART002991001,2023
+OCT1016,Personalized Diabetes Prediction Method Using Machine Learning Based on Expanded Health Data,10.37675/jat.2025.00710,,ART003277959,2025
+OCT1018,Prediction of Myocardial Infarction/Angina and Selection of Major Risk Factors Using Machine Learning,10.37727/jkdas.2018.20.2.647,,ART002344686,2018
+OCT1021,Analysis of Influencing Factors of Suicide Ideation Using Random Forest Model : Focusing on the National Health and Nutrition Examination Survey,10.37727/jkdas.2023.25.3.1121,,ART002970241,2023
+OCT1022,Predicting Depression om Adults using a Random Forest Model : Focusing on the 8th Korean National Health and Nutrition Examination Survey,10.37727/jkdas.2023.25.4.1449,,ART002990870,2023
+OCT1023,Analysis of the Impact of Osteoarthritis on Quality of Life Using Machine Learning Method,10.37727/jkdas.2024.26.4.1191,,ART003112815,2024
+OCT1025,Imputation of Missing Responses on Smoking Habits,10.37727/jkdas.2025.27.5.1481,,ART003258365,2025
+OCT1026,Partial Dependence and Accumulated Local Effect Plots for Interpretable Machine Learning: A Random Forest Application to Health-Related Quality of Life,10.37727/jkdas.2026.28.1.419,,ART003309038,2026
+OCT1032,Deep Learning-based Evolutionary Recommendation Model for Heterogeneous Big Data Integration,10.3837/tiis.2020.09.009,,ART002633850,2020
+OCT1040,Deep autoencoders and multivariate analysis for enhanced hypertension detection during the COVID-19 era,10.3934/era.2024147,,,2024
+OCT1102,Relationship between Health Status and Life Styles and Atopic Dermatitis in Adolescents,10.4094/jkachn.2012.18.3.143,,ART001684262,2012
+OCT1116,Classification and prediction of the effects of nutritional intake on diabetes mellitus using artificial neural network sensitivity analysis: 7th Korea National Health and Nutrition Examination Survey.,10.4162/nrp.2023.17.6.1255,38053823,ART003021964,2023
+OCT1134,A prediction model for adolescents’ skipping breakfast using the CART algorithm for decision trees: 7th (2016–2018) Korea National Health and Nutrition Examination Survey,10.4163/jnh.2023.56.3.300,,ART002975720,2023
+OCT1160,Prediction Model for Health-Related Quality of Life of Elderly with Chronic Diseases using Machine Learning Techniques.,10.4258/hir.2014.20.2.125,24872911,ART001875075,2014
+OCT1161,Data-Mining-Based Coronary Heart Disease Risk Prediction Model Using Fuzzy Logic and Decision Tree.,10.4258/hir.2015.21.3.167,26279953,ART002017169,2015
+OCT1162,Statistics and Deep Belief Network-Based Cardiovascular Risk Prediction.,10.4258/hir.2017.23.3.169,28875051,ART002249083,2017
+OCT1163,Development of a Stress Classification Model Using Deep Belief Networks for Stress Monitoring.,10.4258/hir.2017.23.4.285,29181238,ART002281696,2017
+OCT1171,The Relationship Between Life’s simple 7 and Generalized Anxiety Disorder: A Study Based on KNHANES and Machine Learning,10.5114/aoms/221898,,,2026
+OCT1185,Bayesian additive regression trees for imbalanced ordinal outcomes,10.5351/KJAS.2025.38.5.665,,ART003261988,2025
+OCT1186,Modeling of Metabolic Syndrome Using Bayesian Network,10.5351/kjas.2014.27.5.705,,ART001925811,2014
+OCT1190,An Obesity Risk Prediction by Hierarchically Using Logistic Regression based Elastic Net and Decision Tree,10.5391/JKIIS.2025.35.1.1,,ART003173987,2025
+OCT1194,Determinants and machine learning-based prediction of health-related quality of life among Korean baby boomers: the 2023 Korea National Health and Nutrition Examination Survey,10.54794/enesg.2026.6.4.339,,ART003342684,2026
+OCT1195,Neural network approach to predict the association between blood cadmium levels and hypertension,10.55214/25768484.v8i4.978,,,2024
+OCT1197,A Study on Improving Minority Class Classification using CVAE-based Synthetic Data,10.5573/ieie.2025.62.11.131,,ART003265175,2025
+OCT1207,"Factors Associated with Fruit and Vegetable Consumption of Subjects Having a History of Stroke: Using 5th Korea National Health and Nutrition Examination Survey (2010, 2011)",10.5720/kjcn.2014.19.5.468,,ART001927254,2014
+OCT1216,Performance Comparison of Various Classification Algorithms of Machine Learning Applications for Predicting Diabetic Nephropathy,10.5762/KAIS.2022.23.7.184,,ART002864344,2022
+OCT1220,Research on the Predictive Model of Chronic Diseases according to Intergenerational Health Behavior Using Data Mining -Using the National Health and Nutrition Survey-,10.5762/KAIS.2024.25.3.557,,ART003067371,2024
+OCT1221,Prediction of Metabolic Syndrome Using The Catboost Model,10.5762/KAIS.2024.25.4.324,,ART003074863,2024
+OCT1222,Predicting the association between metabolic syndrome and chronic kidney disease using the XGBoost model,10.5762/KAIS.2024.25.7.320,,ART003104239,2024
+OCT1224,Group Classification on Management Behavior of Diabetic Mellitus,10.5762/kais.2011.12.2.765,,ART001527742,2011
+OCT1227,The Prediction Model for Self-Reported Voice Problem Using a Decision Tree Model,10.5762/kais.2013.14.7.3368,,ART001791732,2013
+OCT1229,"Predicting Factors of Korean Workers"" Quality of Life Using Stagewise Additive Modeling with a Multi-class Exponential Loss Function",10.5762/kais.2024.25.8.221,,ART003113272,2024
+OCT1230,An Anomaly-Aware Analysis of Metabolic Heterogeneity in Diabetes Risk During and After COVID-19,10.58502/dtt.26.0017,,,2026
+OCT1248,Support Vector Machine and Regression Analysis of Blood Glucose Regulation in Male Workers with Type 2 Diabetes: Insights from a Nationwide Survey in South Korea,10.62441/nano-ntp.v20i6.117,,,2024
+OCT1251,Synthetic oversampling based decision support framework to solve class imbalance problem in smoking cessation program,10.6703/ijase.202009_17(3).223,,,2020
+OCT1253,Disease risk prediction system using correlated health indexes,10.7236/IJASC.2018.7.4.1,,ART002416549,2018
+OCT1259,A study on the method of constructing a nomogram for predicting dyslipidemia,10.7465/jkdi.2019.30.5.1063,,ART002510304,2019
+OCT1266,Identification of Risky Subgroups with Sleep Problems Among Adult Cancer Survivors Using Decision-tree Analyses: Based on the Korean National Health and Nutrition Examination Survey from 2013 to 2016,10.7586/jkbns.2018.20.2.103,,ART002349849,2017
+OCT1267,Decision-Tree Analysis to Predict Blood Pressure Control Status Among Hypertension Patients Taking Antihypertensive Medications,10.7586/jkbns.2019.21.1.85,,ART002444324,2017
+OCT1268,Identification of subgroups with poor lipid control among patients with dyslipidemia using decision tree analysis: the Korean National Health and Nutrition Examination Survey from 2019 to 2021,10.7586/jkbns.23.0007,,ART002962269,2023
+OCT1270,[Prediction model of health-related quality of life in older adults according to gender using a decision tree model: a study based on the Korea National Health and Nutrition Examination Survey].,10.7586/jkbns.23.023,42563747,ART003056802,2024
+OCT1272,Development and validation of machine learning models to predict prediabetes using dietary intake data in young adults in Korea: a cross-sectional study.,10.7586/jkbns.24.029,42563809,ART003139358,2024
+OCT1276,[Identification of sex-specific sarcopenia risk groups among older adults using decision tree modeling: a cross-sectional study based on the Korean National Health and Nutrition Examination Survey].,10.7586/jkbns.25.091,42563720,ART003306978,2026
+OCT1285,Development of a Metabolic Syndrome Classification and Prediction Model for Koreans Using Deep Learning Technology: The Korea National Health and Nutrition Examination Survey (KNHANES) (2013-2018).,10.7762/cnr.2023.12.2.138,37214780,ART002958014,2023
+OCT1287,Development and Comparison of AI Algorithms for a Predictive Model of Cataracts: Analysis of the Korea National Health and Nutrition Examination Survey (2015-2017).,10.7762/cnr.2025.14.4.297,41267920,ART003262447,2025
+OCT1291,Statistical Analysis for Risk Factors and Prediction of Hypertension based on Health Behavior Information,10.9728/dcs.2018.19.4.685,,ART002341921,2018
+OCT1292,A Hybrid Efficient Feature Selection Model for High Dimensional Data Set based on KNHNAES (2013~2015),10.9728/dcs.2018.19.4.739,,ART002341928,2018
+OCT1302,A Hybrid Feature Selection Method to Classification and Its Application in Hypertension Diagnosis,,,,2017
+OCT1315,A Study On Imputation In Multipurpose Sample Survey : Focus On National Hearth Survey,,,ART001273101,2008
+OCT1321,A Study on Factors of Management of Diabetes Mellitus using Data Mining,,,ART001347621,2009
+OCT1369,Relationship between Suicidal Ideation and Plasma C-Reactive Protein Level in General Population : The Korean National Health and Nutrition Examination Survey,,,ART002331122,2018
+OCT1372,Comparison of nomogram construction methods using chronic obstructive pulmonary disease,,,ART002365250,2018
+OCT1374,Nomogram comparison conducted by logistic regression and naive Bayesian classifier using type 2 diabetes mellitus (T2D),,,ART002402109,2018
+OCT1377,의사결정나무 분석법을 이용한 우울 노인 중 자살 고위험군 규명,,,ART002475908,2019
+OCT1379,Nomogram building to predict dyslipidemia using a naive Bayesian classifier model,,,ART002500711,2019
+OCT1380,Prediction model of hypercholesterolemia using body fat mass based on machine learning,,,ART002528071,2019
+OCT1383,Optimized Feature Selection using Feature Subset IG-MLP Evaluation based Machine Learning Model for Disease Prediction,,,ART002574747,2020
+OCT1384,Comparison of nomograms designed to predict hypertension with a complex sample,,,ART002643858,2020
+OCT1387,제 2형 성인 당뇨병 유병자의 혈당조절 취약군 예측: 제7기(2016-2018년도) 국민건강영양조사 자료 활용,,,ART002687627,2021
+OCT1390,Prediction Model of Hypertension Using Sociodemographic Characteristics Based on Machine Learning,,,ART002779811,2021
+OCT1392,Comparison of Feature Selection Methods Applied on Risk Prediction for Hypertension,,,ART002823041,2022
+OCT1394,Analysis of Hypertension Risk Factors by Life Cycle Based on Machine Learning,,,ART002890689,2022
+OCT1399,"Proposing a Methodology for Encouraging Customer Insurance Enrollment: Predicting the Incidence of Major Diseases Based on Individual’s Demographic, Genetic and Lifestyle Characteristics",,,ART003029438,2023
+OCT1401,Selecting Optimal Algorithms for Stroke Prediction: Machine LearningBased Approach,,,ART003091954,2024
+OCT1406,Risk Pattern Analysis for Low Back Pain in Older Korean Adults: An Association Rule Mining on Physical Activity and Health Behaviors,,,ART003234795,2025
+OCT1407,Prediction Model for Health-related Quality of Life in Coronary Artery Disease Patients According to Stress Level,,,ART003237221,2025
+OCT1411,Classification of PHQ-9 High-Risk Groups and Socioeconomic Factors Using Explainable Artificial Intelligence: A 2024 KNHANES Study,,,ART003355602,2026
+OCT1413,Association between Food Choice Behavior and Blood Pressure in Hypertensive Patients Aged 50 Years or Older:  Cross-sectional Study using Data from the 2019–2020 Korea National Health and Nutrition Examination Survey,,,ART003357464,2026
+OCT1415,"Association of Wearable Accelerometer-Based Circadian Rhythm  with Depression, Stress, and Quality of Life in a Korean Population:  Application of Explainable AI",,,ART003371022,2026
+OCT1417,Development of a Machine Learning Prediction Model for Unmet Medical Care among Working Young Adults and Identification of High-Risk Subgroups: Evidence from KNHANES 2020–2024,,,ART003384711,2026
+OCT1419,Identifying Hyperlipidemia-Associated Factors in Middle-Aged Korean Men Using AutoInt,,,ART003386596,2026
+OCT1436,Machine Learning Based Depression Prediction Using Nutritional Factors,,,,2025
+OCT1440,Prediction of Hypertension using Feature Selection with KNHANES 2007-2014,,,,2016
+OCT1489,An Effective Feature Selection for Diabetes Prediction,10.1007/978-3-031-39689-2_10,,,2023
+OCT1490,"Machine Learning Models Combining Routine Urine Dipstick Results With Age, Sex, and Body Mass Index to Triage Serum Urate Testing: Development and External Validation Study (Preprint)",10.2196/107515,,,2026
+OCT1492,Market Segmentation of Patient-Utilization in Oriental Medical Care and Western Medical Care,10.4332/kjhpa.2002.12.1.125,,,2002
+OCT1493,Prediction of Hypertension Using Deep Autoencoder-Based Feature Representation,10.1007/978-981-33-6420-2_29,,,2021
+OCT1504,"Leveraging AdaNet for In-Depth Analysis of Hypertension Medication Adherence in 1,512 Middle-Aged Male Korean Workers",10.62441/nano-ntp.v20is12.27,,,2024
