@@ -284,7 +284,7 @@ def main():
     ck = json.load(open("results/derived/checklist_v22_scores.json"))
     # author 2026-11-20: name the weight precisely (survey sampling weights, not model or class weights)
     OVR = {"RC06": dict(crit_en="States whether survey weights were used and which survey weight, or why not", crit_ko=""),
-           "RC07": dict(item_en="Combined-year survey weights", item_ko="", crit_en="When survey weights were used with combined years, reports how they were adjusted", crit_ko=""),
+           "RC07": dict(item_en="Combined-year survey weights", item_ko="", crit_en="When survey years were combined, reports how survey weights were adjusted for the combination (not applicable when the years were analysed separately or survey weights were stated not to be used)", crit_ko=""),
            "RC24": dict(item_en="Survey weights in model fitting", item_ko="", crit_en="States whether survey weights were used in model fitting and how, or why not", crit_ko=""),
            "RC32": dict(item_en="Survey weights in performance evaluation", item_ko="", crit_en="States whether performance measures were weighted by survey weights and how, or why not", crit_ko=""),
            "RC42": dict(item_en="Survey weights in importance aggregation", item_ko="", crit_ko="")}
