@@ -205,7 +205,7 @@ def s4():
                              "Decision tree", "Naive Bayes"]))
     ranked = sorted(order, key=lambda k: -ac[k])  # prompt 096: sorted by size, "Other families" last
     bars(a, [names[k] for k in ranked] + ["Other families"], [ac[k] for k in ranked] + [other], N_CORE, xmax=130)
-    title(fig, a, f"A. Algorithm families evaluated (N={N_CORE}; overlap)")
+    title(fig, a, f"A. Algorithm families fitted (N={N_CORE}; overlap)")
     tm = Counter(x["algorithm_development"]["hyperparameter_tuning_method"] for x in cls_a)
     no_tuning = sum(x["algorithm_development"]["tuning_selection_status"] == "NO_TUNING_OR_DEFAULT_MODEL" for x in cls_a)
     search = sum(tm[k] for k in ("RANDOM_SEARCH", "BAYESIAN_OR_OTHER_OPTIMISATION", "GRID_SEARCH", "OTHER_REPORTED"))

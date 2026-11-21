@@ -232,8 +232,8 @@ def main():
             ("S5. Differences by publication period", "Supplementary_Figure_S05_Differences_by_publication_period",
              f"Core studies by publication period (n =¦ {k('kPerNA')},¦ {k('kPerNB')},¦ {k('kPerNC')} and {k('kPerND')}). (A) Algorithms compared and families fitted;¦ teal,¦ boosting. (B) Paired model comparison. (C) Studies producing a ranking in the first and last period,¦ in the four largest topics. Lines are visual guides,¦ not fitted trends."),
             ("S6. Algorithms,¦ tuning,¦ evaluation designs and performance measures", "Supplementary_Figure_S06_Algorithms_tuning_evaluation_and_measures",
-             f"{k('kCore')} core studies;¦ categories overlap except in (B). (A) Algorithm families. (B) Hyperpara\\-meter tuning. (C) Evaluation designs;¦ teal,¦ beyond the development data. (D) Performance measures. (E) Importance methods in the {k('kRanking')} studies with a ranking;¦ teal,¦ SHAP."),
-            ("S7. Agreement between pairs of rankings", "Supplementary_Figure_S07_Agreement_between_rankings",
+             f"{k('kCore')} core studies;¦ categories overlap except in (B). (A) Algorithm families fitted,¦ coded as in Figure 3I;¦ tree boosting is shown as XGBoost and LightGBM,¦ other boosting algorithms being counted with other families. (B) Hyperpara\\-meter tuning. (C) Evaluation designs;¦ teal,¦ beyond the development data. (D) Performance measures. (E) Importance methods in the {k('kRanking')} studies with a ranking;¦ teal,¦ SHAP."),
+            ("S7. Overlap of reported important-variable domains across studies", "Supplementary_Figure_S07_Agreement_between_rankings",
              f"(A) Overlap of the variable domains named by pairs of the {k('kRanking')} studies with a ranking (Jaccard index;¦ median and interquartile range;¦ open points exclude age,¦ sex and body size). Pairs share studies and are not independent. (B) Rows of Figure 4D clustered by their variable profiles (average linkage)."),
             ("S8. Reporting completeness and PROBAST+AI", "Supplementary_Figure_S08_Reporting_completeness_and_PROBAST_AI",
              f"{k('kCore')} core studies. (A) Eight of the 19 TRIPOD+AI-derived reporting elements. (B) PROBAST+AI judgements per model unit ({units('PD_OVERALL')} developments,¦ {units('PE_OVERALL')} evaluations);¦ dark grey,¦ low quality or high risk. Each bar is 100\\% of the units judged for that row: the overall rows include every development or evaluation unit with an overall judgement;¦ a domain row includes the evaluation units with both an overall and a domain judgement,¦ so units without a judgement for that domain (not applicable or not assessed) are left out and the domain totals can be smaller than the overall total.")]
@@ -329,22 +329,21 @@ def main():
         c["items_agreed"], c["items_decided"] = len(ag), len(dc); return c
     cm = cod_steps(["results/oct_search/coding/final_items_clean.jsonl"])
     cl = cod_steps([f"results/oct_search/{d}/final_items.jsonl" for d in ("coding_legacy", "coding_legacy2", "coding_legacy3")])
-    sel_dir = "Every exclusion agreed by both systems re-examined once by both;¦ publication-type rules and deduplication exceptions added as protocol amendments;¦ retracted reports excluded"
-    cod_dir = "Remaining differences settled by rules,¦ not case by case:¦ immaterial differences,¦ differences of form,¦ an inconsistency flagged by one system only and differences in reading a rule by fixed rules;¦ the rest by one common rule per item,¦ cross-checked in up to three rounds"
-    def c4(c): return f"{c['s4']:,} settled:¦ {c['s4_fixed']:,} by the fixed rules,¦ {c['s4'] - c['s4_fixed']:,} by rules agreed for {c['items_agreed']} items"
-    def c5(c): return (f"{c['s5']:,} settled by the rules set for {c['items_decided']} items without an agreed rule (review comments accepted by the author or the suggested rule,¦ as directed) and by the fallback"
-                       + (f",¦ {c['s5_fallback']} of them by the fallback" if c["s5_fallback"] else "") + (f";¦ {c['s5_pilot']} pilot codings by review comments accepted by the author" if c["s5_pilot"] else ""))
+    sel_dir = "Re-examine every agreed exclusion;¦ operational clarifications (publication type,¦ deduplication,¦ retraction);¦ criteria unchanged"
+    cod_dir = "Settle the remaining differences by rules,¦ not case by case:¦ fixed rules for immaterial,¦ form,¦ one-sided inconsistency and rule-reading differences;¦ one common rule per item for the rest"
+    def c4(c): return f"{c['s4']:,} settled:¦ {c['s4_fixed']:,} by fixed rules;¦ {c['s4'] - c['s4_fixed']:,} by common rules agreed for {c['items_agreed']} items"
+    def c5(c): return (f"{c['s5']:,} settled:¦ rules for {c['items_decided']} items without an agreed rule (as directed)"
+                       + (f";¦ fallback {c['s5_fallback']}" if c["s5_fallback"] else "") + (f";¦ pilot decisions {c['s5_pilot']}" if c["s5_pilot"] else ""))
     s7 = [["Scope", f"{sc['n']:,} records", f"{ec['n']:,} reports", f"{cm['n']:,} codings ({k('oItemsPerReport')} items,¦ {k('oReports')} reports)", f"{cl['n']:,} codings (additional items,¦ {k('kAll')} representative reports)"],
           ["1. Independent assessment", f"{sc['s1']:,} agreed", f"{ec['s1']:,} agreed", f"{cm['s1']:,} agreed", f"{cl['s1']:,} agreed"],
           ["2. Cross-review rounds", f"{sc['s2_in']} discordant;¦ up to three rounds;¦ {sc['s2_ok']} agreed", f"{ec['s2_in']} discordant;¦ up to three rounds;¦ {ec['s2_ok']} agreed",
            f"Two rounds (choice,¦ then choice after seeing the other's);¦ {cm['s2']:,} settled", f"As for the CHARMS-based items;¦ {cl['s2']:,} settled"],
-          ["3. Author's directions (rules,¦ no case decisions)", sel_dir, sel_dir, cod_dir, cod_dir],
+          ["3. Author's directions (rules,¦ no case decisions)", sel_dir, "As for screening", cod_dir, "As for the CHARMS-based items"],
           ["4. Cross-checks under the directions", f"{sc['s4_in']} agreed exclusions re-examined;¦ {sc['s4_kept']} kept,¦ {sc['s4_open']} reopened (up to three rounds)",
            f"{ec['s4_in']} agreed exclusions re-examined;¦ {ec['s4_kept']} kept,¦ {ec['s4_open']} reopened (up to three rounds)", c4(cm), c4(cl)],
           ["5. Decision", f"{sc['s5']} decided by the author", f"{ec['s5']} decided by the author;¦ 1 retracted report excluded under the author's direction (step 3)", c5(cm), c5(cl)],
-          ["Prompts (Supplementary Note S1)", "Step 1:¦ screening\\_round1;¦ steps 2 and 4:¦ screening\\_round\\_n;¦ step 4:¦ screening\\_challenge",
-           "Step 1:¦ eligibility\\_round1;¦ steps 2 and 4:¦ eligibility\\_round\\_n;¦ step 4:¦ eligibility\\_challenge",
-           "Step 1:¦ step1\\_independent\\_coding,¦ step1\\_performance\\_rows;¦ step 2:¦ step2\\_cross\\_review;¦ step 4:¦ step4\\_* (materiality,¦ inconsistency,¦ form or rule,¦ blind rule check,¦ field rule rounds 1--3 and application);¦ step 5:¦ step5\\_*", "As for the CHARMS-based items"],
+          ["Prompts (Supplementary Note S1)", "screening\\_round1 (1);¦ screening\\_round\\_n (2,¦ 4);¦ screening\\_challenge (4)",
+           "eligibility\\_round1 (1);¦ eligibility\\_round\\_n (2,¦ 4);¦ eligibility\\_challenge (4)", "step1\\_* (1);¦ step2\\_* (2);¦ step4\\_* (4);¦ step5\\_* (5)", "As for the CHARMS-based items"],
           ["Public record", "02\\_¦selection/¦screening\\_¦rounds.jsonl", "02\\_¦selection/¦eligibility\\_¦rounds.jsonl", "03\\_¦coding/¦coding\\_¦rounds.jsonl (run charms);¦ field\\_¦rules.jsonl", "03\\_¦coding/¦coding\\_¦rounds.jsonl (runs additional\\_¦1--3);¦ field\\_¦rules.jsonl"]]
     tot = cm["n"] + cl["n"]; pc_ = lambda x: f"{100 * x / tot:.1f}"
     s1_, s2_, s4_, s5_ = cm["s1"] + cl["s1"], cm["s2"] + cl["s2"], cm["s4"] + cl["s4"], cm["s5"] + cl["s5"]
@@ -418,7 +417,7 @@ def main():
             s = s.split("\n", 1)[1].strip()
             s = re.sub(r'^[rfbRFB]*"""', "", s); s = re.sub(r'"""\s*$', "", s)
         return s.strip("\n")
-    nb = ["Prompt templates of every step,¦ verbatim. Both systems received the same prompt in isolated calls without tools or earlier conversation (Anthropic Claude claude-opus-5-5,¦ OpenAI Codex gpt-6.1-sol). Words in braces are filled for each call:¦ the eligibility criteria (Supplementary Table S4),¦ the item definitions and general coding rules,¦ the records or the report text with its identifiers,¦ and,¦ in later rounds,¦ the earlier answers. Item definitions,¦ coding rules and these files are in the public repository (Data availability).\\par\\medskip\n"]
+    nb = ["Prompt templates of every step,¦ verbatim,¦ as used;¦ where a prompt speaks of reviewers or prediction studies,¦ the reviewers are the two AI systems,¦ and eligibility followed the criteria in Supplementary Table S4. Both systems received the same prompt in isolated calls without tools or earlier conversation (Anthropic Claude claude-opus-5-5,¦ OpenAI Codex gpt-6.1-sol). Words in braces are filled for each call:¦ the eligibility criteria (Supplementary Table S4),¦ the item definitions and general coding rules,¦ the records or the report text with its identifiers,¦ and,¦ in later rounds,¦ the earlier answers. Item definitions,¦ coding rules and these files are in the public repository (Data availability).\\par\\medskip\n"]
     for g_, lst in PRM:
         nb.append(f"{{\\large\\sffamily\\bfseries {g_}}}\\par\\smallskip\n")
         for f, d in lst:

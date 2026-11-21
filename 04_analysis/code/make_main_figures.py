@@ -422,7 +422,7 @@ def figure_analysis(lang="en"):
     fbars(axI, [(names[k][1], af[k], "navy") for k in order])  # prompt 108: no family singled out (author request)
     ttl(axI, T(ko, f"I. Algorithms fitted\n(N={N}; overlap)", f"I.  \n(N={N}, )"))
     sm = o["selected_model_family_192"]
-    short_ = {"boosting": T(ko, "Tree boosting", ""), "neural_network": T(ko, "Neural network", "")}  # K: full names in J
+    short_ = {"boosting": T(ko, "Tree boosting", ""), "neural_network": T(ko, "Neural network", ""), "logistic_regression": T(ko, "Logistic\nregression", "")}  # two lines: clear of panel I values  # K: full names in J
     rowsJ = [(short_.get(k, names[k][1]), sm[names[k][0]], "navy") for k in order] + [(T(ko, "Not designated", ""), sm.get("Not designated", 0), "nr")] * bool(sm.get("Not designated")) \
         + [(T(ko, "Not compared", ""), sm["single_algorithm"], "na")]  # author decision D17: no model designated
     assert sum(r[1] for r in rowsJ) == N
@@ -439,9 +439,9 @@ def figure_analysis(lang="en"):
             return "m"
         return "both"
     sx = Counter(_sex(_ms.first(d, "POP05")) for d in CORE_)
-    fbars(axAge, [(T(ko, "Age", ""), 0, "head"), (T(ko, "Under 19", ""), ag["child"], "navy"), (T(ko, "All ages", ""), ag["all"], "navy"),
-                  (T(ko, "19 and over", ""), ag["adult"], "navy"), (T(ko, "30 and over", ""), ag["middle"], "navy"),
-                  (T(ko, "60 and over", ""), ag["older"], "navy"), (T(ko, "Not reported", ""), ag["nr"], "nr"),
+    fbars(axAge, [(T(ko, "Age", ""), 0, "head"), (T(ko, "Under 19 only", ""), ag["child"], "navy"), (T(ko, "All ages", ""), ag["all"], "navy"),
+                  (T(ko, "Minimum 18-29", ""), ag["adult"], "navy"), (T(ko, "Minimum 30-59", ""), ag["middle"], "navy"),
+                  (T(ko, "Minimum 60+", ""), ag["older"], "navy"), (T(ko, "Not reported", ""), ag["nr"], "nr"),
                   (T(ko, "Sex", ""), 0, "head"), (T(ko, "Both sexes", ""), sx["both"], "navy"), (T(ko, "Women only", ""), sx["f"], "navy"),
                   (T(ko, "Men only", ""), sx["m"], "navy"), (T(ko, "Not reported", ""), sx["nr"], "nr")])
     assert sum(sx.values()) == N
@@ -2718,7 +2718,7 @@ def figure_agreement(lang="en", out=None):
                         Line2D([], [], marker="o", ls="", markerfacecolor="white", markeredgecolor=SLATE, ms=6,
                                label=T(ko, "Without age, sex and body size", ""))],
                frameon=False, loc="lower right", bbox_to_anchor=(1.0, 1.0), ncol=2, fontsize=FS_VALUE - 2.2, handletextpad=.2)
-    title(fig, axC, T(ko, f"A. Agreement between pairs of rankings (N={NS()['rank']})", f"A.       ({NS()['rank']})"), dy=.05)
+    title(fig, axC, T(ko, f"A. Overlap of named variable domains between pairs of studies (N={NS()['rank']})", f"A.        ({NS()['rank']})"), dy=.05)
     # B (prompt 112): rows of Figure 5A clustered by their variable profiles alone (no topic tree).
     from scipy.cluster.hierarchy import dendrogram
     r = o["rankings_named_112"]; vps = r["variables_per_study"]; cols = fig5_columns(r)

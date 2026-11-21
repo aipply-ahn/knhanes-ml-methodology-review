@@ -90,9 +90,13 @@ def main():
     for d in core:
         r = d["study_id"]; cs = set(codes("legacy.algorithms_fitted", r))
         t = text(F, "legacy.algorithms_fitted", r) + " " + text(M, "model_development.model_family", r)
-        fam = [n for n, c, pat in FAM if (c and c in cs) or re.search(pat, t)]
+        # review v9 (2026-11-21): families counted from the coded algorithms only, as in Figure 3I; the report text only
+        # splits a coded family into named members (XGBoost, LightGBM within boosting; naive Bayes within other)
+        cs = {c.split("(")[0].strip().lower().replace(" ", "_") for c in cs}
+        PARENT = {"XGBoost": "boosting", "LightGBM": "boosting", "Naive Bayes": "other"}
+        fam = [n for n, c, pat in FAM if (c and c in cs) or (not c and PARENT[n] in cs and re.search(pat, t))]
         if "boosting" in cs and not ({"XGBoost", "LightGBM"} & set(fam)): fam.append("Gradient boosting")
-        if "other" in cs or re.search(r"\bknn\b|nearest|catboost|adaboost|extra tree", t): fam.append("Other")
+        if "other" in cs: fam.append("Other")
         sts, tv = vals(M, "model_development.tuning_search", r); tt = " ".join(tv).lower()
         if sts != "reported": tm, ts = "NR", "NR"
         elif re.search(r"default|not tuned|no tuning|without tuning|not performed|not done", tt) and not re.search(r"grid|random search|bayes|optuna", tt): tm, ts = "MANUAL_OR_DEFAULT", "NO_TUNING_OR_DEFAULT_MODEL"

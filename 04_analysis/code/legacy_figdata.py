@@ -104,15 +104,16 @@ def main():
         published KNHANES cycle boundaries (IV 2007-2009, V 2010-2012, ... IX 2022-2024): one year -> ONE_YEAR, several
         years in one cycle -> MULTI_SAME, years in more than one cycle -> MULTI_CROSS; None when no year is printed
         (author 2026-11-19: settle by rule; cycle membership is public, not something a report has to state)."""
+        #
         x = main_rows.get("data_source.survey_cycles", {}).get(rid) or {}
         ys = set()
         for v in x.get("values") or []:
             if re.match(r"\s*NHANES", str(v.get("unit", ""))): continue  # US NHANES datasets
             t = str(v.get("value", ""))
-            for a_, b_ in re.findall(r"((?:19|20)\d\d)\s*(?:[-–—~∼]|to|through|and)\s*((?:19|20)?\d\d)\b", t):
+            for a_, b_ in re.findall(r"(?<!\d)((?:19|20)\d\d)\s*(?:[-–—~∼～]|to|through|and)\s*((?:19|20)?\d\d)(?!\d)", t):
                 a1, b1 = int(a_), int(b_) if len(b_) == 4 else int(a_[:2] + b_)
                 if 1998 <= a1 <= b1 <= 2027 and " and " not in t[t.find(a_):t.find(a_) + 12]: ys.update(range(a1, b1 + 1))
-            ys.update(int(y) for y in re.findall(r"\b((?:19|20)\d\d)\b", t) if 1998 <= int(y) <= 2027)
+            ys.update(int(y) for y in re.findall(r"(?<!\d)((?:19|20)\d\d)(?!\d)", t) if 1998 <= int(y) <= 2027)
         ys = {y for y in ys if y in CYC}
         if not ys: return None
         if len(ys) == 1: return "ONE_YEAR"
@@ -154,6 +155,8 @@ def main():
         if first("legacy.VI16", rid) == "USED" and not cats: pi["VI16"] = [{"value": "NOT_USED"}]
         put("MOD15", ["USED" if code_public(rid) else (first("legacy.MOD15", rid) if first("legacy.MOD15", rid) not in CODE_USED else "NOT_USED")])
         put("TSK01", [first("legacy.task", rid)]); put("DAT08", [year_scope(rid) or first("legacy.year_scope", rid, "UNC")])
+        # Applicability by fixed rule (review v9, 2026-11-21): combined-year survey weights cannot apply to one KNHANES year
+        if pi["DAT08"][0]["value"] == "ONE_YEAR": pi["SUR11"] = [{"value": "NA"}]
         put("DAT14", codes("legacy.survey_components", rid))
         put("OUT10", [{"current_state_same_survey": "CURRENT", "future_event": "FUTURE", "timing_unclear": "UNC"}.get(first("legacy.outcome_timing", rid), "UNC")])
         cal = D.get(rid, {}).get("calibration_beyond_brier") in ("True", "1", "yes", "Y")
@@ -295,6 +298,10 @@ def main():
             if not u: continue
             st = (u[1] or {}).get("status"); v = first(f"legacy.checklist.{x['pub_id']}", r, "")
             if st == "not_applicable" or v.upper() == "NA": continue
+            # same fixed rule (review v9): C04 applies to combined years with survey weights used or not reported;
+            # C05 to combined or unclear years (one KNHANES year: nothing to harmonise)
+            if x["pub_id"] in ("C04", "C05") and fv(r, "DAT08") == "ONE_YEAR": continue
+            if x["pub_id"] == "C04" and fv(r, "SUR11") in ("NA", "NOT_USED"): continue
             it[str(x["idx"])] = code_public(r) if x["pub_id"] == "C36" else v == "met"
         studies[r] = {"items": it, "tripod": {str(i): LEV.get(fv(r, f"REP{i:02d}"), "Not reported") for i in range(1, 20)}}
     ck_out = {k: v for k, v in ck.items() if k not in ("studies", "removed")}; ck_out["studies"] = studies

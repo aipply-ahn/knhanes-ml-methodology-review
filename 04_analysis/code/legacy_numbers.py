@@ -96,12 +96,13 @@ def main():
     put("Pooled", ys["MULTI_SAME"] + ys["MULTI_CROSS"])
     t = O["core_topics"]; put("TopMetabolic", t.get("METABOLIC_ENDOCRINE", 0)); put("TopMental", t.get("MENTAL_HEALTH", 0))
     put("TopCardio", t.get("CARDIOVASCULAR", 0)); put("TopMusculo", t.get("MUSCULOSKELETAL", 0))
-    agemin = collections.Counter()
-    for r in CORE:
-        m = re.search(r"\d+", str(fv(r, "POP03") or "")); a = int(m.group(0)) if m else None
-        hi = re.search(r"\d+", str(fv(r, "POP04") or ""))
-        agemin["nr" if a is None and not hi else "u19" if a is not None and a < 19 else "a19" if a is not None and a < 30 else "a30" if a is not None and a < 60 else "a60" if a is not None else "maxonly"] += 1
-    put("AgeNineteen", agemin["a19"]); put("AgeThirty", agemin["a30"]); put("AgeSixty", agemin["a60"]); put("AgeNR", agemin["nr"]); put("AgeUnder", agemin["u19"])
+    agemin = collections.Counter()  # same categories as Figure 3C (make_main_figures._age): upper age < 19 -> under 19 only;
+    for r in CORE:                   # minimum < 18 -> all ages; otherwise by minimum age 18-29 / 30-59 / 60+
+        m = re.search(r"\d+", str(fv(r, "POP03") or "")); lo = int(m.group(0)) if m else None
+        m2 = re.search(r"\d+", str(fv(r, "POP04") or "")); hi = int(m2.group(0)) if m2 else None
+        agemin["nr" if lo is None and hi is None else "u19" if hi is not None and hi < 19 else "all" if lo is not None and lo < 18 else "nr" if lo is None
+               else "a60" if lo >= 60 else "a30" if lo >= 30 else "a19"] += 1
+    put("AgeNineteen", agemin["a19"]); put("AgeThirty", agemin["a30"]); put("AgeSixty", agemin["a60"]); put("AgeNR", agemin["nr"]); put("AgeUnder", agemin["u19"]); put("AgeAll", agemin["all"])
     sx = collections.Counter(fv(r, "POP05") for r in CORE)
     put("SexBoth", sx.get("None (both sexes)", 0)); put("SexWomen", sx.get("female only", 0)); put("SexMen", sx.get("male only", 0)); put("SexNR", sx.get("NR", 0))
     cs = O["core_sample"]; put("SampleMedian", f"{round(cs['median']):,}"); put("SampleQone", f"{round(cs['q1']):,}"); put("SampleQthree", f"{round(cs['q3']):,}")
@@ -319,6 +320,11 @@ def main():
             if h.startswith(("rule_not_material", "verify_inconsistency", "triage", "rule_blind")) or (h.startswith("field_rule") and str(fst.get(r["item"])).startswith("agreed")): st4 += 1
             elif h.startswith(("field_rule", "rule_fix", "decision")): st5 += 1
     put("VStepFour", f"{st4:,}"); put("VStepFive", f"{st5:,}")
+    # outcome and predictor set rebuildable from the report (OUT16 / PRD13 = R2), as in Supplementary Figure S3B and Table A1
+    _core = [recs[r] for r in REC["CORE"]]
+    _o = sum(any(x["value"] == "R2" for x in d["protocol_items"].get("OUT16", [])) for d in _core)
+    _p = sum(any(x["value"] == "R2" for x in d["protocol_items"].get("PRD13", [])) for d in _core)
+    put("OutRebuild", _o); put("OutRebuildPct", pct(_o, len(_core))); put("PrdRebuild", _p); put("PrdRebuildPct", pct(_p, len(_core)))
     put("VFieldAgreedItems", sum(str(fst.get(i)).startswith("agreed") for i in fields)); put("VFieldDecidedItems", sum(not str(fst.get(i)).startswith("agreed") for i in fields))
     json.dump(N, open(f"{L}/legacy_numbers.json", "w"), indent=1, ensure_ascii=False)
     with open("manuscript/legacy_numbers.tex", "w") as f:
