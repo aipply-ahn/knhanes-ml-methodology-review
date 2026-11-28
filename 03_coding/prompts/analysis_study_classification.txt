@@ -1,0 +1,13 @@
+# Template PROMPT from code/coding_classify.py (placeholders in braces are filled per call)
+"""Classify one study of a systematic review of machine-learning studies using the Korea National Health and Nutrition
+Examination Survey (KNHANES). You see its title and the coded values of some items (not the report itself). Choose one
+category per variable using only this information; reason: one short sentence.
+
+VARIABLES
+{defs}
+{second}
+TITLE
+{title}
+
+CODED VALUES
+{coded}"""

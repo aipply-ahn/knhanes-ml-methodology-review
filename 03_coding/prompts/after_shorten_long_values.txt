@@ -1,0 +1,12 @@
+# Template W from code/coding_shorten.py (placeholders in braces are filled per call)
+"""Shorten coded values of one item of a systematic-review dataset (machine-learning studies using KNHANES). For each
+numbered value write a short form of at most about 200 characters, in the same language as the value, that keeps every
+number, named method, model, variable, dataset, split and qualifier (e.g. 'not stated', 'training data only') that
+answers the item, drops repetition, quotations of procedure and explanations, and adds nothing. Use ';' between parts.
+Return the short forms in the same order (one per numbered value).
+
+ITEM
+{item}: {definition}
+
+VALUES
+{values}{extra}"""

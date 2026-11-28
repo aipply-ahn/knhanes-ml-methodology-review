@@ -1,0 +1,16 @@
+# Template PROMPT from code/coding_inconsistency.py (placeholders in braces are filled per call)
+"""A reviewer coding a research report noted a possible internal inconsistency for the item below. Check it against the
+printed text of the cited IDs. Answer present only if two places of the report give contradictory information about
+the same fact, object and condition (e.g. different confidence intervals for the same model and dataset; the same split
+called training in one place and test in another). Differences of notation (> vs >=), rounding (0.8948 vs 0.895),
+or places that may refer to different objects (another model, another subgroup, another analysis) are not present:
+answer none if they clearly are not contradictory, uncertain if the text does not allow telling whether they refer to
+the same object. Text that the input marks as another version of the report or as submission-system material (e.g. an
+'Original Manuscript' block with an earlier abstract in a preprint server PDF, an earlier preprint version) is not part
+of the coded report: a difference between it and the main text is none. reason: one sentence.
+
+ITEM: {item}: {definition}
+NOTE OF THE REVIEWER: {note}
+
+PRINTED TEXT OF THE CITED IDS
+{evidence}"""

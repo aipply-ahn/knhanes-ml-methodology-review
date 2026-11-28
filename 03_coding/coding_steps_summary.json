@@ -1,0 +1,82 @@
+{
+ "charms": {
+  "codings": 18081,
+  "reports": 287,
+  "settled_by_step": {
+   "1": 5785,
+   "2": 9326,
+   "4": 2664,
+   "5": 306
+  },
+  "route_call_mismatch": {},
+  "field_rules": {
+   "decided_suggestion": 16,
+   "agreed_r3": 24,
+   "decided_review": 11,
+   "agreed_r2": 4
+  }
+ },
+ "additional_1": {
+  "codings": 40455,
+  "reports": 279,
+  "settled_by_step": {
+   "1": 21098,
+   "2": 11433,
+   "4": 6107,
+   "5": 1817
+  },
+  "route_call_mismatch": {},
+  "field_rules": {
+   "agreed_r3": 66,
+   "decided_suggestion": 65,
+   "agreed_r2": 9,
+   "decided_review": 2
+  }
+ },
+ "additional_2": {
+  "codings": 1674,
+  "reports": 279,
+  "settled_by_step": {
+   "1": 1414,
+   "2": 166,
+   "4": 75,
+   "5": 19
+  },
+  "route_call_mismatch": {},
+  "field_rules": {
+   "agreed_r2": 3,
+   "decided_suggestion": 3
+  }
+ },
+ "additional_3": {
+  "codings": 1116,
+  "reports": 279,
+  "settled_by_step": {
+   "1": 951,
+   "2": 95,
+   "4": 30,
+   "5": 40
+  },
+  "route_call_mismatch": {},
+  "field_rules": {
+   "decided_suggestion": 4
+  }
+ },
+ "tripod_requirements": {
+  "codings": 11284,
+  "reports": 217,
+  "settled_by_step": {
+   "1": 9849,
+   "2": 946,
+   "4": 365,
+   "5": 124
+  },
+  "route_call_mismatch": {},
+  "field_rules": {
+   "agreed_r2": 8,
+   "agreed_r3": 16,
+   "decided_suggestion": 19,
+   "decide_open": 2
+  }
+ }
+}

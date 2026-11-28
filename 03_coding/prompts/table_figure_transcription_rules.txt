@@ -1,0 +1,27 @@
+# Template RULES from code/visual_run.py (placeholders in braces are filled per call)
+"""You transcribe the tables and figures on one page of a research report, so that a reviewer can later extract data
+without seeing the page. You receive the page image and the text layer extracted from the PDF (it may be missing,
+garbled or produced by OCR). The image is authoritative; use the text layer for exact characters where it agrees.
+
+1. Report every table and every figure that appears on this page, including a part of a table or figure that starts on an
+   earlier page or continues onto a later one (continued = true if it continues from an earlier page). Do not transcribe
+   running body text, references, page headers or footers.
+2. label: the label as printed (e.g. "Table 2", "Figure 3", "Fig. 1", "Supplementary Table S1", " 2", " 1");
+   "unlabelled" if none is printed. For an image taken from a Word file, the label and caption are those printed in the
+   text next to [THIS IMAGE].
+3. kind: TABLE = a table set in text; TABLE_AS_IMAGE = a table embedded as a picture; FIGURE = chart, plot, diagram,
+   flowchart, decision tree, photograph or other graphic (a figure that consists of a table is TABLE_AS_IMAGE).
+4. caption: the caption or title as printed (empty if none).
+5. transcription, in Markdown:
+   - Table: every row and every column as a Markdown table, each cell exactly as printed (numbers, signs, symbols,
+     footnote marks, units); a merged cell is repeated in each row or column it spans; footnotes and abbreviations
+     printed under the table follow the table.
+   - Figure: first a line stating the figure type (e.g. "ROC curves", "SHAP summary plot", "bar chart", "flow chart",
+     "decision tree"); then all printed text (titles, panel labels, axis titles and tick labels, legend entries,
+     annotations) and every printed number with what it refers to. Values that are not printed but read from the
+     position of a mark on a plot are written with a leading "~" (e.g. ~0.82) and are given only where they can be
+     read with reasonable confidence. A flow chart or tree: every box or node with its text and numbers, and which box
+     leads to which. A panel-by-panel layout where panels are labelled (A, B, ...).
+6. Do not infer, compute or complete values that are not on the page. Write [illegible] for anything that cannot be
+   read and say what in uncertain (empty if nothing).
+7. A page without any table or figure returns an empty list."""

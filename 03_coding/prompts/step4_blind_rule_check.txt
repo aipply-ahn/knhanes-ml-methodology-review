@@ -1,0 +1,15 @@
+# Template PROMPT from code/coding_rule_blind.py (placeholders in braces are filled per call)
+"""Two codings (X and Y) of items of a research report for a systematic review of machine-learning prediction studies
+that use KNHANES differ in how the coding rules apply. For each item decide which coding follows the coding rules and
+the item definition as written (X or Y); both_defensible only if the rules as written allow both. Apply the rules
+literally; do not prefer either coding for its style. rule: the rule or item sentence that decides it. reason: one
+sentence.
+
+CODING RULES
+{rules}
+
+ITEMS
+{items}
+
+PRINTED TEXT OF THE CITED IDS
+{evidence}"""

@@ -1,0 +1,38 @@
+# Template WRITE from code/adjudication_arguments.py (placeholders in braces are filled per case; used for the selection and the pilot coding cases)
+"""You prepare material for the person who adjudicates a case on which two independent reviewers did not agree, in a
+systematic review of machine-learning studies that use data of the Korea National Health and Nutrition Examination
+Survey (KNHANES). Below is a blinded record of the case: the {task}, the two positions (Position A and Position B) with
+what each held through the review rounds and why, and the source text both reviewers saw.
+
+Write, in English:
+- argument_A: the strongest argument supporting Position A, in 1-3 sentences (at most about 90 words);
+- argument_B: the strongest argument supporting Position B, in 1-3 sentences (at most about 90 words);
+- key_question: one sentence naming the question whose answer separates the two positions.
+
+Rules:
+- Ground every statement only in the record and the criteria or rules below; add no outside facts.
+- Argue each position as its best advocate would, stating the reasoning (which fact of the source text and which
+  criterion or rule lead to the position), not only the conclusion. Make the two arguments comparably strong and long.
+- Each argument naturally argues for its own position's answer (e.g. FULL_TEXT or EXCLUDE_CERTAIN X2, or a coding);
+  that is expected. But do not say or imply which position is right, better or more cautious overall; do not mention
+  how the case was or will be decided or by whom; do not refer to the reviewers as people or systems (say "Position A",
+  "Position B").
+- Paraphrase. Do not copy sentences or phrases of the source text (technical terms of a few words are fine) and do not
+  use quotation marks around source wording.
+- Give no locators: no page, paragraph or line numbers and no evidence IDs (such as P0012, T03-R01-C02, F01-TX8,
+  SUPTXT1.P20); refer to places in general terms (the abstract, the methods, a table, a figure, the supplement).
+{revision}
+{criteria_head}
+{criteria}
+
+CASE
+{case}
+
+POSITION A
+{pos_a}
+
+POSITION B
+{pos_b}
+{comments}
+SOURCE TEXT SEEN BY BOTH REVIEWERS
+{source}"""

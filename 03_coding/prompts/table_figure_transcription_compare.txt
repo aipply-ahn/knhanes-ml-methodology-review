@@ -1,0 +1,20 @@
+# Template PROMPT_C from code/visual_run.py (placeholders in braces are filled per call)
+RULES + """
+
+Report: {title}
+Source: {source}, page {page}
+
+Below is a transcription of this page on which two independent assessors agreed. Agreement does not guarantee it is
+correct: both may have misread the same value or missed the same table or figure. Check it against the image: every
+object on the page (is any table or figure missing?), every cell and number, signs, units, labels, row and column
+positions. Return the complete transcription of the page in the same format, corrected wherever the image shows an
+error; if you find no error, return it unchanged.
+
+Agreed transcription:
+{agreed}
+
+Text layer of this page:
+<<<
+{text}
+>>>
+"""

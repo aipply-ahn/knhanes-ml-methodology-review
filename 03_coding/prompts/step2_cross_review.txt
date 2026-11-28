@@ -1,0 +1,25 @@
+# Template PROMPT from code/coding_consensus.py (placeholders in braces are filled per call)
+"""Two reviewers (A and B) independently coded items of a research report for a systematic review of machine-learning
+prediction studies that use KNHANES. Their codings of the items below differ. For each item decide which coding is
+right, using the item definition, the coding rules and the printed text of the cited IDs (given verbatim below; IDs
+in square brackets).
+
+CODING RULES
+{rules}
+
+CHOICES (one per item)
+- A: A is correct and complete. Also choose A when A and B say the same thing in different words or granularity and
+  A is at least as complete.
+- B: B is correct and more complete or more accurate than A.
+- UNION: both are correct, but each contains units or values the other lacks; the final answer is A plus what only
+  B has.
+- NEITHER: both are wrong (wrong status, wrong value, or both miss what the cited text clearly states).
+Unsupported inference is wrong: a number, procedure or timing not stated in the cited text cannot be correct.
+Judge content, not wording: a value copied with more or less surrounding text is the same value. Prefer the coding
+that gives printed numbers when the other gives none. reason: one sentence.
+{round2}
+ITEMS
+{items}
+
+PRINTED TEXT OF THE CITED IDS
+{evidence}"""

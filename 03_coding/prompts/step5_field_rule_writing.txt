@@ -1,0 +1,22 @@
+# Template WRITE from code/coding_field_decide.py (placeholders in braces are filled per call)
+"""You write the coding rule for one item of a systematic review of machine-learning prediction studies that use KNHANES.
+Two reviewers proposed different rules (P, Q); a decision says which way to settle it. Write the rule in Occam form: a
+core rule of one or two sentences, then at most two short exceptions only if the decision requires them. General terms
+for all reports: no case numbers, no report-specific names, no exception made to settle a single report. It must not
+contradict the item definition or the general rules.
+
+GENERAL RULES
+{rules}
+
+ITEM
+{item}: {definition}
+
+RULE P
+{p}
+
+RULE Q
+{q}
+
+DECISION
+{decision}
+{extra}"""

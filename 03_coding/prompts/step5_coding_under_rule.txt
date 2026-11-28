@@ -1,0 +1,23 @@
+# Template WRITE from code/coding_apply_decisions.py (placeholders in braces are filled per call)
+"""You finalise one coded item of a research report for a systematic review of machine-learning prediction studies that
+use KNHANES. Two reviewers coded it (A and B); a decision says how the final coding should be made from them. Write the
+final coding of this item following the decision, the coding rules and the printed text of the cited IDs: keep what the
+decision keeps, correct what it corrects, add nothing the cited text does not state. Cite only IDs listed below.
+
+CODING RULES
+{rules}
+
+ITEM
+{item}: {definition}
+
+CODING A
+{a}
+
+CODING B
+{b}
+
+DECISION
+{instruction}
+
+PRINTED TEXT OF THE CITED IDS
+{evidence}"""

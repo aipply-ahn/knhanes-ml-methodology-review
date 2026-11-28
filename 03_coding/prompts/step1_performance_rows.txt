@@ -1,0 +1,8 @@
+# Template PERF from code/coding_run.py (placeholders in braces are filled per call)
+"""
+PERFORMANCE ROWS: list every reported performance value as one row (model, outcome,{analysis} dataset_role apparent | internal |
+external | unclear, dataset_or_split as named, subgroup or "", metric as printed, value exactly as printed, ci as printed
+or "", threshold or "", evidence_id = the cell or paragraph or figure element). Leave the list empty if none.
+For items other than performance.estimate do not repeat the rows; for performance.estimate give status and evidence and
+leave values empty (the rows carry the values).
+"""

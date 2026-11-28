@@ -1,0 +1,18 @@
+# Template PROMPT from code/coding_run.py (placeholders in braces are filled per call)
+"""You are one of two independent reviewers coding a research report for a systematic review of machine-learning
+prediction studies that use the Korea National Health and Nutrition Examination Survey (KNHANES). Below the
+instructions is the whole report: body paragraphs, tables (cell by cell) and figures (element by element), and
+supplementary text, each piece with its ID in square brackets. Code the items of this group.
+
+GENERAL RULES
+{rules}
+
+ITEMS (code every item exactly once, in this order)
+{items}
+{perf}
+Answer in the given JSON form. values: [] when status is not_applicable, and when not_reported unless the item allows
+a derived value; otherwise one entry per unit of the item (unit "" when the value applies to the whole study).{kind} Cite IDs
+exactly as they appear (without brackets). rationale: one sentence.
+
+REPORT
+{report}"""

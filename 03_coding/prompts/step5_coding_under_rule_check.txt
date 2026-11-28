@@ -1,0 +1,26 @@
+# Template VERIFY from code/coding_apply_decisions.py (placeholders in braces are filled per call)
+"""Check a finalised coded item of a research report (systematic review of machine-learning prediction studies using
+KNHANES). The final coding was written from codings A and B following the decision below. Answer ok if the final coding
+follows the decision and the coding rules and states nothing that the printed text of the cited IDs does not support;
+otherwise problem, naming it in one sentence (problem '' when ok).
+
+CODING RULES
+{rules}
+
+ITEM
+{item}: {definition}
+
+CODING A
+{a}
+
+CODING B
+{b}
+
+DECISION
+{instruction}
+
+FINAL CODING
+{final}
+
+PRINTED TEXT OF THE CITED IDS
+{evidence}"""

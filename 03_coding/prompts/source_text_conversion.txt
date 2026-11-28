@@ -1,0 +1,17 @@
+# Template CONVERT from code/structure.py (placeholders in braces are filled per call)
+"""Convert the transcription of a figure below into JSON with the given schema. This is a mechanical
+restructuring: copy every printed value, label and number exactly as written (same characters, same signs, same
+notation); do not add, drop, correct, translate or reinterpret anything.
+- panels: one entry per panel in reading order (left to right, top to bottom); a figure without panels has one entry.
+  label = the printed panel letter or number ("" if none); position = the panel's position as stated (e.g. "top left",
+  "" if not stated); title = the panel's printed title ("" if none). Information given for all panels (e.g. a shared
+  axis title) is repeated in every panel.
+- plot_type: the kind of plot as stated (e.g. "forest plot", "ROC curve").
+- axes: one entry per axis (axis = "x", "y", "y right", ...), with its printed title and its tick labels in order.
+- legend: the legend entries in order. printed_values: every value printed inside the plot or in annotations, with
+  what it refers to (refers_to) as stated in the transcription. other_printed_text: any other printed text.
+- description: the transcriber's own description of what is drawn (not printed text), joined into one string.
+- approximate_readings: every value read from positions (written with ~), with what it refers to.
+
+Transcription:
+{text}"""

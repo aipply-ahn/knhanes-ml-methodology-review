@@ -1,0 +1,21 @@
+# Template PROMPT from code/coding_triage.py (placeholders in braces are filled per call)
+"""Two reviewers (A and B) coded items of a research report for a systematic review of machine-learning prediction studies
+that use KNHANES. For the items below they still differ after discussion. Do not re-argue; classify the difference.
+- FORM: both give the same facts in a different form: units split differently or grouped ('all models' vs one entry
+  per model), wording, quotation length, or one adds correct detail the other leaves out without contradicting it.
+  rule_side none.
+- RULE: the difference is how a coding rule or the item definition applies (status choice such as not_applicable vs
+  not_reported, whether a partial detail makes the item reported, unit form, version scope, unsupported inference),
+  and the rule text below decides it. rule_side = the coding that follows the rule (A or B). Name the rule in reason.
+- SUBSTANTIVE: the two codings take a different fact from the report (what was done, on which data, which number,
+  whether two places contradict) and the rules do not decide it; only reading the report can. rule_side none.
+reason: one sentence.
+
+CODING RULES
+{rules}
+
+ITEMS
+{items}
+
+PRINTED TEXT OF THE CITED IDS
+{evidence}"""

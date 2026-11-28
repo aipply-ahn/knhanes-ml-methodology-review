@@ -1,0 +1,11 @@
+# Template V from code/coding_shorten.py (placeholders in braces are filled per call)
+"""Check short forms of coded values (systematic-review dataset of machine-learning studies using KNHANES). For each
+numbered pair: ok if the short form keeps every number, named method, model, variable, dataset, split and qualifier of
+the full value that answers the item and adds or changes nothing; otherwise not ok with the problem in one sentence
+('' when ok).
+
+ITEM
+{item}: {definition}
+
+PAIRS
+{pairs}"""

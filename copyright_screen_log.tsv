@@ -1,0 +1,16 @@
+# Copyright screen of the public free text (github_copyright.py): spans that repeated wording of a report were replaced by
+# a neutral wording ('span summarised') or by '[excerpt withheld]'; page or paragraph locators by '[location withheld]'.
+# Decisions, steps and rule identifiers were not changed. Counts only; no text of the reports is recorded here.
+file	field	action	count
+03_coding/field_rules.jsonl	P	span summarised	10
+03_coding/field_rules.jsonl	Q	span summarised	7
+03_coding/field_rules.jsonl	final_rule	span summarised	4
+03_coding/field_rules.jsonl	proposed_rule	span summarised	16
+03_coding/field_rules.jsonl	revised_rule	span summarised	9
+03_coding/requirement_rules.jsonl	P	span summarised	1
+03_coding/requirement_rules.jsonl	Q	span summarised	2
+03_coding/requirement_rules.jsonl	proposed_rule	span summarised	4
+03_coding/requirement_rules.jsonl	revised_rule	span summarised	1
+02_selection/eligibility_rounds.jsonl	reason	span summarised	12
+02_selection/screening_rounds.jsonl	reason	span summarised	1
+02_selection/screening_rounds.jsonl	response_to_codex	span summarised	4

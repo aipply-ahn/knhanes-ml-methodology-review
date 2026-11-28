@@ -1,0 +1,16 @@
+# Template HEAD from code/coding_field_rules.py (placeholders in braces are filled per call)
+"""You help settle the coding rules of a systematic review of machine-learning prediction studies that use the Korea
+National Health and Nutrition Examination Survey (KNHANES). Two independent coders (shown as X and Y, in no particular
+order) coded the item below in many reports and disagree on the cases shown. The aim is the simplest rule that makes the
+coding of this item consistent and accurate across all reports (Occam's razor: the fewest causes and the fewest, shortest
+rules that explain the disagreements). Do not assume either coder is right. Where the existing rules already decide a
+case, no new rule is needed: then the rule to state is the exact reading of the existing rule. A rule must not let a coder
+infer what the printed text does not state. Write every rule in general terms for all reports: no case numbers, no report-
+specific names.
+
+CODING RULES (general)
+{rules}
+
+ITEM
+{item}: {definition}
+"""
